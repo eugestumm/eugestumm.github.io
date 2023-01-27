@@ -6,7 +6,7 @@ I am Euge Stumm, a first-year Ph.D. student in Literary, Cultural, and Linguisti
 
 ## Contact information
 
-You can contact me at ehs89@miami.edu or eugestumm@gmail.com
+You can contact me at [ehs89@miami.edu](ehs89@miami.edu) or [eugestumm@gmail.com](eugestumm@gmail.com)
 
 ## Education 
 
@@ -29,7 +29,7 @@ Stumm, E. H., Souza, M. D. A., Schiavi, B. T. & Levandowski, D. C. (2021, submit
 
 Schneider, K., Stumm, E. H., Rocha, R. Z., & Levandowski, D. C. (2020, in press). Innovative practices in Developmental Psychology teaching (in Portuguese). _Revista Psicologia Escolar e Educacional_.
 
-[Gurski, R., Strzykalski, S., Gomes, P. G., & Stumm, E. H. (2020). The state of art of Psychoanalysis and Education in Rio Grande do Sul] (https://doi.org/10.1590/S1678-4634202046224847) (in Portuguese). _Revista Educação e Pesquisa_, _46,_ 1-15.
+[Gurski, R., Strzykalski, S., Gomes, P. G., & Stumm, E. H. (2020). The state of art of Psychoanalysis and Education in Rio Grande do Sul](https://doi.org/10.1590/S1678-4634202046224847) (in Portuguese). _Revista Educação e Pesquisa_, _46,_ 1-15.
 
 [Stumm, E. H., & Weinmann, A. D. O. (2019). The cinema as a creator of prostheses: a dildic analysis of the "The guys of the sidewalks"](https://doi.org/10.9771/peri.v1i11.29254) (in Portuguese). _Revista Periódicus_, _1_(11), 234-249.
 
