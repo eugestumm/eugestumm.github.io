@@ -2,7 +2,7 @@
 
 ## About me 
 
-I am Euge Stumm, a first-year Ph.D. student in Literary, Cultural, and Linguistic studies at the University of Miami. My main research interests are in gender and sexuality studies, queer theory, Brazil, cinema, digital humanities, and cultural studies. 
+I am Euge Stumm (pronouns: they/them), a first-year Ph.D. student in Literary, Cultural, and Linguistic studies at the University of Miami. My main research interests are in gender and sexuality studies, queer theory, Brazil, cinema, digital humanities, and cultural studies. 
 
 ## Contact information
 
