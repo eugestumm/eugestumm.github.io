@@ -23,8 +23,6 @@ Psychology
 
 **Peer-reviewed journal article**
 
-Stumm, E. H., Souza, M. D. A., Schiavi, B. T. & Levandowski, D. C. (2021, submitted). Akilombating Developmental Psychology: Social Markers of Difference in Southern Brazilian Psychology Teaching.
-
 [Stumm, E. H. (2021). What if goblins were, actually, humans? Colonization, racism, and barbarism in Dragon's Dogma](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) (in Portuguese). _Revista Contraponto (UFRGS)_, _8_(2), 169-185.
 
 Schneider, K., Stumm, E. H., Rocha, R. Z., & Levandowski, D. C. (2020, in press). Innovative practices in Developmental Psychology teaching (in Portuguese). _Revista Psicologia Escolar e Educacional_.
