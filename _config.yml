@@ -1,4 +1,4 @@
 name: Your Name
 markdown: kramdown
 
-theme: jekyll-theme-cayman
+theme: lanyon
