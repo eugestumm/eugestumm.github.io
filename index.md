@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Susanna Alles Torrent
+title: Euge Stumm
 ---
 
 # Hello Word
@@ -15,13 +15,16 @@ You can contact me at [ehs89@miami.edu](ehs89@miami.edu) or [eugestumm@gmail.com
 
 ## Education 
 
-**PhD, University of Miami 2022–present**
+**PhD, University of Miami** 
+2022–present
 Literary, Cultural, and Linguistic Studies (expected graduation date: 2027)
 
-**MA, Federal University of Rio Grande do Sul (UFRGS)** 2021–2022
+**MA, Federal University of Rio Grande do Sul (UFRGS)** 
+2021–2022
 Psychology
 
-**BA, Federal University of Health Sciences of Porto Alegre (UFCSPA)** 2016–2021
+**BA, Federal University of Health Sciences of Porto Alegre (UFCSPA)** 
+2016–2021
 Psychology
 
 ## Publications 
