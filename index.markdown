@@ -1,6 +1,8 @@
 ---
-layout: default
-title: Euge Stumm
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
 ---
 
 # Hello Word
