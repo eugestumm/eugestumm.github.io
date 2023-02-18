@@ -1,8 +1,5 @@
----
-layout: page
-title: "Publications"
-permalink: /publications
----
+# Publications 
+
 **Peer-reviewed journal article**
 
 [Stumm, E. H. (2021). What if goblins were, actually, humans? Colonization, racism, and barbarism in Dragon's Dogma](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) (in Portuguese). _Revista Contraponto (UFRGS)_, _8_(2), 169-185.
