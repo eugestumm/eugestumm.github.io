@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+header {
+    padding: 3em;
+    display: block;
+    text-align: center;
+}
+
 /* Set body styles */
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+ 
   line-height: 1.5;
   color: #333;
 }

@@ -7,9 +7,9 @@ title: Euge Stumm - Publications
 ---
 
 
-# Publications 
+## Publications 
 
-## Peer-reviewed journal article
+### Peer-reviewed journal article
 
 [Stumm, E. H. (2021). What if goblins were, actually, humans? Colonization, racism, and barbarism in Dragon's Dogma](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) (in Portuguese). _Revista Contraponto (UFRGS)_, _8_(2), 169-185.
 
@@ -19,7 +19,7 @@ Schneider, K., Stumm, E. H., Rocha, R. Z., & Levandowski, D. C. (2020, in press)
 
 [Stumm, E. H., & Weinmann, A. D. O. (2019). The cinema as a creator of prostheses: a dildic analysis of the "The guys of the sidewalks"](https://doi.org/10.9771/peri.v1i11.29254) (in Portuguese). _Revista Periódicus_, _1_(11), 234-249.
 
-## Book chapter
+### Book chapter
 
 [Stumm, E. H. (2021). Manifesto toward a pirate Psychology](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf) (in Portuguese). In _Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia_ (pp. 162-168). Regional Council of Psychology of Rio Grande do Sul. 
 
@@ -27,7 +27,7 @@ Schneider, K., Stumm, E. H., Rocha, R. Z., & Levandowski, D. C. (2020, in press)
 
 [Stumm, E. H. (2020). A minor gameography? Sex-political multitudes and the dissident artistical productions in the indie games scene](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf) (in Portuguese). In Giunta, A., Biczel, D., Lopes, F., Simões, I. (Eds), _Contra o cânone Arte, feminismo(s) e ativismos séculos XVIII a XXI Seminário Internacional_ (pp. 170-175). Mercosur Biennial Foundation. 
 
-## Conference papers
+### Conference papers
 
 [Stumm, E. H. (2020). Somatofictional autopoietics in the cartoon Steven Universe](https://www.researchgate.net/publication/352991027_Autopoieticas_somatoficcionais_no_cartoon_infantil_Steve_Universe) (in Portuguese). _SIMPÓSIO GÊNERO E INFÂNCIA: Direitos Humanos, Educação e Psicanálise_ (pp. 18-19), Porto Alegre. 
 
