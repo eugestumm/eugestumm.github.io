@@ -3,11 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: Euge Stumm - Projects
 ---
 
 
-# Publications 
+# Projects
 
-**Under construction!**
+Under construction!
 
 ["Person working on the computer"](img/unboxing.png) [](/img/unboxing.png?raw=true)
