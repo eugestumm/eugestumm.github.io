@@ -12,7 +12,7 @@ I am Euge Stumm (they/them/elle/elu), a first-year Ph.D. student in Literary, Cu
 
 ### Contact information
 
-You can contact me at [ehs89@miami.edu](ehs89@miami.edu) or [eugestumm@gmail.com](eugestumm@gmail.com)
+You can contact me at [ehs89@miami.edu](mailto:ehs89@miami.edu) or [eugestumm@gmail.com](mailto:eugestumm@gmail.com)
 
 ### Education 
 
