@@ -11,4 +11,4 @@ title: Euge Stumm - Projects
 
 Under construction!
 
-["Person working on the computer"](img/unboxing.png) [](/img/unboxing.png?raw=true)
+![Person working on the computer](/img/unboxing.png) 
