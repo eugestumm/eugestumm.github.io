@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="css/main.css">
-		</head>
-		<body>
-      <header>
-        <h6>Euge Stumm</h6>
-        <nav>
-            <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="/publications">Publications</a></li>
-                <li><a href="/projects">Projects</a></li>
-              
-            </ul>
-        </nav>
-    </header>
-			<div class="container">
-			
-			{{ content }}
-			
+---
+layout: compress
+---
 
+{% include base_path %}
 
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-			<footer>
-				<br>
-				<p>© 2023 Euge Stumm. Made with Jekyll.</p>
-			</div>
-		</body>
-		
-	</html>
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
