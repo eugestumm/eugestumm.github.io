@@ -8,9 +8,30 @@ author_profile: true
 
 ## Ongoing
 
-### Brutal past and futures: analyzing colonial violence online reception in Crusader Kings 3 and Rimworld
+### Mysoginistic behavior on social media: a sentiment analysis of sexual violence in a subreddit of Crusader Kings
 
-This is an ongoing project for the Digital Humanities Practicum of the Spring/2023.
+This is an ongoing project for the Digital Humanities Practicum of the Spring/2023. Below is a brief preview of the references I have used to discuss my preliminary findings.
+
+- Beck, Victoria Simpson, et al. "Violence Against Women in Video Games: A Prequel or Sequel to Rape Myth Acceptance?" _Journal of Interpersonal Violence_, vol. 27, no. 15, Oct. 2012, pp. 3016–31. _DOI.org (Crossref)_,[https://doi.org/10.1177/0886260512441078](https://doi.org/10.1177/0886260512441078).
+
+- Kilomba, Grada. _Plantation Memories: Episodes of Everyday Racism_. Unrast, 2008.
+
+- Trevisan, João Silvério. _Devassos No Paraíso: A Homossexualidade No Brasil, Da Colônia à Atualidade_. Objetiva, 2018.
+
+- Lugones, María. "Rumo a um feminismo descolonial." _Revista Estudos Feministas_, vol. 22, no. 3, Dec. 2014, pp. 935–52. _DOI.org (Crossref)_,[https://doi.org/10.1590/S0104-026X2014000300013](https://doi.org/10.1590/S0104-026X2014000300013).
+
+- Diamond, Ian, and Julie Jefferies. _Beginning Statistics: An Introduction for Social Scientists_. SAGE, 2001.
+
+- Ballestrin, Luciana. "América Latina e o Giro Decolonial." _Revista Brasileira de Ciência Política_, no. 11, Aug. 2013, pp. 89–117. _DOI.org (Crossref)_,[https://doi.org/10.1590/S0103-33522013000200004](https://doi.org/10.1590/S0103-33522013000200004).
+
+- Aggarwal, Charu C. _Machine Learning for Text_. 1st ed. 2018, Springer International Publishing : Imprint: Springer, 2018. _Library of Congress ISBN_,[https://doi.org/10.1007/978-3-319-73531-3](https://doi.org/10.1007/978-3-319-73531-3).
+
+- Hutto, C., and Eric Gilbert. "VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text." _Proceedings of the International AAAI Conference on Web and Social Media_, vol. 8, no. 1, May 2014, pp. 216–25. _DOI.org (Crossref)_,[https://doi.org/10.1609/icwsm.v8i1.14550](https://doi.org/10.1609/icwsm.v8i1.14550).
+
+- Boe, Bryce. _PRAW: The Python Reddit API Wrapper — PRAW 7.7.0 Documentation_.[https://praw.readthedocs.io/en/stable/](https://praw.readthedocs.io/en/stable/). Accessed 23 Apr. 2023.
+
+- Ramsay, Stephen. "Databases." _A Companion to Digital Humanities_, edited by Susan Schreibman et al., Blackwell Pub, 2004.
+
 
 
 ## Finished
