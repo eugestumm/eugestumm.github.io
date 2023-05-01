@@ -38,3 +38,11 @@ This is an ongoing project for the Digital Humanities Practicum of the Spring/20
 
 ### [Transylvania Witch](https://transylvania-witch.tumblr.com/)
 Online installation to be played in a loop. The website plays a spell that claims transforming you into a transgender woman. The installation consists of putting it in a public space and observing people's reaction to the spell. If any of them become a transgender woman, please tell me!
+
+### [Non-binary in binary](https://non-binary-in-binary.tumblr.com/)
+Online installation to be displayed in a loop. The website shows a number of non-binary identities (xenogender, mtx, demiboy, etc) converted into binary code. My goal is to reflect how non-binary gender identities cannot be understood in binary logics. [This project was exhibited in the Museum of Contemporary Art of Rio Grande do Sul, Brazil.](https://cultura.rs.gov.br/instituto-estadual-de-artes-visuais-apresenta-a-exposicao-re-pulsa/)
+
+### [Romaozev](https://poieticalab.itch.io/romaozev)
+Digital game and installation. The game simulates labyrinth where the player cannot see the center of the screen, only the edges. The goal is to find the word love, that can only be seen with the sides of the eyes. My goal is to reflect on the lives that can only experience love through the side of their eyes. 
+
+
