@@ -8,7 +8,7 @@ author_profile: true
 
 ## Ongoing
 
-### [Sexual violence in video game social media: a sentiment analysis of rape speech in a subreddit of Crusader Kings (This link leads to another page)](eugestumm.github.io/sexualviolence_crusaderkings)
+### [Sexual violence in video game social media: a sentiment analysis of rape speech in a subreddit of Crusader Kings (This link leads to another page)](https://eugestumm.github.io/sexualviolence_crusaderkings)
 
 This is my project on Crusader Kings and sexual violence. My goal is to analyze how the community of players of the video game series Crusader Kings dealed with rape speech in their biggest Reddit community. I used the data collected from PRAW Reddit API with sentiment analysis using VADER sentiment analysis tool and descriptive and exploratory statistics to visualize and interpret the data. 
 
