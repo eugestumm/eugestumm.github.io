@@ -25,4 +25,4 @@ Department of Modern Languages and Literatures Graduate Conference, University o
 
 [Stumm, E. H. (2018). Pornochanchadas and the erotic: perspectives and subversions](https://lume.ufrgs.br/handle/10183/191945) (in Portuguese). _XXX SALÃO DE INICIAÇÃO CIENTÍFICA DA UFRGS_, Porto Alegre. 
 
-[Stumm, E. H. (2017).Portraits of the academic production on Psychoanalysis and Cinema in Rio Grande do Sul](https://lume.ufrgs.br/handle/10183/175684) (in Portuguese). _XXIX SALÃO DE INICIAÇÃO CIENTÍFICA DA UFRGS_, Porto Alegre.
+[Stumm, E. H. (2017). Portraits of the academic production on Psychoanalysis and Cinema in Rio Grande do Sul](https://lume.ufrgs.br/handle/10183/175684) (in Portuguese). _XXIX SALÃO DE INICIAÇÃO CIENTÍFICA DA UFRGS_, Porto Alegre.
