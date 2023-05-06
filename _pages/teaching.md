@@ -8,8 +8,9 @@ author_profile: true
 # Graduate Teaching Experience
 
 ## Teaching experience
-### Portuguese 105 - Portuguese for Spanish Speakers
 #### *University of Miami - Fall/2023*
+#### Portuguese 105 - Portuguese for Spanish Speakers
+
 Starting on the Fall/2023, I will be conducting a 3 credits course for introductory level of Portuguese. My teaching mixes social justice pedagogy and communicative approach for language teaching. I have chosen the textbook ["Português Pluricêntrico"](https://escholarship.org/uc/item/9zs4s2p8) for this course.
 
 ## Graduate Teaching Assistant
