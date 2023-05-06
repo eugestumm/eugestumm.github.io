@@ -37,3 +37,11 @@ LATIN AMERICAN STUDIES 301 / 691 - R.
 - Portuguese (Fall/2022 to Spring/2023)
 I conducted two hours of tutoring per week for all levels Portuguese students of the University of Miami. 
 
+## Undergraduate Teaching Experience
+### Undergraduate Teaching Assistant
+### *Federal University of Health Sciences of Porto Alegre* (2018-2021)
+I worked as a teaching assistant under the guidance of Professor Daniela Levandowski. I organized the texts and extra materials and provided the classroom with technical support throughout the semester. I contributed with the following classes:
+- Developmental Psychology I
+- Developmental Psychology II
+
+
