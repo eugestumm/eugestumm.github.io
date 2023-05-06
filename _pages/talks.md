@@ -8,7 +8,7 @@ author_profile: true
 
 ## Talks in conferences
 
-#### Machorras, viados, and sapas: Post-feminism and Furry alliances in Latin America and global North
+### Machorras, viados, and sapas: Post-feminism and Furry alliances in Latin America and global North
 Department of Modern Languages and Literatures Graduate Conference, University of Miami, March 2023
 
 ## Published conference papers
