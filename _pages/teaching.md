@@ -19,6 +19,11 @@ I worked as a teaching assistant under the guidance of Professor Steven Butterma
 - LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (Spring/2023)
 - Contemporary Brazilian Film:  From Cinema Novo to Cinema Novíssimo (Fall/2022)
 
+### *Federal University of Rio Grande do Sul, Brazil*
+I worked as a teaching assistant under the guidance of Professor Adolfo Pizzinato. I organized the texts and extra materials and provided the classroom with technical support throughout the semester. I also was responsible for conducting and teaching specific classes, as well as pedagogical materials. I contributed with the following classes:
+- Diversity and Human Development
+- Psychology Applied to Health Sciences
+
 ## Invited Lecture
 ### *University of Miami*
 #### "Pajubá 101", in LGBTQIA+ BRAZIL: Queering & Querying the Paradise of Paradox
