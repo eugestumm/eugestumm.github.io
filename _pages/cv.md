@@ -16,18 +16,6 @@ Education
 * M.A. in **Psychology**, Federal University of Rio Grande do Sul, 2022
 * Ph.D. in **Literary, Cultural, and Linguistic Studies**, University of Miami, 2027 (expected)
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
 Publications
 ======
 
