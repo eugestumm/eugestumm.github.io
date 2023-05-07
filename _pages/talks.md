@@ -11,6 +11,9 @@ author_profile: true
 ### Machorras, viados, and sapas: Post-feminism and Furry alliances in Latin America and global North
 Department of Modern Languages and Literatures Graduate Conference, University of Miami, March 2023
 
+### Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX
+7th Biennial Vinculaciones 2023 "(Re)thinking the “We” in Latin America" -  Graduate Student Symposium, University of Pittsburgh, April 2023
+
 ## Published conference papers
 
 [Somatofictional autopoietics in the cartoon Steven Universe](https://www.researchgate.net/publication/352991027_Autopoieticas_somatoficcionais_no_cartoon_infantil_Steve_Universe) (in Portuguese). _SIMPÓSIO GÊNERO E INFÂNCIA: Direitos Humanos, Educação e Psicanálise_ (pp. 18-19), Porto Alegre. 
