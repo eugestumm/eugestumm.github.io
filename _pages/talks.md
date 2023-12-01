@@ -11,7 +11,7 @@ author_profile: true
 ### From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance.
 Queen's Graduate Conference in Literature "ORIENTATION: THIS WAY, THAT WAY & THE OTHER". Queen's University, Kingston, Canada, May 2023.
 
-###What is queer about queer cinema: Queering speculative fabulation. 
+### What is queer about queer cinema: Queering speculative fabulation. 
 Fifth Annual Graduate and Postdoctoral Research Symposium. University of Miami, Miami, March 2023.
 
 ### Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX
