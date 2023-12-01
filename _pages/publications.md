@@ -9,7 +9,7 @@ author_profile: true
 
 [What if goblins were, actually, humans? Colonization, racism, and barbarism in Dragon's Dogma](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) (in Portuguese). _Revista Contraponto (UFRGS)_, _8_(2), 169-185.
 
-[Innovative practices in Developmental Psychology teaching (in Portuguese and English).](https://www.scielo.br/j/pee/a/7CRvnXTcnSYP6JGkVcbJVsG/?lang=en) _Revista Psicologia Escolar e Educacional_.
+[Innovative practices in Developmental Psychology teaching](https://www.scielo.br/j/pee/a/7CRvnXTcnSYP6JGkVcbJVsG/?lang=en) (in Portuguese and English). _Revista Psicologia Escolar e Educacional_.
 
 [The state of art of Psychoanalysis and Education in Rio Grande do Sul](https://doi.org/10.1590/S1678-4634202046224847) (in Portuguese). _Revista Educação e Pesquisa_, _46,_ 1-15.
 
