@@ -1,8 +1,12 @@
 # How to update
 
-## Talks
+## For further updates
 
-Go in posts/talks.md
+Go in _pages/talks.md
+
+Most of the pages are in _pages folder. 
+
+## that's it
 
 
 
