@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Peer-reviewed journal article
+## Peer-reviewed journal articles
 
 [What if goblins were, actually, humans? Colonization, racism, and barbarism in Dragon's Dogma](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) (in Portuguese). _Revista Contraponto (UFRGS)_, _8_(2), 169-185.
 
@@ -15,7 +15,7 @@ author_profile: true
 
 [The cinema as a creator of prostheses: a dildic analysis of the "The guys of the sidewalks"](https://doi.org/10.9771/peri.v1i11.29254) (in Portuguese). _Revista Periódicus_, _1_(11), 234-249.
 
-## Book chapter
+## Book chapters
 
 [Manifesto toward a pirate Psychology](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf) (in Portuguese). In _Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia_ (pp. 162-168). Regional Council of Psychology of Rio Grande do Sul. 
 
