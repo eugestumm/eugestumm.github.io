@@ -75,7 +75,7 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : G-S5Q3R3BR7Q
+    tracking_id          : #G-S5Q3R3BR7Q
 
 
 # Site Author
@@ -84,10 +84,10 @@ author:
   avatar           : "profile_photo.png"
   bio              : "Euge Stumm is a Ph.D. student in the Department of Modern Languages and Literatures at the University of Miami."
   location         : "Miami, Florida"
-  employer         :
+  employer         : University of Miami
   pubmed           : 
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            :
+  email            : ehs89@miami.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
