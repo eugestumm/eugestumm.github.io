@@ -5,8 +5,15 @@ permalink: /talks/
 author_profile: true
 ---
 
+## Workshops
+
+### Introduction to Semantic Search using Semantra
+Modern Languages and Literatures Lecture Series (Spring 2024). University of Miami, April 2024.
 
 ## Talks in conferences
+
+### Pajubá as a community of practice
+17th Samuel Armistead Colloquium: "From the Margin to the Horizon: New Landscapes in Cultural, Linguistics and Literature Studies in Ibero America". University of California, Davis. April 2024.
 
 ### From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance.
 Queen's Graduate Conference in Literature "ORIENTATION: THIS WAY, THAT WAY & THE OTHER". Queen's University, Kingston, Canada, May 2023.
