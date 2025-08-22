@@ -189,10 +189,10 @@ def format_project_markdown(project):
     try:
         markdown_parts = []
         
-        # Project header (no emoji)
+        # Project header as clickable link if URL is present (no emoji)
         title = project['title'] or "Untitled Project"
-        if project['url']:
-            header = f"### [{title}]({project['url']})"
+        if project.get('url') and project['url'].strip():  # Only if URL exists and is not empty
+            header = f"### [{title}]({project['url'].strip()})"
         else:
             header = f"### {title}"
         markdown_parts.append(header)
@@ -205,9 +205,9 @@ def format_project_markdown(project):
             metadata_parts.append(f"**Year**: {year}")
         if project['project_type']:
             metadata_parts.append(f"**Type**: {project['project_type']}")
-        
+
         if metadata_parts:
-            markdown_parts.append(" | ".join(metadata_parts))
+            markdown_parts.append("; ".join(metadata_parts))
             markdown_parts.append("")
         
         # Description
@@ -222,7 +222,7 @@ def format_project_markdown(project):
                 tech_parts.append(f"**Methods**: {project['methods']}")
             if project['technologies']:
                 tech_parts.append(f"**Technologies**: {project['technologies']}")
-            markdown_parts.append(" | ".join(tech_parts))
+            markdown_parts.append("; ".join(tech_parts))
             markdown_parts.append("")
         
         # Collaborators (skip if empty, blank, or 'nan')
