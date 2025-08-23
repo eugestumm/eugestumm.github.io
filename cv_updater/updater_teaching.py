@@ -190,10 +190,10 @@ def format_workshop_entry(row):
         description = str(row.get('description', '')).strip()
         special_notes = str(row.get('special_notes', '')).strip()
         
-        # Start with the title in quotes
+        # Start with the title in bold
         main_parts = []
         if course_title:
-            main_parts.append(f'"{course_title}"')
+            main_parts.append(f'**{course_title}**')
         
         # Add institution if available
         if institution:
@@ -206,8 +206,8 @@ def format_workshop_entry(row):
             except (ValueError, TypeError):
                 pass
         
-        # Combine main line with em-dashes
-        main_line = " — ".join(main_parts)
+        # Join main parts with commas
+        main_line = ", ".join(main_parts)
         
         # Build the additional information indented on the next line
         additional_info = []
