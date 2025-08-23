@@ -157,10 +157,15 @@ def init_cv():
     """Initialize CV with YAML front matter and header"""
     cv_content = "---\n"
     cv_content += "layout: archive\n"
+    #cv_content += "author: Euge Stumm\n"
+    #cv_content += "fontsize: 12pt\n"
+    cv_content += "papersize: \"letter\"\n"
+    cv_content += "geometry: \"margin=1in\"\n"
+    cv_content += "mainfont: \"Times New Roman\"\n"
     cv_content += "title: \"Curriculum Vitae\"\n"
     cv_content += "permalink: /cv/\n"
     cv_content += "author_profile: true\n"
-    cv_content += "---\n\n"
+    cv_content += "---\n"
     
     return cv_content
 

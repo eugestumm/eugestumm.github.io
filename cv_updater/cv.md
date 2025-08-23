@@ -1,10 +1,12 @@
 ---
 layout: archive
+papersize: "letter"
+geometry: "margin=1in"
+mainfont: "Times New Roman"
 title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
-
 # Euge Helyantus Stumm
 
 *Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*  
