@@ -54,7 +54,7 @@ author_profile: true
 
 ## Workshop
 
-- **How to Create StoryMaps Using Leaflet and OpenStreetMaps.**, University of Miami, 2025  
+- **How to Create StoryMaps Using Leaflet and OpenStreetMaps**, University of Miami, 2025  
   Supervised by Dr. Shai Cohen  
   Workshop ministered in SPA 310 — Sephardic Literature.
 - **How to Use CollectionBuilder**, University of Miami, 2025  
