@@ -179,82 +179,68 @@ def format_course_entry(row):
 
 def format_workshop_entry(row):
     """
-    Format a workshop entry - Academic professional formatting
+    Format a workshop entry - Academic professional formatting with improved layout
     """
     try:
-        course_code = str(row.get('course_code', '')).strip()
         course_title = str(row.get('course_title', '')).strip()
         institution = str(row.get('institution', '')).strip()
-        semester = str(row.get('semester', '')).strip()
         year = row.get('year')
         supervisor = str(row.get('supervisor', '')).strip()
         co_instructor = str(row.get('co_instructor', '')).strip()
         description = str(row.get('description', '')).strip()
         special_notes = str(row.get('special_notes', '')).strip()
         
-        # Build main workshop information using em-dash
-        workshop_parts = []
+        # Start with the title in quotes
+        main_parts = []
+        if course_title:
+            main_parts.append(f'"{course_title}"')
         
-        # Workshop title - clean, no extra quotes
-        if course_title and course_code:
-            workshop_parts.append(f"{course_title} ({course_code})")
-        elif course_title:
-            workshop_parts.append(course_title)
-        elif course_code:
-            workshop_parts.append(course_code)
-        else:
-            workshop_parts.append("Workshop")
-        
-        # Institution
+        # Add institution if available
         if institution:
-            workshop_parts.append(institution)
-        
-        # Date
-        date_info = []
-        if semester:
-            date_info.append(semester)
+            main_parts.append(institution)
+            
+        # Add year
         if pd.notna(year) and year != '' and year != 0:
             try:
-                date_info.append(str(int(year)))
+                main_parts.append(str(int(year)))
             except (ValueError, TypeError):
                 pass
         
-        if date_info:
-            workshop_parts.append(" ".join(date_info))
+        # Combine main line with em-dashes
+        main_line = " — ".join(main_parts)
         
-        # Use em-dash separator
-        main_line = " — ".join(workshop_parts)
+        # Build the additional information indented on the next line
+        additional_info = []
         
-        # Additional information - cleaner formatting without excessive italics
-        additional_parts = []
+        # Format supervision and collaboration info together with comma
+        supervision_parts = []
+        if supervisor:
+            supervision_parts.append(f"Supervised by {supervisor}")
+        if co_instructor:
+            if ',' in co_instructor:  # Multiple co-facilitators
+                supervision_parts.append(f"co-facilitated with {co_instructor}")
+            else:
+                supervision_parts.append(f"co-facilitated with {co_instructor}")
         
-        # Supervision and collaboration info
-        if supervisor and co_instructor:
-            additional_parts.append(f"Supervised by {supervisor}, co-facilitated with {co_instructor}")
-        elif supervisor:
-            additional_parts.append(f"Supervised by {supervisor}")
-        elif co_instructor:
-            additional_parts.append(f"Co-facilitated with {co_instructor}")
+        # Add supervision info if available
+        if supervision_parts:
+            additional_info.append(", ".join(supervision_parts))
         
-        # Context/venue information from description/notes - preserve important details
+        # Add presentation context from description or special notes
         notes_content = description if description else special_notes
         if notes_content:
-            # Clean up common redundant prefixes but preserve the meaningful content
-            notes_clean = notes_content.replace('Workshop ministered in the ', '').replace('workshop ministered in the ', '')
-            notes_clean = notes_clean.replace('Workshop ministered in ', '').replace('workshop ministered in ', '')
-            
-            # Add the context information naturally
-            if 'Department' in notes_clean or 'Group' in notes_clean or 'Series' in notes_clean:
-                additional_parts.append(f"Presented for the {notes_clean}")
-            elif notes_clean.strip():
-                # Remove the awkward "Context:" and just include the information naturally
-                additional_parts.append(f"Presented in {notes_clean}")
+            notes_clean = notes_content.strip()
+            if notes_clean:
+                # Remove any existing "Presented in" or "Presented for" prefixes
+                notes_clean = notes_clean.replace('Presented in ', '').replace('Presented for ', '')
+                additional_info.append(notes_clean)
         
-        # Combine everything cleanly
-        if additional_parts:
-            # Use period-separated format for readability
-            additional_text = ". ".join(additional_parts)
-            return f"{main_line}. {additional_text}"
+        # Combine everything with proper formatting and indentation
+        # Each piece of information on its own line
+        if additional_info:
+            # Add two spaces at the end of each line for markdown line breaks
+            return f"{main_line}  \n  {additional_info[0]}" + \
+                   ("".join(f"  \n  {info}" for info in additional_info[1:]))
         else:
             return main_line
             
