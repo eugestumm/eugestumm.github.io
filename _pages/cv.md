@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-# Euge Stumm
+# Euge Helyantus Stumm
 
 *Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*  
 [ehs89@miami.edu](mailto:ehs89@miami.edu) | [Website](https://eugestumm.github.io) | [ORCID](https://orcid.org/0000-0001-9087-4198) | [GitHub](https://github.com/eugestumm)

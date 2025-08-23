@@ -194,6 +194,7 @@ def generate_header_section(data):
     address = row.get('address', '')
 
     content = f"# {name}\n\n"
+    #content = ""
     
     if title:
         content += f"*{title}*  \n"
