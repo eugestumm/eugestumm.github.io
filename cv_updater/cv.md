@@ -18,24 +18,30 @@ author_profile: true
 
 **Ph.D. in Literary, Cultural, and Linguistic Studies** (In-Progress)
 University of Miami
-  - Advisor: [Dr. Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
+
+Advisor: [Dr. Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 
 **Graduate Certificate in Digital Humanities** (In-Progress)
 University of Miami
-  - Advisor: [Dr. Susanna Allés-Torrent](https://susannalles.com/)
+
+Advisor: [Dr. Susanna Allés-Torrent](https://susannalles.com/)
 
 **Graduate Certificate in Second Language Acquisition and Teaching** (In-Progress)
 University of Miami
-  - Advisor: [Dr. Ager Gondra](https://people.miami.edu/profile/6ab3218ab810899980f16329d9112fef)
+
+Advisor: [Dr. Ager Gondra](https://people.miami.edu/profile/6ab3218ab810899980f16329d9112fef)
 
 **M.A. in Psychology**
 Federal University of Rio Grande do Sul
-  - Thesis: *How to be Furro: A Digital Ethnography Among Brazilian Furry Fandoms*
-  - Advisor: [Dr. Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
+
+Thesis: *How to be Furro: A Digital Ethnography Among Brazilian Furry Fandoms*
+
+Advisor: [Dr. Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
 
 **B.A. in Psychology**
 Federal University of Health Sciences of Porto Alegre
-  - Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
+
+Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
 
 ---
 

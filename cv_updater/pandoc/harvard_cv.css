@@ -1,0 +1,271 @@
+/* Harvard Style CV CSS for Pandoc */
+@page {
+    margin: 1in;
+    size: letter;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    max-width: 100%;
+}
+
+/* Headings */
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.25in 0 0.1in 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 0.1in;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0.5em 0 0.25em 0;
+    padding-bottom: 0.05em;
+    border-bottom: 1pt solid #000;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0.5em 0 0.25em 0;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0.5em 0 0.25em 0;
+}
+
+/* Contact information */
+h1 + p {
+    text-align: center;
+    margin: 0.1in 0 0.3in 0;
+    font-style: italic;
+}
+
+/* Horizontal rule */
+hr {
+    border: 0.5pt solid #000;
+    margin: 0.2in 0;
+}
+
+/* Lists */
+ul {
+    margin: 0.25em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.1em 0;
+    text-align: justify;
+}
+
+/* Paragraphs and spacing */
+p {
+    margin: 0.25em 0;
+    text-align: justify;
+}
+
+/* Strong and emphasis */
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Section spacing */
+.section {
+    margin-bottom: 0.75em;
+}
+
+/* Publication entries */
+.publication {
+    margin-bottom: 0.75em;
+    text-align: justify;
+}
+
+.publication .authors {
+    font-weight: normal;
+}
+
+.publication .year {
+    font-weight: bold;
+}
+
+.publication .title {
+    font-style: italic;
+}
+
+/* Education and experience entries */
+.experience {
+    margin-bottom: 0.5em;
+}
+
+.experience .date {
+    float: right;
+    font-weight: normal;
+}
+
+.experience .position {
+    font-weight: bold;
+}
+
+.experience .institution {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Clear floats */
+.clear {
+    clear: both;
+}
+
+/* Page breaks */
+.page-break {
+    page-break-before: always;
+}
+
+/* No indent for paragraphs */
+p {
+    text-indent: 0;
+}
+
+/* Harvard-style citation formatting */
+.citation {
+    margin-bottom: 0.5em;
+    text-align: justify;
+    padding-left: 0.5in;
+    text-indent: -0.5in;
+}
+
+/* Conference presentation formatting */
+.conference {
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+.conference .title {
+    font-style: italic;
+}
+
+.conference .event {
+    font-weight: bold;
+}
+
+.conference .location {
+    font-style: italic;
+}
+
+/* Project formatting */
+.project {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.project .title {
+    font-weight: bold;
+}
+
+.project .years {
+    float: right;
+    font-weight: normal;
+}
+
+.project .type {
+    font-style: italic;
+}
+
+.project .status {
+    font-style: italic;
+}
+
+.project .technologies {
+    font-style: italic;
+}
+
+/* Awards formatting */
+.award {
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+.award .title {
+    font-weight: bold;
+}
+
+.award .organization {
+    font-style: italic;
+}
+
+.award .amount {
+    font-style: italic;
+}
+
+/* Language skills */
+.language {
+    margin-bottom: 0.25em;
+}
+
+.language .name {
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5in;
+}
+
+.language .proficiency {
+    font-style: italic;
+}
+
+/* Blockquote for special sections */
+blockquote {
+    margin: 0.5em 0;
+    padding-left: 1em;
+    border-left: 2pt solid #ccc;
+    font-style: italic;
+}
+
+/* Table formatting for any tabular data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5em 0;
+}
+
+th, td {
+    padding: 0.25em;
+    text-align: left;
+    border-bottom: 0.5pt solid #ccc;
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 1pt solid #000;
+}
+
+/* Footer for page numbers */
+footer {
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 0.5in;
+}

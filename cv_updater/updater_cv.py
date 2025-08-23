@@ -271,19 +271,19 @@ def generate_education_section(data):
             content += f"**{display_degree}**"
             if status and status.lower() != 'finished':
                 content += f" ({status})"
-            content += "\n"
+            content += "\n"  # Line break after degree
             
             if university:
-                content += f"{university}\n"
+                content += f"{university}\n"  # University on its own line
             
             if thesis:
-                content += f"  - Dissertation: *{thesis}*\n"
+                content += f"\nThesis: *{thesis}*\n"  # Added line break before thesis
             
             if advisor:
                 if advisor_link:
-                    content += f"  - Advisor: [{advisor}]({advisor_link})\n"
+                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"  # Added line break before advisor
                 else:
-                    content += f"  - Advisor: {advisor}\n"
+                    content += f"\nAdvisor: {advisor}\n"
             
             # Handle committee members
             committee_members = []
@@ -298,7 +298,7 @@ def generate_education_section(data):
                         committee_members.append(member)
             
             if committee_members:
-                content += f"  - Committee: {', '.join(committee_members)}\n"
+                content += f"\nCommittee: {', '.join(committee_members)}\n"
             
             # Add related graduate certificates
             phd_university = row.get('university', '')
@@ -307,10 +307,17 @@ def generate_education_section(data):
                 # Match by university or add all if no specific matching logic needed
                 if cert_university == phd_university or not phd_university:
                     cert_title = cert_row.get('title', '')
+                    cert_status = cert_row.get('status', '')
+                    cert_advisor = cert_row.get('advisor', '')
                     if cert_title:
-                        content += f"  - Graduate Certificate: {cert_title}\n"
+                        content += f"\nGraduate Certificate in {cert_title}"
+                        if cert_status and cert_status.lower() != 'finished':
+                            content += f" ({cert_status})"
+                        content += f"\n{cert_university}\n" if cert_university else "\n"
+                        if cert_advisor:
+                            content += f"Advisor: {cert_advisor}\n"
             
-            content += "\n"
+            content += "\n"  # Extra line break between entries
         
         # Process other degree entries
         for row in other_entries:
@@ -339,21 +346,21 @@ def generate_education_section(data):
             content += f"**{display_degree}**"
             if status and status.lower() != 'finished':
                 content += f" ({status})"
-            content += "\n"
+            content += "\n"  # Line break after degree
             
             if university:
-                content += f"{university}\n"
+                content += f"{university}\n"  # University on its own line
             
             if thesis:
-                content += f"  - Thesis: *{thesis}*\n"
+                content += f"\nThesis: *{thesis}*\n"  # Added line break before thesis
             
             if advisor:
                 if advisor_link:
-                    content += f"  - Advisor: [{advisor}]({advisor_link})\n"
+                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"  # Added line break before advisor
                 else:
-                    content += f"  - Advisor: {advisor}\n"
+                    content += f"\nAdvisor: {advisor}\n"
             
-            content += "\n"
+            content += "\n"  # Extra line break between entries
     
     content += "---\n\n"
     return content
