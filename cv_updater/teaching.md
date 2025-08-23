@@ -45,3 +45,32 @@ author_profile: true
   *Under supervision of Dr. Daniela Centenaro Levandowski*
 - Developmental Psychology II  
   *Under supervision of Dr. Daniela Centenaro Levandowski*
+
+## Workshop
+
+- "How to Create StoryMaps Using Leaflet and OpenStreetMaps." | University of Miami | 2025  
+  *Under supervision of Dr. Shai Cohen*  
+  *Workshop ministered in SPA 310 — Sephardic Literature.*
+- "How to Use CollectionBuilder" | University of Miami | 2025  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Open-Source StoryMaps using Leaflet and OpenStreetMaps" | University of Miami | 2025  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Data Literacy: R Language and Statistics Basics" | University of Miami | 2025  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Data Literacy - Understanding Association and Causation in Data" | University of Miami | 2025  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Introduction to Semantic Search with Semantra" | University of Miami | 2024  
+  *Workshop ministered in the Department of Modern Languages and Literatures's Lecture Series*
+- "Introduction to Markdown" | University of Miami | 2024  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick and Michael Soriano*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Introduction to GitHub + GitHub Pages" | University of Miami | 2024  
+  *Under supervision of Dr. Susanna Allés-Torrent, co-taught with Elizabeth Cornick and Michael Soriano*  
+  *Workshop ministered in the Digital Humanities Interdisciplinary Research Group.*
+- "Pajubá 101" | University of Miami | 2023  
+  *Under supervision of Dr. Steven Butterman*  
+  *Workshop ministered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil.*
