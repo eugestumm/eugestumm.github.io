@@ -30,27 +30,3 @@ author_profile: true
 3. **Stumm, E. H.**. [*A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene.*](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf) *Contra o cânone: Arte, feminismo(s) e ativismos séculos XVIII a XXI Seminário Internacional*, edited by Giunta, A., Biczel, D., Lopes, F., Simões, I., Mercosur Biennial Foundation, 2020, pp. 170-175. [Web](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf)
 
 ---
-
-## Additional Academic Profiles
-
-{% if author.googlescholar %}
-- [Google Scholar Profile]({{author.googlescholar}}) - *Complete publication metrics and citations*
-{% endif %}
-
-{% if author.orcid %}
-- [ORCID Profile](https://orcid.org/{{author.orcid}}) - *Verified academic identity and works*
-{% endif %}
-
-{% if author.researchgate %}
-- [ResearchGate Profile]({{author.researchgate}}) - *Academic networking and collaboration*
-{% endif %}
-
-{% if author.academia %}
-- [Academia.edu Profile]({{author.academia}}) - *Independent research platform*
-{% endif %}
-
----
-
-*Last updated: {{ site.time | date: '%B %Y' }}*
-
-{% include base_path %}

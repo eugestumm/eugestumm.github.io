@@ -346,33 +346,6 @@ def generate_jekyll_markdown(categories):
         markdown_lines.append("---")
         markdown_lines.append("")
     
-    # Enhanced footer section
-    markdown_lines.extend([
-        "## Additional Academic Profiles",
-        "",
-        "{% if author.googlescholar %}",
-        "- [Google Scholar Profile]({{author.googlescholar}}) - *Complete publication metrics and citations*",
-        "{% endif %}",
-        "",
-        "{% if author.orcid %}",
-        "- [ORCID Profile](https://orcid.org/{{author.orcid}}) - *Verified academic identity and works*",
-        "{% endif %}",
-        "",
-        "{% if author.researchgate %}",
-        "- [ResearchGate Profile]({{author.researchgate}}) - *Academic networking and collaboration*",
-        "{% endif %}",
-        "",
-        "{% if author.academia %}",
-        "- [Academia.edu Profile]({{author.academia}}) - *Independent research platform*",
-        "{% endif %}",
-        "",
-        "---",
-        "",
-        "*Last updated: {{ site.time | date: '%B %Y' }}*",
-        "",
-        "{% include base_path %}"
-    ])
-    
     if total_publications > 0:
         print(f"✅ Successfully processed {total_publications} publications total")
     else:
