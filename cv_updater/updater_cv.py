@@ -976,7 +976,7 @@ def generate_languages_section(data):
             content += f"**{language}**"
             if proficiency:
                 content += f": {proficiency}"
-            content += "\n"
+            content += "\n\n"  # Changed to double newline for spacing between languages
     
     content += "---\n\n"
     return content

@@ -318,9 +318,14 @@ Workshop ministered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ B
 ## Languages
 
 **Portuguese**: Native
+
 **English**: Advanced
+
 **Spanish**: Advanced
+
 **French**: Reading proficiency
+
 **Pajubá**: Advanced
+
 ---
 
