@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Teaching CV Generator
+Teaching CV Generator - FIXED VERSION
 Reads teaching experience from an ODS spreadsheet and generates a markdown CV section.
-Enhanced to properly handle Workshop category and descriptions.
+Fixed to avoid pipe characters being interpreted as table delimiters and proper line breaks.
 """
 
 import pandas as pd
@@ -101,98 +101,77 @@ def clean_and_validate_data(df):
 
 def format_course_entry(row):
     """
-    Format a single course entry based on available data - safe for missing values
-    Enhanced to better handle Workshop entries and descriptions
+    Format a single course entry - FIXED to avoid pipe table issues and institution mixing
+    Uses alternative separators and formatting that won't trigger Markdown tables
+    IMPORTANT: Does NOT include institution in the entry (institution is handled as section headers)
     """
     try:
-        # Start with course title - handle missing data safely
-        entry_parts = []
-        
-        # Course title and code - check if values exist and are not empty
+        # Get basic information (EXCLUDING institution - that's handled separately)
         course_code = str(row.get('course_code', '')).strip()
         course_title = str(row.get('course_title', '')).strip()
         category = str(row.get('category', '')).strip().lower()
-        
-        # For workshops, prioritize the title even if there's no course code
-        if course_title and course_code:
-            course_info = f"{course_title} ({course_code})"
-        elif course_title:
-            course_info = course_title
-        elif course_code:
-            course_info = course_code
-        else:
-            # For workshops, this might be more descriptive
-            if category == 'workshop':
-                course_info = "Workshop"
-            else:
-                course_info = "Course information not available"
-                print(f"⚠️  Warning: Missing course title and code for entry in category: {category}")
-        
-        entry_parts.append(course_info)
-        
-        # Date information - handle safely
-        date_parts = []
         semester = str(row.get('semester', '')).strip()
         year = row.get('year')
-        
-        if semester:
-            date_parts.append(semester)
-        if pd.notna(year) and year != '' and year != 0:
-            try:
-                date_parts.append(str(int(year)))
-            except (ValueError, TypeError):
-                print(f"⚠️  Warning: Invalid year format: {year}")
-        
-        if date_parts:
-            entry_parts.append(" | ".join(date_parts))
-        
-        # Additional information (supervisor, co-instructor, notes) - handle safely
-        additional_info = []
-        
         supervisor = str(row.get('supervisor', '')).strip()
         co_instructor = str(row.get('co_instructor', '')).strip()
         special_notes = str(row.get('special_notes', '')).strip()
         description = str(row.get('description', '')).strip()
         
-        # Enhanced handling of description and special_notes
-        # Prioritize description column if it exists and has content
-        notes_content = ""
-        if description:
-            notes_content = description
-            print(f"ℹ️   Added description: {description[:50]}{'...' if len(description) > 50 else ''}")
-        elif special_notes:
-            notes_content = special_notes
-            print(f"ℹ️   Added special_notes: {special_notes[:50]}{'...' if len(special_notes) > 50 else ''}")
+        # Build main course information using em-dash instead of pipes
+        course_info_parts = []
         
-        # Combine all parts with better formatting
-        main_entry = " | ".join(entry_parts) if entry_parts else "Entry information incomplete"
+        # Course title and code ONLY (no institution here!)
+        if course_title and course_code:
+            course_info_parts.append(f"{course_title} ({course_code})")
+        elif course_title:
+            course_info_parts.append(course_title)
+        elif course_code:
+            course_info_parts.append(course_code)
+        else:
+            if category == 'workshop':
+                course_info_parts.append("Workshop")
+            else:
+                course_info_parts.append("Course information not available")
         
-        # Format additional information with line breaks for better readability
-        if supervisor or co_instructor or notes_content:
-            formatted_additional = []
-            
-            # Add supervisor and co-instructor info first
-            if supervisor:
-                formatted_additional.append(f"*Under supervision of {supervisor}*")
-            if co_instructor:
-                formatted_additional.append(f"*(co-taught with {co_instructor})*")
-            
-            # Add description/notes on a separate line for workshops and when content is long
-            if notes_content:
-                if category.lower() == 'workshop' or len(notes_content) > 50:
-                    # For workshops or long descriptions, put on separate line
-                    if formatted_additional:
-                        return f"{main_entry}  \n  {' '.join(formatted_additional)}  \n  *{notes_content}*"
-                    else:
-                        return f"{main_entry}  \n  *{notes_content}*"
-                else:
-                    # For shorter descriptions, keep inline
-                    formatted_additional.append(f"*{notes_content}*")
-            
-            if formatted_additional:
-                return f"{main_entry}  \n  {' '.join(formatted_additional)}"
+        # Add semester and year
+        date_info = []
+        if semester:
+            date_info.append(semester)
+        if pd.notna(year) and year != '' and year != 0:
+            try:
+                date_info.append(str(int(year)))
+            except (ValueError, TypeError):
+                pass
         
-        return main_entry
+        if date_info:
+            course_info_parts.append(" ".join(date_info))
+        
+        # Use em-dash as separator instead of pipe to avoid table formatting
+        main_line = " — ".join(course_info_parts)
+        
+        # Build additional information lines
+        additional_lines = []
+        
+        # Supervision information
+        if supervisor:
+            additional_lines.append(f"*Under supervision of {supervisor}*")
+        
+        if co_instructor:
+            additional_lines.append(f"*(Co-taught with {co_instructor})*")
+        
+        # Description/notes (check that these don't accidentally contain institution names)
+        notes_content = description if description else special_notes
+        if notes_content:
+            # Clean notes to avoid accidental institution inclusion
+            notes_content = notes_content.strip()
+            if notes_content and not notes_content.startswith('University') and not notes_content.startswith('Federal'):
+                additional_lines.append(f"*{notes_content}*")
+        
+        # Combine everything with proper line breaks
+        if additional_lines:
+            return main_line + "  \n  " + "  \n  ".join(additional_lines)
+        else:
+            return main_line
             
     except Exception as e:
         print(f"⚠️  Warning: Error formatting course entry: {e}")
@@ -200,188 +179,88 @@ def format_course_entry(row):
 
 def format_workshop_entry(row):
     """
-    Format a workshop entry specifically for academic CV standards
-    Includes institution within the entry rather than as a header
+    Format a workshop entry - Academic professional formatting
     """
     try:
-        entry_parts = []
-        
-        # Course title and code - check if values exist and are not empty
         course_code = str(row.get('course_code', '')).strip()
         course_title = str(row.get('course_title', '')).strip()
         institution = str(row.get('institution', '')).strip()
-        
-        # Build the main workshop title
-        if course_title and course_code:
-            workshop_title = f'"{course_title}" ({course_code})'
-        elif course_title:
-            workshop_title = f'"{course_title}"'
-        elif course_code:
-            workshop_title = course_code
-        else:
-            workshop_title = "Workshop"
-            print(f"⚠️  Warning: Missing workshop title and code")
-        
-        entry_parts.append(workshop_title)
-        
-        # Add institution if available
-        if institution:
-            entry_parts.append(institution)
-        
-        # Date information
-        date_parts = []
         semester = str(row.get('semester', '')).strip()
         year = row.get('year')
-        
-        if semester:
-            date_parts.append(semester)
-        if pd.notna(year) and year != '' and year != 0:
-            try:
-                date_parts.append(str(int(year)))
-            except (ValueError, TypeError):
-                print(f"⚠️  Warning: Invalid year format: {year}")
-        
-        if date_parts:
-            entry_parts.append(" ".join(date_parts))
-        
-        # Main entry line
-        main_entry = " | ".join(entry_parts) if entry_parts else "Workshop information incomplete"
-        
-        # Additional information
-        additional_lines = []
-        
         supervisor = str(row.get('supervisor', '')).strip()
         co_instructor = str(row.get('co_instructor', '')).strip()
         description = str(row.get('description', '')).strip()
         special_notes = str(row.get('special_notes', '')).strip()
         
-        # Build additional info lines
-        supervision_info = []
-        if supervisor:
-            supervision_info.append(f"Under supervision of {supervisor}")
-        if co_instructor:
-            supervision_info.append(f"co-taught with {co_instructor}")
+        # Build main workshop information using em-dash
+        workshop_parts = []
         
-        if supervision_info:
-            additional_lines.append(f"*{', '.join(supervision_info)}*")
+        # Workshop title - clean, no extra quotes
+        if course_title and course_code:
+            workshop_parts.append(f"{course_title} ({course_code})")
+        elif course_title:
+            workshop_parts.append(course_title)
+        elif course_code:
+            workshop_parts.append(course_code)
+        else:
+            workshop_parts.append("Workshop")
         
-        # Add description/notes
+        # Institution
+        if institution:
+            workshop_parts.append(institution)
+        
+        # Date
+        date_info = []
+        if semester:
+            date_info.append(semester)
+        if pd.notna(year) and year != '' and year != 0:
+            try:
+                date_info.append(str(int(year)))
+            except (ValueError, TypeError):
+                pass
+        
+        if date_info:
+            workshop_parts.append(" ".join(date_info))
+        
+        # Use em-dash separator
+        main_line = " — ".join(workshop_parts)
+        
+        # Additional information - cleaner formatting without excessive italics
+        additional_parts = []
+        
+        # Supervision and collaboration info
+        if supervisor and co_instructor:
+            additional_parts.append(f"Supervised by {supervisor}, co-facilitated with {co_instructor}")
+        elif supervisor:
+            additional_parts.append(f"Supervised by {supervisor}")
+        elif co_instructor:
+            additional_parts.append(f"Co-facilitated with {co_instructor}")
+        
+        # Context/venue information from description/notes - preserve important details
         notes_content = description if description else special_notes
         if notes_content:
-            additional_lines.append(f"*{notes_content}*")
+            # Clean up common redundant prefixes but preserve the meaningful content
+            notes_clean = notes_content.replace('Workshop ministered in the ', '').replace('workshop ministered in the ', '')
+            notes_clean = notes_clean.replace('Workshop ministered in ', '').replace('workshop ministered in ', '')
+            
+            # Add the context information naturally
+            if 'Department' in notes_clean or 'Group' in notes_clean or 'Series' in notes_clean:
+                additional_parts.append(f"Presented for the {notes_clean}")
+            elif notes_clean.strip():
+                # Remove the awkward "Context:" and just include the information naturally
+                additional_parts.append(f"Presented in {notes_clean}")
         
-        # Combine everything
-        if additional_lines:
-            return f"{main_entry}  \n  " + "  \n  ".join(additional_lines)
+        # Combine everything cleanly
+        if additional_parts:
+            # Use period-separated format for readability
+            additional_text = ". ".join(additional_parts)
+            return f"{main_line}. {additional_text}"
         else:
-            return main_entry
+            return main_line
             
     except Exception as e:
         print(f"⚠️  Warning: Error formatting workshop entry: {e}")
         return "Workshop entry could not be formatted"
-    """
-    Format a single course entry based on available data - safe for missing values
-    Enhanced to better handle Workshop entries and descriptions
-    """
-    try:
-        # Start with course title - handle missing data safely
-        entry_parts = []
-        
-        # Course title and code - check if values exist and are not empty
-        course_code = str(row.get('course_code', '')).strip()
-        course_title = str(row.get('course_title', '')).strip()
-        category = str(row.get('category', '')).strip().lower()
-        
-        # For workshops, prioritize the title even if there's no course code
-        if course_title and course_code:
-            course_info = f"{course_title} ({course_code})"
-        elif course_title:
-            course_info = course_title
-        elif course_code:
-            course_info = course_code
-        else:
-            # For workshops, this might be more descriptive
-            if category == 'workshop':
-                course_info = "Workshop"
-            else:
-                course_info = "Course information not available"
-                print(f"⚠️  Warning: Missing course title and code for entry in category: {category}")
-        
-        entry_parts.append(course_info)
-        
-        # Date information - handle safely
-        date_parts = []
-        semester = str(row.get('semester', '')).strip()
-        year = row.get('year')
-        
-        if semester:
-            date_parts.append(semester)
-        if pd.notna(year) and year != '' and year != 0:
-            try:
-                date_parts.append(str(int(year)))
-            except (ValueError, TypeError):
-                print(f"⚠️  Warning: Invalid year format: {year}")
-        
-        if date_parts:
-            entry_parts.append(" | ".join(date_parts))
-        
-        # Additional information (supervisor, co-instructor, notes) - handle safely
-        additional_info = []
-        
-        supervisor = str(row.get('supervisor', '')).strip()
-        co_instructor = str(row.get('co_instructor', '')).strip()
-        special_notes = str(row.get('special_notes', '')).strip()
-        description = str(row.get('description', '')).strip()
-        
-        if supervisor:
-            additional_info.append(f"*Under supervision of {supervisor}*")
-        
-        if co_instructor:
-            additional_info.append(f"*(co-taught with {co_instructor})*")
-        
-        # Enhanced handling of description and special_notes
-        # Prioritize description column if it exists and has content
-        notes_content = ""
-        if description:
-            notes_content = description
-            print(f"ℹ️   Added description: {description[:50]}{'...' if len(description) > 50 else ''}")
-        elif special_notes:
-            notes_content = special_notes
-            print(f"ℹ️   Added special_notes: {special_notes[:50]}{'...' if len(special_notes) > 50 else ''}")
-        
-        # Combine all parts with better formatting
-        main_entry = " | ".join(entry_parts) if entry_parts else "Entry information incomplete"
-        
-        # Format additional information with line breaks for better readability
-        if additional_info or notes_content:
-            formatted_additional = []
-            
-            # Add supervisor and co-instructor info first
-            if supervisor:
-                formatted_additional.append(f"*Under supervision of {supervisor}*")
-            if co_instructor:
-                formatted_additional.append(f"*(co-taught with {co_instructor})*")
-            
-            # Add description/notes on a separate line for workshops and when content is long
-            if notes_content:
-                if category.lower() == 'workshop' or len(notes_content) > 50:
-                    # For workshops or long descriptions, put on separate line
-                    if formatted_additional:
-                        return f"{main_entry}  \n  {' '.join(formatted_additional)}  \n  *{notes_content}*"
-                    else:
-                        return f"{main_entry}  \n  *{notes_content}*"
-                else:
-                    # For shorter descriptions, keep inline
-                    formatted_additional.append(f"*{notes_content}*")
-            
-            if formatted_additional:
-                return f"{main_entry}  \n  {' '.join(formatted_additional)}"
-        
-        return main_entry
-            
-    except Exception as e:
-        print(f"⚠️  Warning: Error formatting course entry: {e}")
-        return "Course entry could not be formatted"
 
 def group_and_sort_data(df):
     """
@@ -450,8 +329,7 @@ def group_and_sort_data(df):
 
 def generate_markdown(grouped_data):
     """
-    Generate markdown content from grouped data - safe for empty/missing data
-    Special handling for Workshop category to list chronologically without institution nesting
+    Generate markdown content from grouped data - FIXED for proper line breaks and formatting
     """
     # Start with Jekyll front matter
     markdown_lines = [
@@ -482,8 +360,9 @@ def generate_markdown(grouped_data):
             continue
             
         try:
+            # Add category header with proper spacing
             markdown_lines.append(f"## {category}")
-            markdown_lines.append("")
+            markdown_lines.append("")  # Blank line after category header
             
             # Special handling for Workshop category - no institution nesting
             if category.lower() == 'workshop':
@@ -491,7 +370,6 @@ def generate_markdown(grouped_data):
                 
                 for _, row in data.iterrows():
                     try:
-                        # Add course entry directly without institution grouping
                         course_entry = format_workshop_entry(row)
                         markdown_lines.append(f"- {course_entry}")
                         category_entries += 1
@@ -506,41 +384,83 @@ def generate_markdown(grouped_data):
                     # Remove the category header if no entries were added
                     markdown_lines = markdown_lines[:-2]
                 else:
-                    markdown_lines.append("")  # Add blank line after category
+                    markdown_lines.append("")  # Blank line after category entries
                     print(f"✓ Added {category_entries} workshop entries")
             
             else:
-                # Standard handling for other categories with institution nesting
+                # Proper institution grouping - FIXED to sort institutions by most recent first
                 current_institution = None
                 category_entries = 0
                 
+                # First, group by institution and find the most recent year for each
+                institution_groups = {}
+                institution_max_years = {}
+                
                 for _, row in data.iterrows():
+                    institution = str(row.get('institution', '')).strip() or "Other"
+                    year = row.get('year')
+                    
+                    if institution not in institution_groups:
+                        institution_groups[institution] = []
+                        institution_max_years[institution] = float('-inf')
+                    
+                    institution_groups[institution].append(row)
+                    
+                    # Track the most recent year for this institution
+                    if pd.notna(year) and year != '':
+                        try:
+                            year_num = float(year)
+                            if year_num > institution_max_years[institution]:
+                                institution_max_years[institution] = year_num
+                        except (ValueError, TypeError):
+                            pass
+                
+                # Sort institutions by their most recent year (descending)
+                sorted_institutions = sorted(institution_groups.keys(), 
+                                           key=lambda x: institution_max_years[x], 
+                                           reverse=True)
+                
+                # Process each institution in order of most recent first
+                for institution in sorted_institutions:
+                    institution_rows = institution_groups[institution]
+                    
+                    # Add institution header
+                    if current_institution is not None:
+                        markdown_lines.append("")  # Blank line before new institution
+                    
+                    if institution == "Other":
+                        markdown_lines.append("**Other**")
+                    else:
+                        markdown_lines.append(f"**{institution}**")
+                    markdown_lines.append("")  # Blank line after institution header
+                    current_institution = institution
+                    
+                    # Sort entries within this institution by year (descending), then sort_order
                     try:
-                        institution = str(row.get('institution', '')).strip()
-                        
-                        # Add institution header if it's new and not empty
-                        if institution and institution != current_institution:
-                            markdown_lines.append(f"**{institution}**")
-                            current_institution = institution
-                        elif not institution:
-                            print(f"⚠️  Warning: Missing institution for entry in category: {category}")
-                        
-                        # Add course entry
-                        course_entry = format_course_entry(row)
-                        markdown_lines.append(f"- {course_entry}")
-                        category_entries += 1
-                        entries_added += 1
-                        
-                    except Exception as e:
-                        print(f"⚠️  Warning: Error processing entry in category '{category}': {e}")
-                        continue
+                        institution_data = pd.DataFrame(institution_rows)
+                        institution_data = institution_data.sort_values(['year', 'sort_order'], 
+                                                                      ascending=[False, True], 
+                                                                      na_position='last')
+                    except:
+                        institution_data = pd.DataFrame(institution_rows)
+                    
+                    # Add all entries for this institution
+                    for _, row in institution_data.iterrows():
+                        try:
+                            course_entry = format_course_entry(row)
+                            markdown_lines.append(f"- {course_entry}")
+                            category_entries += 1
+                            entries_added += 1
+                        except Exception as e:
+                            print(f"⚠️  Warning: Error processing entry in category '{category}': {e}")
+                            continue
                 
                 if category_entries == 0:
                     print(f"⚠️  Warning: No valid entries processed for category: {category}")
                     # Remove the category header if no entries were added
                     markdown_lines = markdown_lines[:-2]
                 else:
-                    markdown_lines.append("")  # Add blank line after each category
+                    markdown_lines.append("")  # Blank line after each category
                     print(f"✓ Added {category_entries} entries for category: {category}")
                 
         except Exception as e:

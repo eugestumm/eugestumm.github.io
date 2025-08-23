@@ -5,46 +5,40 @@ permalink: /projects/
 author_profile: true
 ---
 
-## [Pajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)](https://eugestumm.github.io/PajubaDigitalArchive/)
+## [Sexual Violence in Video Game Social Media: A Sentiment Analysis of Rape Speech in a Subreddit of Crusader Kings](https://eugestumm.github.io/sexualviolence_crusaderkings)
 
-**Year**: 2025; **Type**: Digital Archive
+**Year**: 2024; **Type**: Computational Analysis
 
-This digital archive features cultural productions and academic works that center around Pajubá. Pajubá (or Bajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY.
+Computational analysis of discourse patterns in gaming communities using PRAW Reddit API and VADER sentiment analysis.
 
-**Technologies**: CollectionBuilder and d3.js
+**Methods**: PRAW API, VADER sentiment analysis, descriptive statistics; **Technologies**: Python, Reddit API, VADER
 
-**Collaborators**: Dr. Susanna Allés-Torrent and Dr. Steven Butterman (Supervisors)
-
----
-
-## [Digital mapping Néstor Perlongher's "O Negócio do Michê"](https://eugestumm.github.io/negociodomiche_visualization/)
-
-**Year**: 2024; **Type**: StoryMap
-
-An interactive StoryMap that digitally reconstructs the São Paulo locations from Néstor Perlongher’s "O Negócio do michê," restoring details lost in later editions. This project uses open-source mapping tools (LeafLet and OpenStreetMaps) to visualize the spatial sequence of his original ethnography.
-
-**Technologies**: Leaflet and OpenStreetMaps
-
-**Collaborators**: Susanna Allés-Torrent (Supervisor)
+*Keywords*: gender studies, gaming, sexual violence, sentiment analysis
 
 ---
 
 ## [Transylvania Witch](https://transylvania-witch.tumblr.com/)
 
-**Year**: 2021; **Type**: Installation
+**Year**: 2023; **Type**: Interactive Media
 
-Online installation to be played in a loop. The website plays a spell that claims transforming you into a transgender woman. The installation consists of putting it in a public space and observing people’s reaction to the spell. If any of them become a transgender woman, please tell me!
+Interactive digital spell and participatory performance exploring gender transformation themes.
 
-**Technologies**: HTML
+**Methods**: Interactive web design, performance art; **Technologies**: Web technologies, Tumblr
+
+*Keywords*: transgender, digital ritual, performance art
 
 ---
 
-## [Non-binary in Binary](https://non-binary-in-binary.tumblr.com/)
+## [Non-Binary in Binary](https://non-binary-in-binary.tumblr.com/)
 
-**Year**: 2021; **Type**: Installation
+**Year**: 2023; **Type**: Digital Art Installation
 
-Online installation to be displayed in a loop. The website shows a number of non-binary identities (xenogender, mtx, demiboy, etc) converted into binary code. My goal is to reflect how non-binary gender identities cannot be understood in binary logics. This project was exhibited in the Museum of Contemporary Art of Rio Grande do Sul, Brazil.
+Digital installation displaying non-binary gender identities converted to binary code, examining tensions between identity and computational logic.
 
-**Technologies**: HTML and Javascript
+**Methods**: Binary conversion, web installation; **Technologies**: HTML, CSS, JavaScript, Tumblr
+
+**Exhibited at**: Museum of Contemporary Art of Rio Grande do Sul, Brazil
+
+*Keywords*: gender studies, non-binary, digital art, binary code
 
 ---
