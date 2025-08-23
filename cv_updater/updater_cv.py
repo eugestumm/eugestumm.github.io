@@ -157,7 +157,7 @@ def init_cv():
     """Initialize CV with YAML front matter and header"""
     cv_content = "---\n"
     cv_content += "layout: archive\n"
-    cv_content += "title: \"Euge Stumm\"\n"
+    cv_content += "title: \"Curriculum Vitae\"\n"
     cv_content += "permalink: /cv/\n"
     cv_content += "author_profile: true\n"
     cv_content += "---\n\n"

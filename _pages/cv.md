@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Euge Stumm"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
