@@ -31,6 +31,36 @@ def copy_to_pages():
         except Exception as e:
             print(f"Error copying {file}: {e}")
 
+def check_git_available():
+    try:
+        # Try to run 'git --version' to check if git is available
+        subprocess.run(['which', 'git'], check=True, capture_output=True)
+        return True
+    except subprocess.CalledProcessError:
+        print("Error: Git is not installed or not in PATH")
+        return False
+
+def git_operations(operation='pull'):
+    if not check_git_available():
+        return
+
+    try:
+        # Get the full path to git executable
+        git_path = subprocess.run(['which', 'git'], check=True, capture_output=True, text=True).stdout.strip()
+        
+        if operation == 'pull':
+            print("\nPulling latest changes from remote...")
+            subprocess.run([git_path, 'pull', 'origin', 'main'], check=True)
+        elif operation == 'push':
+            print("\nCommitting and pushing changes...")
+            subprocess.run([git_path, 'add', '.'], check=True)
+            subprocess.run([git_path, 'commit', '-m', 'Update CV content'], check=True)
+            subprocess.run([git_path, 'push', 'origin', 'main'], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Git operation failed: {e}")
+    except Exception as e:
+        print(f"Unexpected error during git operation: {e}")
+
 def main():
     # Run all updater scripts
     updater_scripts = [
@@ -47,8 +77,14 @@ def main():
     for file in files_to_show:
         show_file_content(file)
     
+    # Pull latest changes before copying to _pages
+    git_operations('pull')
+    
     # Copy files to _pages directory
     copy_to_pages()
+
+    # Push changes to remote repository
+    git_operations('push')
 
 if __name__ == "__main__":
     main()
