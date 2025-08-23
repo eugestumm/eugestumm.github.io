@@ -1,11 +1,9 @@
 ---
 layout: archive
-title: "Curriculum Vitae"
+title: "Euge Stumm"
 permalink: /cv/
 author_profile: true
 ---
-
-*Last updated: August 2025*
 
 # Euge Stumm
 
@@ -323,9 +321,11 @@ Workshop ministered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ B
 
 **Spanish**: Advanced
 
-**French**: Reading proficiency
+**French**: Reading Proficiency
 
 **Pajubá**: Advanced
 
 ---
+
+*Last updated: August 2025*
 

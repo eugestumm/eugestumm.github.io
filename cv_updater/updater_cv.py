@@ -157,14 +157,10 @@ def init_cv():
     """Initialize CV with YAML front matter and header"""
     cv_content = "---\n"
     cv_content += "layout: archive\n"
-    cv_content += "title: \"Curriculum Vitae\"\n"
+    cv_content += "title: \"Euge Stumm\"\n"
     cv_content += "permalink: /cv/\n"
     cv_content += "author_profile: true\n"
     cv_content += "---\n\n"
-    
-    # Add last updated date
-    current_date = datetime.now().strftime("%B %Y")
-    cv_content += f"*Last updated: {current_date}*\n\n"
     
     return cv_content
 
@@ -1086,6 +1082,10 @@ def generate_cv_markdown(data):
     cv_content += generate_languages_section(data)
     cv_content += generate_service_section(data)
     cv_content += generate_memberships_section(data)
+
+    # Add last updated date
+    current_date_last_updated = datetime.now().strftime("%B %Y")
+    cv_content += f"*Last updated: {current_date_last_updated}*\n\n"
     
     return cv_content
 
