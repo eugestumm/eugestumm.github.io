@@ -5,25 +5,52 @@ permalink: /publications/
 author_profile: true
 ---
 
+*7 publications (2019–2023)*
+
+---
+
 ## Peer-reviewed journal articles
 
-Schneider, K., Stumm, E. H., Rocha, R. Z., Levandowski, D. C.. ["Innovative Practices in Developmental Psychology Teaching".](https://doi.org/10.1590/2175-35392023-242419-T) *Psicologia Escolar e Educacional*, 27, e242419.
+1. Schneider, K., **Stumm, E. H.**, Rocha, R. Z., Levandowski, D. C.. ["Innovative Practices in Developmental Psychology Teaching".](https://doi.org/10.1590/2175-35392023-242419-T) *Psicologia Escolar e Educacional*, vol. 27, 2023, pp. e242419. [DOI: 10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
 
-Stumm, E. H.. ["What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon's Dogma".](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) *Revista Contraponto*, 8(2), 169--185.
+2. **Stumm, E. H.**. ["What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon's Dogma".](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) *Revista Contraponto*, vol. 8, no. 2, 2021, pp. 169-185. [Web](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101)
 
-Gurski, R., Strzykalski, S., Gomes, P. G., Stumm, E. H.. ["The State of Art of Psychoanalysis and Education in Rio Grande do Sul".](https://doi.org/10.1590/S1678-4634202046224847) *Revista Educação e Pesquisa*, 46, 1--15.
+3. Gurski, R., Strzykalski, S., Gomes, P. G., **Stumm, E. H.**. ["The State of Art of Psychoanalysis and Education in Rio Grande do Sul".](https://doi.org/10.1590/S1678-4634202046224847) *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1-15. [DOI: 10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
 
-Stumm, E. H., Weinmann, A. D. O.. ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the ``The Guys of the Sidewalks''".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, 1(11), 234--249.
+4. **Stumm, E. H.**, Weinmann, A. D. O.. ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the ``The Guys of the Sidewalks''".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234-249. [DOI: 10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+
+---
 
 ## Book chapters
 
-Stumm, E. H.. ["Manifesto Toward a Pirate Psychology".](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf) *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*. Regional Council of Psychology of Rio Grande do Sul, pp. 162--168.
+1. **Stumm, E. H.**. [*Manifesto Toward a Pirate Psychology.*](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf) *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162-168. [Web](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf)
 
-Piuco, T., Stumm, E. H.. ["Queer Aesthetics: Between Empowerment and Erasure".](https://issuu.com/fashionrevolution/docs/fr-forum-2020) *Forum Fashion Revolution 2020*, edited by Factum, A., Carli, A., Perini, A., Anicet, A., Camargo, C., Barreto, C., Lima, V.. Ministry of Tourism and Unibes Cultural, pp. 259--263.
+2. Piuco, T., **Stumm, E. H.**. [*Queer Aesthetics: Between Empowerment and Erasure.*](https://issuu.com/fashionrevolution/docs/fr-forum-2020) *Forum Fashion Revolution 2020*, edited by Factum, A., Carli, A., Perini, A., Anicet, A., Camargo, C., Barreto, C., Lima, V., Ministry of Tourism and Unibes Cultural, 2020, pp. 259-263. [Web](https://issuu.com/fashionrevolution/docs/fr-forum-2020)
 
-Stumm, E. H.. ["A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene".](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf) *Contra o cânone: Arte, feminismo(s) e ativismos séculos XVIII a XXI Seminário Internacional*, edited by Giunta, A., Biczel, D., Lopes, F., Simões, I.. Mercosur Biennial Foundation, pp. 170--175.
+3. **Stumm, E. H.**. [*A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene.*](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf) *Contra o cânone: Arte, feminismo(s) e ativismos séculos XVIII a XXI Seminário Internacional*, edited by Giunta, A., Biczel, D., Lopes, F., Simões, I., Mercosur Biennial Foundation, 2020, pp. 170-175. [Web](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf)
+
+---
+
+## Additional Academic Profiles
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+- [Google Scholar Profile]({{author.googlescholar}}) - *Complete publication metrics and citations*
 {% endif %}
+
+{% if author.orcid %}
+- [ORCID Profile](https://orcid.org/{{author.orcid}}) - *Verified academic identity and works*
+{% endif %}
+
+{% if author.researchgate %}
+- [ResearchGate Profile]({{author.researchgate}}) - *Academic networking and collaboration*
+{% endif %}
+
+{% if author.academia %}
+- [Academia.edu Profile]({{author.academia}}) - *Independent research platform*
+{% endif %}
+
+---
+
+*Last updated: {{ site.time | date: '%B %Y' }}*
+
 {% include base_path %}

@@ -1,17 +1,27 @@
 ---
 layout: archive
-title: "Research Projects"
+title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
 
-# Projects
+## [Pajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)](https://eugestumm.github.io/PajubaDigitalArchive/)
 
-## [Digital mapping Néstor Perlongher's "O Negócio do Michê"](nan)
+**Year**: 2025; **Type**: Digital Archive
+
+This digital archive features cultural productions and academic works that center around Pajubá. Pajubá (or Bajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY.
+
+**Technologies**: CollectionBuilder and d3.js
+
+**Collaborators**: Dr. Susanna Allés-Torrent and Dr. Steven Butterman (Supervisors)
+
+---
+
+## [Digital mapping Néstor Perlongher's "O Negócio do Michê"](https://eugestumm.github.io/negociodomiche_visualization/)
 
 **Year**: 2024; **Type**: StoryMap
 
-An interactive StoryMap that digitally reconstructs the São Paulo locations from Néstor Perlongher’s Negócio do michê, restoring details lost in later editions. This project uses open-source mapping tools (LeafLet and OpenStreetMaps) to visualize the spatial sequence of his original ethnography.
+An interactive StoryMap that digitally reconstructs the São Paulo locations from Néstor Perlongher’s "O Negócio do michê," restoring details lost in later editions. This project uses open-source mapping tools (LeafLet and OpenStreetMaps) to visualize the spatial sequence of his original ethnography.
 
 **Technologies**: Leaflet and OpenStreetMaps
 

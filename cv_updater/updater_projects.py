@@ -278,12 +278,10 @@ def main():
     markdown_lines = [
         "---",
         "layout: archive", 
-        "title: \"Research Projects\"",
+        "title: \"Projects\"",
         "permalink: /projects/",
         "author_profile: true",
         "---",
-        "",
-        "# Projects",
         ""
     ]
     

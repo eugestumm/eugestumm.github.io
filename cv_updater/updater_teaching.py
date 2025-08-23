@@ -462,7 +462,6 @@ def generate_markdown(grouped_data):
         "author_profile: true",
         "---",
         "",
-        "# Teaching",
         ""
     ]
     
@@ -549,7 +548,7 @@ def generate_markdown(grouped_data):
             continue
     
     if entries_added == 0:
-        markdown_lines = ["# Teaching", "", "No valid teaching entries could be processed from the spreadsheet.", ""]
+        markdown_lines = ["No valid teaching entries could be processed from the spreadsheet.", ""]
         print("⚠️  Warning: No teaching entries were successfully processed")
     else:
         print(f"✓ Successfully processed {entries_added} teaching entries total")
@@ -573,7 +572,7 @@ def main():
             print("❌ Failed to read spreadsheet or spreadsheet is empty")
             # Create a minimal teaching.md file
             with open("teaching.md", 'w', encoding='utf-8') as f:
-                f.write("# Teaching\n\nNo teaching data available. Please check the spreadsheet URL and format.\n")
+                f.write("No teaching data available. Please check the spreadsheet URL and format.\n")
             return
         
         print(f"✅ Successfully read {len(df)} rows from spreadsheet")
@@ -586,7 +585,7 @@ def main():
         if df.empty:
             print("❌ No valid data found after cleaning")
             with open("teaching.md", 'w', encoding='utf-8') as f:
-                f.write("# Teaching\n\nNo valid teaching entries found in spreadsheet.\n")
+                f.write("No valid teaching entries found in spreadsheet.\n")
             return
         
         print(f"✅ Data cleaned successfully. {len(df)} valid entries found.")
@@ -598,7 +597,7 @@ def main():
         if not grouped_data:
             print("❌ No valid categories found after grouping")
             with open("teaching.md", 'w', encoding='utf-8') as f:
-                f.write("# Teaching\n\nNo valid teaching categories found in spreadsheet.\n")
+                f.write("No valid teaching categories found in spreadsheet.\n")
             return
         
         # Generate markdown
@@ -630,7 +629,7 @@ def main():
         print("⚠️  Creating minimal teaching.md file...")
         try:
             with open("teaching.md", 'w', encoding='utf-8') as f:
-                f.write(f"# Teaching\n\nError generating teaching CV: {e}\n\nPlease check the spreadsheet format and try again.\n")
+                f.write(f"Error generating teaching CV: {e}\n\nPlease check the spreadsheet format and try again.\n")
         except Exception as file_error:
             print(f"❌ Could not even create error file: {file_error}")
     
