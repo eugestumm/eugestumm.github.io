@@ -191,10 +191,10 @@ def format_project_markdown(project):
         
         # Project header as clickable link if URL is present (no emoji)
         title = project['title'] or "Untitled Project"
-        if project.get('url') and project['url'].strip():  # Only if URL exists and is not empty
-            header = f"### [{title}]({project['url'].strip()})"
+        if project.get('url'):
+            header = f"## [{title}]({project['url']})"
         else:
-            header = f"### {title}"
+            header = f"## {title}"
         markdown_parts.append(header)
         markdown_parts.append("")
         
@@ -283,10 +283,10 @@ def main():
         "author_profile: true",
         "---",
         "",
-        "## Projects",
+        "# Projects",
         ""
     ]
-
+    
     for project in projects:
         project_md = format_project_markdown(project)
         markdown_lines.append(project_md)

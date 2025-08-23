@@ -5,9 +5,9 @@ permalink: /projects/
 author_profile: true
 ---
 
-## Projects
+# Projects
 
-### [Digital mapping Néstor Perlongher's "O Negócio do Michê"](nan)
+## [Digital mapping Néstor Perlongher's "O Negócio do Michê"](nan)
 
 **Year**: 2024; **Type**: StoryMap
 
@@ -19,7 +19,7 @@ An interactive StoryMap that digitally reconstructs the São Paulo locations fro
 
 ---
 
-### [Transylvania Witch](https://transylvania-witch.tumblr.com/)
+## [Transylvania Witch](https://transylvania-witch.tumblr.com/)
 
 **Year**: 2021; **Type**: Installation
 
@@ -29,7 +29,7 @@ Online installation to be played in a loop. The website plays a spell that claim
 
 ---
 
-### [Non-binary in Binary](https://non-binary-in-binary.tumblr.com/)
+## [Non-binary in Binary](https://non-binary-in-binary.tumblr.com/)
 
 **Year**: 2021; **Type**: Installation
 
