@@ -154,7 +154,7 @@ def format_course_entry(row):
         
         # Supervision information
         if supervisor:
-            additional_lines.append(f"*Under supervision of {supervisor}*")
+            additional_lines.append(f"*Supervised by {supervisor}*")
         
         if co_instructor:
             additional_lines.append(f"*(Co-taught with {co_instructor})*")

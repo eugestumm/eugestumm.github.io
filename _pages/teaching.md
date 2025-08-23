@@ -23,34 +23,34 @@ author_profile: true
 **University of Miami**
 
 - Queer Studies (SPA 330) — Spring 2024  
-  *Under supervision of Dr. Steven Butterman*
+  *Supervised by Dr. Steven Butterman*
 - Topics in Gender and Sexuality (GSS 305) — Fall 2023  
-  *Under supervision of Dr. Gema Pérez-Sánchez*
+  *Supervised by Dr. Gema Pérez-Sánchez*
 - Introduction to Gender and Sexuality Studies (GSS 202) — Fall 2023  
-  *Under supervision of Dr. Steven Butterman*
+  *Supervised by Dr. Steven Butterman*
 
 ## Teaching Assistant
 
 **University of Miami**
 
 - LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (POR 699) — Spring 2023  
-  *Under supervision of Dr. Steven Butterman*
+  *Supervised by Dr. Steven Butterman*
 - Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo (POR 699) — Fall 2022  
-  *Under supervision of Dr. Steven Butterman*
+  *Supervised by Dr. Steven Butterman*
 
 **Federal University of Rio Grande do Sul**
 
 - Diversity and Human Development — 2022  
-  *Under supervision of Dr. Adolfo Pizzinato*
+  *Supervised by Dr. Adolfo Pizzinato*
 - Psychology Applied to Health Sciences — 2022  
-  *Under supervision of Dr. Adolfo Pizzinato*
+  *Supervised by Dr. Adolfo Pizzinato*
 
 **Federal University of Health Sciences of Porto Alegre**
 
-- Developmental Psychology I  
-  *Under supervision of Dr. Daniela Centenaro Levandowski*
-- Developmental Psychology II  
-  *Under supervision of Dr. Daniela Centenaro Levandowski*
+- Developmental Psychology I — 2018  
+  *Supervised by Dr. Daniela Centenaro Levandowski*
+- Developmental Psychology II — 2018  
+  *Supervised by Dr. Daniela Centenaro Levandowski*
 
 ## Workshop
 

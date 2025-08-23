@@ -21,7 +21,7 @@ def copy_to_pages():
     # Create _pages directory if it doesn't exist
     os.makedirs(parent_pages_dir, exist_ok=True)
     
-    files_to_copy = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md']
+    files_to_copy = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md', 'cv.md']
     for file in files_to_copy:
         dest_path = os.path.join(parent_pages_dir, file)
         try:
@@ -37,14 +37,15 @@ def main():
         'updater_projects.py',
         'updater_publications.py',
         'updater_teaching.py',
-        'updater_conferences.py'
+        'updater_conferences.py',
+        'updater_cv.py'  # Added the CV updater script
     ]
     
     for script in updater_scripts:
         run_updater(script)
     
     # Show content of generated files
-    files_to_show = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md']
+    files_to_show = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md', 'cv.md']
     for file in files_to_show:
         show_file_content(file)
     
