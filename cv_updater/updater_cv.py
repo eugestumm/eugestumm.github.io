@@ -249,7 +249,7 @@ def generate_education_section(data):
                 degree = row['degree'].replace('_', ' ').lower()
                 if degree == 'doctorate':
                     phd_entries.append(row)
-                elif degree == 'graduate_certificate':
+                elif degree == 'graduate certificate':  # This should be 'graduate certificate' not 'graduate_certificate'
                     graduate_certificates.append(row)
                 else:
                     other_entries.append(row)
@@ -283,9 +283,9 @@ def generate_education_section(data):
             
             if advisor:
                 if advisor_link:
-                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"  # Added line break before advisor
+                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n\n"  # Added extra \n after advisor
                 else:
-                    content += f"\nAdvisor: {advisor}\n"
+                    content += f"\nAdvisor: {advisor}\n\n"  # Added extra \n after advisor
             
             # Handle committee members
             committee_members = []
@@ -300,28 +300,25 @@ def generate_education_section(data):
                         committee_members.append(member)
             
             if committee_members:
-                content += f"\nCommittee: {', '.join(committee_members)}\n"
+                content += f"\nCommittee: {', '.join(committee_members)}\n\n"  # Added extra \n after committee
             
-            # Add related graduate certificates
+            # Add related graduate certificates - simple nested lines
             phd_university = row.get('university', '')
             for cert_row in graduate_certificates:
                 cert_university = cert_row.get('university', '')
-                # Match by university or add all if no specific matching logic needed
-                if cert_university == phd_university or not phd_university:
+                # Match by university, or if certificate has no university, assume it belongs to this PhD
+                if cert_university == phd_university or not cert_university:
                     cert_title = cert_row.get('title', '')
                     cert_status = cert_row.get('status', '')
-                    cert_advisor = cert_row.get('advisor', '')
                     if cert_title:
-                        content += f"\nGraduate Certificate in {cert_title}"
+                        content += f"Graduate Certificate in {cert_title}"
                         if cert_status and cert_status.lower() != 'finished':
                             content += f" ({cert_status})"
-                        content += f"\n{cert_university}\n" if cert_university else "\n"
-                        if cert_advisor:
-                            content += f"Advisor: {cert_advisor}\n"
+                        content += "\n"
             
             content += "\n"  # Extra line break between entries
         
-        # Process other degree entries
+        # Process other degree entries (but NOT graduate certificates - they're already nested under PhDs)
         for row in other_entries:
             status = row.get('status', '')
             degree = row['degree'].replace('_', ' ').title()

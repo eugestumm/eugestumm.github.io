@@ -1,10 +1,12 @@
 ---
 layout: archive
+papersize: "letter"
+geometry: "margin=1in"
+mainfont: "Times New Roman"
 title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
-
 # Euge Helyantus Stumm
 
 *Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*  
@@ -19,15 +21,8 @@ University of Miami
 
 Advisor: [Dr. Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 
-**Graduate Certificate in Digital Humanities** (In-Progress)
-University of Miami
-
-Advisor: [Dr. Susanna Allés-Torrent](https://susannalles.com/)
-
-**Graduate Certificate in Second Language Acquisition and Teaching** (In-Progress)
-University of Miami
-
-Advisor: [Dr. Ager Gondra](https://people.miami.edu/profile/6ab3218ab810899980f16329d9112fef)
+Graduate Certificate in Digital Humanities (In-Progress)
+Graduate Certificate in Second Language Acquisition and Teaching (In-Progress)
 
 **M.A. in Psychology**
 Federal University of Rio Grande do Sul
