@@ -283,9 +283,9 @@ def generate_education_section(data):
             
             if advisor:
                 if advisor_link:
-                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n\n"  # Added extra \n after advisor
+                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"
                 else:
-                    content += f"\nAdvisor: {advisor}\n\n"  # Added extra \n after advisor
+                    content += f"\nAdvisor: {advisor}\n"
             
             # Handle committee members
             committee_members = []
@@ -300,10 +300,12 @@ def generate_education_section(data):
                         committee_members.append(member)
             
             if committee_members:
-                content += f"\nCommittee: {', '.join(committee_members)}\n\n"  # Added extra \n after committee
+                content += f"\nCommittee: {', '.join(committee_members)}\n"
             
             # Add related graduate certificates - simple nested lines
             phd_university = row.get('university', '')
+            if graduate_certificates:  # Only add line break if there are certificates
+                content += "\n"  # Add line break before certificates
             for cert_row in graduate_certificates:
                 cert_university = cert_row.get('university', '')
                 # Match by university, or if certificate has no university, assume it belongs to this PhD
@@ -314,7 +316,7 @@ def generate_education_section(data):
                         content += f"Graduate Certificate in {cert_title}"
                         if cert_status and cert_status.lower() != 'finished':
                             content += f" ({cert_status})"
-                        content += "\n"
+                        content += "\n\n"
             
             content += "\n"  # Extra line break between entries
         

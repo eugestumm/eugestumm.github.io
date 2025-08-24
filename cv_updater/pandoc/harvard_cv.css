@@ -1,4 +1,5 @@
-/* Harvard Style CV CSS for Pandoc */
+/* Harvard Style Academic CV CSS - Clean and Consistent */
+
 @page {
     margin: 1in;
     size: letter;
@@ -6,84 +7,70 @@
 
 body {
     font-family: "Times New Roman", serif;
-    font-size: 12pt;
-    line-height: 1.15;
+    font-size: 11pt;
+    line-height: 1.2;
     margin: 0;
     padding: 0;
     color: #000;
     max-width: 100%;
 }
 
-/* Headings */
+/* Name */
 h1 {
     font-size: 16pt;
     font-weight: bold;
     text-align: center;
-    margin: 0.25in 0 0.1in 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2pt solid #000;
-    padding-bottom: 0.1in;
+    margin: 0 0 0.1in 0;
+    text-transform: none;
 }
 
-h2 {
-    font-size: 14pt;
-    font-weight: bold;
-    margin: 0.5em 0 0.25em 0;
-    padding-bottom: 0.05em;
-    border-bottom: 1pt solid #000;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 12pt;
-    font-weight: bold;
-    margin: 0.5em 0 0.25em 0;
-    text-transform: uppercase;
-}
-
-h4 {
-    font-size: 12pt;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0.5em 0 0.25em 0;
-}
-
-/* Contact information */
+/* Contact info */
 h1 + p {
     text-align: center;
     margin: 0.1in 0 0.3in 0;
     font-style: italic;
+    font-size: 11pt;
 }
 
-/* Horizontal rule */
-hr {
-    border: 0.5pt solid #000;
-    margin: 0.2in 0;
+/* Section headers */
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0.3in 0 0.15in 0;
+    padding-bottom: 0.05in;
+    border-bottom: 1pt solid #000;
+    text-transform: uppercase;
 }
 
-/* Lists */
-ul {
-    margin: 0.25em 0;
-    padding-left: 1.5em;
+/* Subsection headers */
+h3 {
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0.2in 0 0.1in 0;
+    font-style: italic;
 }
 
-li {
-    margin: 0.1em 0;
-    text-align: justify;
+/* Sub-subsection headers */
+h4 {
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0.15in 0 0.1in 0;
+    font-style: italic;
 }
 
-/* Paragraphs and spacing */
+/* All paragraphs - consistent spacing */
 p {
-    margin: 0.25em 0;
-    text-align: justify;
+    margin: 0.1in 0;
+    text-align: left;
+    line-height: 1.2;
 }
 
-/* Strong and emphasis */
+/* Strong text */
 strong {
     font-weight: bold;
 }
 
+/* Emphasis */
 em {
     font-style: italic;
 }
@@ -94,178 +81,100 @@ a {
     text-decoration: none;
 }
 
-/* Section spacing */
-.section {
-    margin-bottom: 0.75em;
+/* Lists */
+ul {
+    list-style-type: none;
+    margin: 0.1in 0;
+    padding-left: 0;
 }
 
-/* Publication entries */
-.publication {
-    margin-bottom: 0.75em;
+ol {
+    margin: 0.1in 0;
+    padding-left: 0.3in;
+}
+
+li {
+    margin: 0.1in 0;
+    line-height: 1.2;
+}
+
+/* Publications - hanging indent */
+ol li {
+    text-indent: -0.3in;
+    padding-left: 0.3in;
+    margin-bottom: 0.15in;
     text-align: justify;
 }
 
-.publication .authors {
-    font-weight: normal;
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1pt solid #000;
+    margin: 0.2in 0;
 }
 
-.publication .year {
-    font-weight: bold;
+/* Indented details (supervisors, amounts, etc.) */
+p + p:contains("Advisor:"),
+p + p:contains("Thesis:"),
+p + p:contains("Amount:"),
+p + p:contains("Supervised by"),
+p + p:contains("Co-taught with"),
+p + p:contains("For presentation"),
+p + p:contains("PI:"),
+p + p:contains("Technologies"),
+p + p:contains("Collaborators"),
+p + p:contains("Workshop ministered") {
+    margin-left: 0.3in;
+    font-size: 10pt;
+    margin-top: 0.05in;
 }
 
-.publication .title {
-    font-style: italic;
-}
-
-/* Education and experience entries */
-.experience {
-    margin-bottom: 0.5em;
-}
-
-.experience .date {
-    float: right;
-    font-weight: normal;
-}
-
-.experience .position {
-    font-weight: bold;
-}
-
-.experience .institution {
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Clear floats */
-.clear {
-    clear: both;
-}
-
-/* Page breaks */
-.page-break {
-    page-break-before: always;
-}
-
-/* No indent for paragraphs */
-p {
-    text-indent: 0;
-}
-
-/* Harvard-style citation formatting */
-.citation {
-    margin-bottom: 0.5em;
-    text-align: justify;
-    padding-left: 0.5in;
-    text-indent: -0.5in;
-}
-
-/* Conference presentation formatting */
-.conference {
-    margin-bottom: 0.5em;
-    text-align: justify;
-}
-
-.conference .title {
-    font-style: italic;
-}
-
-.conference .event {
-    font-weight: bold;
-}
-
-.conference .location {
-    font-style: italic;
-}
-
-/* Project formatting */
-.project {
-    margin-bottom: 1em;
-    text-align: justify;
-}
-
-.project .title {
-    font-weight: bold;
-}
-
-.project .years {
-    float: right;
-    font-weight: normal;
-}
-
-.project .type {
-    font-style: italic;
-}
-
-.project .status {
-    font-style: italic;
-}
-
-.project .technologies {
-    font-style: italic;
-}
-
-/* Awards formatting */
-.award {
-    margin-bottom: 0.5em;
-    text-align: justify;
-}
-
-.award .title {
-    font-weight: bold;
-}
-
-.award .organization {
-    font-style: italic;
-}
-
-.award .amount {
-    font-style: italic;
+/* Project metadata */
+p:contains("Years:") {
+    font-size: 10pt;
+    margin: 0.05in 0;
 }
 
 /* Language skills */
-.language {
-    margin-bottom: 0.25em;
+p:contains(": Native"),
+p:contains(": Advanced"),
+p:contains(": Reading") {
+    margin: 0.05in 0;
 }
 
-.language .name {
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5in;
-}
-
-.language .proficiency {
-    font-style: italic;
-}
-
-/* Blockquote for special sections */
-blockquote {
-    margin: 0.5em 0;
-    padding-left: 1em;
-    border-left: 2pt solid #ccc;
-    font-style: italic;
-}
-
-/* Table formatting for any tabular data */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0.5em 0;
-}
-
-th, td {
-    padding: 0.25em;
-    text-align: left;
-    border-bottom: 0.5pt solid #ccc;
-}
-
-th {
-    font-weight: bold;
-    border-bottom: 1pt solid #000;
-}
-
-/* Footer for page numbers */
-footer {
+/* Last updated */
+p:contains("Last updated") {
     text-align: center;
+    font-style: italic;
     font-size: 10pt;
-    margin-top: 0.5in;
+    margin-top: 0.3in;
+    color: #666;
+}
+
+/* Print optimization */
+@media print {
+    /* Prevent awkward page breaks */
+    h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    ol li {
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 2;
+        widows: 2;
+    }
+}
+
+/* Screen view */
+@media screen {
+    body {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 1in;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 }
