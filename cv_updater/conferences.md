@@ -12,7 +12,7 @@ author_profile: true
   Latin American Studies Association, San Francisco, CA, USA. April 2025.
 
 - **Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation**  
-  Harvard University’s Graduate Music Forum Conference: *TRANS∗Media*.  
+  Harvard University’s Graduate Music Forum Conference: *TRANS\*Media*.  
   Harvard University, Cambridge, MA, USA. March 2025.
 
 - **From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics**  
@@ -20,7 +20,7 @@ author_profile: true
   Sciences Po Lyon & Université Lyon 2, Lyon, France. July 2024.
 
 - **Pabujá as a Community of Practices**  
-  17th Samuel Armistead Colloquium.  
+  17th Samuel Armistead Colloquium..  
   University of California, Davis, Davis, CA, USA. April 2024.
 
 - **From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**  

@@ -1,0 +1,180 @@
+/* Harvard Style Academic CV CSS - Clean and Consistent */
+
+@page {
+    margin: 1in;
+    size: letter;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    max-width: 100%;
+}
+
+/* Name */
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 0.1in 0;
+    text-transform: none;
+}
+
+/* Contact info */
+h1 + p {
+    text-align: center;
+    margin: 0.1in 0 0.3in 0;
+    font-style: italic;
+    font-size: 11pt;
+}
+
+/* Section headers */
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0.3in 0 0.15in 0;
+    padding-bottom: 0.05in;
+    border-bottom: 1pt solid #000;
+    text-transform: uppercase;
+}
+
+/* Subsection headers */
+h3 {
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0.2in 0 0.1in 0;
+    font-style: italic;
+}
+
+/* Sub-subsection headers */
+h4 {
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0.15in 0 0.1in 0;
+    font-style: italic;
+}
+
+/* All paragraphs - consistent spacing */
+p {
+    margin: 0.1in 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+/* Strong text */
+strong {
+    font-weight: bold;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    margin: 0.1in 0;
+    padding-left: 0;
+}
+
+ol {
+    margin: 0.1in 0;
+    padding-left: 0.3in;
+}
+
+li {
+    margin: 0.1in 0;
+    line-height: 1.2;
+}
+
+/* Publications - hanging indent */
+ol li {
+    text-indent: -0.3in;
+    padding-left: 0.3in;
+    margin-bottom: 0.15in;
+    text-align: justify;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1pt solid #000;
+    margin: 0.2in 0;
+}
+
+/* Indented details (supervisors, amounts, etc.) */
+p + p:contains("Advisor:"),
+p + p:contains("Thesis:"),
+p + p:contains("Amount:"),
+p + p:contains("Supervised by"),
+p + p:contains("Co-taught with"),
+p + p:contains("For presentation"),
+p + p:contains("PI:"),
+p + p:contains("Technologies"),
+p + p:contains("Collaborators"),
+p + p:contains("Workshop ministered") {
+    margin-left: 0.3in;
+    font-size: 10pt;
+    margin-top: 0.05in;
+}
+
+/* Project metadata */
+p:contains("Years:") {
+    font-size: 10pt;
+    margin: 0.05in 0;
+}
+
+/* Language skills */
+p:contains(": Native"),
+p:contains(": Advanced"),
+p:contains(": Reading") {
+    margin: 0.05in 0;
+}
+
+/* Last updated */
+p:contains("Last updated") {
+    text-align: center;
+    font-style: italic;
+    font-size: 10pt;
+    margin-top: 0.3in;
+    color: #666;
+}
+
+/* Print optimization */
+@media print {
+    /* Prevent awkward page breaks */
+    h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    ol li {
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 2;
+        widows: 2;
+    }
+}
+
+/* Screen view */
+@media screen {
+    body {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 1in;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}

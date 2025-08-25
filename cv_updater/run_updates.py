@@ -52,36 +52,37 @@ def copy_cv_to_assets():
         print(f"Error: {cv_pdf} not found - cannot copy to assets")
 
 def convert_cv_to_pdf():
-    """Convert cv.md to cv_euge_stumm.pdf using the separate pandoc converter script"""
-    print("\nConverting cv.md to cv_euge_stumm.pdf using pandoc converter...")
-    
+    """Convert cv.md to cv_euge_stumm.pdf using Pandoc with LaTeX; use template only if it exists"""
+    print("\nConverting cv.md to cv_euge_stumm.pdf using Pandoc + LaTeX...")
+
     cv_md = 'cv.md'
     cv_pdf = 'cv_euge_stumm.pdf'
-    css_file = os.path.join('pandoc', 'harvard_cv.css')
-    
-    # Check if input files exist
+    latex_template = os.path.join('pandoc', 'harvard_cv.tex')  # optional template
+
     if not os.path.exists(cv_md):
         print(f"Error: {cv_md} not found")
         return False
-    
-    if not os.path.exists(css_file):
-        print(f"Error: CSS file not found at {css_file}")
-        return False
-    
-    # Run the pandoc converter script
+
+    cmd = ['pandoc', cv_md, '-o', cv_pdf, '--pdf-engine', 'xelatex']
+
+    # Use template only if it exists
+    if os.path.exists(latex_template):
+        cmd.extend(['--template', latex_template])
+        print(f"Using LaTeX template: {latex_template}")
+    else:
+        print("No LaTeX template found; using default Pandoc LaTeX styling")
+
     try:
-        result = subprocess.run([
-            'python3', 'pandoc_converter.py'
-        ], capture_output=True, text=True, check=True)
-        
+        subprocess.run(cmd, check=True)
         print("PDF conversion completed successfully")
         return True
-        
     except subprocess.CalledProcessError as e:
         print(f"Error during PDF conversion: {e}")
         if e.stderr:
             print(f"Stderr: {e.stderr}")
         return False
+
+
 
 def main():
     # Run all updater scripts

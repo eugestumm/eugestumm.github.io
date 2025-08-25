@@ -1,11 +1,5 @@
 ---
-layout: archive
-papersize: "letter"
-geometry: "margin=1in"
-mainfont: "Times New Roman"
-title: "Curriculum Vitae"
-permalink: /cv/
-author_profile: true
+author: Euge Stumm
 ---
 # Euge Helyantus Stumm
 
@@ -23,7 +17,7 @@ Advisor: [Dr. Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f
 
 Graduate Certificate in Digital Humanities (In-Progress)
 
-Graduate Certificate in Second Language Acquisition and Teaching (In-Progress)
+Graduate Certificate in Second Language Acquisition and Teaching
 
 
 **M.A. in Psychology**
@@ -68,62 +62,65 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 ### University of Miami
 
-#### Instructor
+**Instructor**
 
-**Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
-  *Co-taught with Dr. Susanna Allés-Torrent*
+- **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
+  - Co-taught with Dr. Susanna Allés-Torrent
 
-**Basic Spanish I** (SPA 101) — Fall 2025
+- **Basic Spanish I** (SPA 101) — Fall 2025
 
-**Queer Studies** (GSS 305) — Fall 2024
-  *Co-taught with Dr. Steven Butterman*
+- **Queer Studies** (GSS 305) — Fall 2024
+  - Co-taught with Dr. Steven Butterman
 
-**Intermediate Portuguese I** (POR 201) — Spring 2024
+- **Intermediate Portuguese I** (POR 201) — Spring 2024
 
-**Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
-
-
-#### Mentored Teaching
-
-**Queer Studies** (SPA 330) — Spring 2024
-  *Supervised by Dr. Steven Butterman*
-
-**Topics in Gender and Sexuality** (GSS 305) — Fall 2023
-  *Supervised by Dr. Gema Pérez-Sánchez*
-
-**Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
-  *Supervised by Dr. Steven Butterman*
+- **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
 
 
-#### Teaching Assistant
+**Mentored Teaching**
 
-**LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
-  *Supervised by Dr. Steven Butterman*
+- **Queer Studies** (SPA 330) — Spring 2024
+  - Supervised by Dr. Steven Butterman
 
-**Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 699) — Fall 2022
-  *Supervised by Dr. Steven Butterman*
+- **Topics in Gender and Sexuality** (GSS 305) — Fall 2023
+  - Supervised by Dr. Gema Pérez-Sánchez
+
+- **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
+  - Supervised by Dr. Steven Butterman
+
+
+**Teaching Assistant**
+
+- **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
+  - Supervised by Dr. Steven Butterman
+
+- **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 699) — Fall 2022
+  - Supervised by Dr. Steven Butterman
+
 
 
 ### Federal University of Rio Grande do Sul
 
-#### Teaching Assistant
+**Teaching Assistant**
 
-**Diversity and Human Development** — 2022
-  *Supervised by Dr. Adolfo Pizzinato*
+- **Diversity and Human Development** — 2022
+  - Supervised by Dr. Adolfo Pizzinato
 
-**Psychology Applied to Health Sciences** — 2022
-  *Supervised by Dr. Adolfo Pizzinato*
+- **Psychology Applied to Health Sciences** — 2022
+  - Supervised by Dr. Adolfo Pizzinato
+
 
 
 ### Federal University of Health Sciences of Porto Alegre
 
-#### Teaching Assistant
+**Teaching Assistant**
 
-**Developmental Psychology I** — 2018
-  *Supervised by Dr. Daniela Centenaro Levandowski*
+- **Developmental Psychology I** — 2018–2021
+  - Supervised by Dr. Daniela Centenaro Levandowski
 
-**Developmental Psychology II** — 2018
-  *Supervised by Dr. Daniela Centenaro Levandowski*
+- **Developmental Psychology II** — 2018–2021
+  - Supervised by Dr. Daniela Centenaro Levandowski
+
 
 
 ---
@@ -134,44 +131,44 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 ### Presenter
 
-**The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish**
-LASA 2026: *Poner el cuerpo en Latinx America*
-Latin American Studies Association, San Francisco, CA, USA, April 2025
+**The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish**  
+LASA 2026: *Poner el cuerpo en Latinx America*  
+Latin American Studies Association, San Francisco, CA, USA, April 2025.  
 
-**Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation**
-Harvard University’s Graduate Music Forum Conference: *TRANS∗Media*
-Harvard University, Cambridge, MA, USA, March 2025
+**Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation**  
+Harvard University’s Graduate Music Forum Conference: *TRANS\*Media*  
+Harvard University, Cambridge, MA, USA, March 2025.  
 
-**From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics**
-International Conference of Europeanists: *Radical Europe: Violence, Emancipation & Reaction* (30th)
-Sciences Po Lyon & Université Lyon 2, Lyon, France, July 2024
+**From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics**  
+International Conference of Europeanists: *Radical Europe: Violence, Emancipation & Reaction* (30th)  
+Sciences Po Lyon & Université Lyon 2, Lyon, France, July 2024.  
 
-**Pabujá as a Community of Practices**
-Samuel Armistead Colloquium (17th)
-University of California, Davis, Davis, CA, USA, April 2024
+**Pabujá as a Community of Practices**  
+Samuel Armistead Colloquium. (17th)  
+University of California, Davis, Davis, CA, USA, April 2024.  
 
-**From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**
-Queen's Graduate Conference in Literature: *Orientation: This Way, That Way & The Other*
-Queen's University, Kingston, ON, Canada, May 2023
+**From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**  
+Queen's Graduate Conference in Literature: *Orientation: This Way, That Way & The Other*  
+Queen's University, Kingston, ON, Canada, May 2023.  
 
-**What is Queer About Queer Cinema: Queering speculative fabulation**
-Graduate and Postdoctoral Research Symposium (Fifth Annual)
-University of Miami, Miami, FL, USA, March 2023
+**What is Queer About Queer Cinema: Queering speculative fabulation**  
+Graduate and Postdoctoral Research Symposium (Fifth Annual)  
+University of Miami, Miami, FL, USA, March 2023.  
 
-**Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX**
-Biennal-International Symposium Vinculaciones: *(Re)thinking the “We” in Latin America* (7th)
-University of Pittsburgh, Pittsburgh, PA, USA, April 2023
+**Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX**  
+Biennal-International Symposium Vinculaciones: *(Re)thinking the “We” in Latin America* (7th)  
+University of Pittsburgh, Pittsburgh, PA, USA, April 2023.  
 
-**Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and global North**
-Department of Modern Languages and Literatures Graduate Conference: *Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*
-University of Miami, Miami, FL, USA, March 2023
+**Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and global North**  
+Department of Modern Languages and Literatures Graduate Conference: *Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*  
+University of Miami, Miami, FL, USA, March 2023.  
 
 ### Organizer
 
-**Critical Ecologies and Speculative Futures**
-*Conceiving the Environment*
-University of Miami, Miami, FL, USA, February 2024
-*With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny*
+**Critical Ecologies and Speculative Futures**  
+*Conceiving the Environment*  
+University of Miami, Miami, FL, USA, February 2024.  
+*With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny..*  
 
 ---
 
@@ -289,7 +286,7 @@ Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
 Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 
-**Data Literacy - Understanding Association and Causation in Data** — University of Miami, 2025
+**Data Literacy: Understanding Association and Causation in Data** — University of Miami, 2025
 Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 

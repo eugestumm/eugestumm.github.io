@@ -1,0 +1,198 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{ifthen}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+
+% Font settings
+\IfFontExistsTF{Times New Roman}{
+    \setmainfont{Times New Roman}
+}{
+    \IfFontExistsTF{Times}{
+        \setmainfont{Times}
+    }{
+        \setmainfont{TeX Gyre Termes}
+    }
+}
+
+% Colors
+\definecolor{harvardcrimson}{RGB}{165,28,48}
+\definecolor{darkgray}{RGB}{64,64,64}
+
+% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=harvardcrimson,
+    urlcolor=harvardcrimson,
+    citecolor=harvardcrimson,
+    pdfborder={0 0 0},
+    breaklinks=true
+}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\thepage\ of \pageref{LastPage}}
+
+% Section formatting
+\titleformat{\section}
+    {\large\bfseries\color{harvardcrimson}}
+    {}
+    {0em}
+    {}
+    [\vspace{-0.3\baselineskip}\titlerule\vspace{0.3\baselineskip}]
+
+\titlespacing*{\section}{0pt}{1.2\baselineskip}{0.4\baselineskip}
+
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {}
+    {0em}
+    {}
+
+\titlespacing*{\subsection}{0pt}{0.8\baselineskip}{0.2\baselineskip}
+
+% Custom commands for better CV formatting
+\newcommand{\CVitem}[2]{%
+    \noindent
+    \begin{tabularx}{\textwidth}{@{}X@{\hspace{1em}}r@{}}
+        \textbf{#1} & #2 \\
+    \end{tabularx}
+    \vspace{0.1\baselineskip}
+}
+
+\newcommand{\CVentry}[4]{%
+    \noindent
+    \begin{tabularx}{\textwidth}{@{}X@{\hspace{1em}}r@{}}
+        \textbf{#1} & #2 \\
+    \end{tabularx}
+    \ifthenelse{\equal{#3}{}}{}{\textit{#3}\\}%
+    \ifthenelse{\equal{#4}{}}{}{#4\\}%
+    \vspace{0.2\baselineskip}
+}
+
+\newcommand{\CVsubitem}[2]{%
+    \noindent\hspace{1em}
+    \begin{tabularx}{\dimexpr\textwidth-1em\relax}{@{}X@{\hspace{1em}}r@{}}
+        #1 & #2 \\
+    \end{tabularx}
+    \vspace{0.05\baselineskip}
+}
+
+\newcommand{\CVdegree}[4]{%
+    \noindent
+    \begin{tabularx}{\textwidth}{@{}X@{\hspace{1em}}r@{}}
+        \textbf{#1} & #2 \\
+    \end{tabularx}
+    \ifthenelse{\equal{#3}{}}{}{#3\\}%
+    \ifthenelse{\equal{#4}{}}{}{#4\\}%
+    \vspace{0.3\baselineskip}
+}
+
+\newcommand{\advisor}[1]{%
+    \textit{Advisor: #1}\\
+}
+
+\newcommand{\thesis}[1]{%
+    \textit{Thesis: #1}\\
+}
+
+% Remove paragraph indentation and adjust spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.15\baselineskip}
+
+% Custom list environments
+\newlist{publicationlist}{enumerate}{1}
+\setlist[publicationlist]{
+    label=\arabic*.,
+    leftmargin=2em,
+    itemsep=0.2\baselineskip,
+    parsep=0pt,
+    topsep=0.2\baselineskip
+}
+
+\newlist{CVbulletlist}{itemize}{1}
+\setlist[CVbulletlist]{
+    label=\textbullet,
+    leftmargin=1.5em,
+    itemsep=0.1\baselineskip,
+    parsep=0pt,
+    topsep=0.1\baselineskip
+}
+
+% Pandoc compatibility
+$if(linestretch)$
+\usepackage{setspace}
+\setstretch{$linestretch$}
+$endif$
+
+% Document metadata
+$if(title)$
+\title{$title$}
+$endif$
+
+$if(author)$
+\author{$author$}
+$endif$
+
+$if(date)$
+\date{$date$}
+$else$
+\date{}
+$endif$
+
+\begin{document}
+
+% Header with contact information
+\begin{center}
+    {\LARGE\bfseries $if(author)$$author$$endif$}
+    
+    $if(subtitle)$
+    \\[0.3\baselineskip]
+    {\large\itshape $subtitle$}
+    $endif$
+    
+    \\[0.5\baselineskip]
+    
+    $if(email)$
+    \href{mailto:$email$}{$email$}
+    $endif$
+    $if(website)$
+    $if(email)$ \textbullet{} $endif$
+    \href{$website$}{Website}
+    $endif$
+    $if(orcid)$
+    $if(email)$$if(website)$ \textbullet{} $else$ \textbullet{} $endif$$else$$if(website)$ \textbullet{} $endif$$endif$
+    \href{$orcid$}{ORCID}
+    $endif$
+    $if(github)$
+    \textbullet{} \href{$github$}{GitHub}
+    $endif$
+\end{center}
+
+\vspace{0.5\baselineskip}
+
+% Main content
+$body$
+
+% Footer
+\vspace{0.5\baselineskip}
+\begin{center}
+\small\textit{Last updated: $if(date)$$date$$else$August 2025$endif$}
+\end{center}
+
+\end{document}

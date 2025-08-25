@@ -66,7 +66,7 @@ author_profile: true
 - **Data Literacy: R Language and Statistics Basics**, University of Miami, 2025  
   Supervised by Dr. Susanna Allés-Torrent, co-facilitated with Elizabeth Cornick  
   Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
-- **Data Literacy - Understanding Association and Causation in Data**, University of Miami, 2025  
+- **Data Literacy: Understanding Association and Causation in Data**, University of Miami, 2025  
   Supervised by Dr. Susanna Allés-Torrent, co-facilitated with Elizabeth Cornick  
   Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
 - **Introduction to Semantic Search with Semantra**, University of Miami, 2024  
