@@ -20,7 +20,7 @@ author_profile: true
   Sciences Po Lyon & Université Lyon 2, Lyon, France. July 2024.
 
 - **Pabujá as a Community of Practices**  
-  17th Samuel Armistead Colloquium..  
+  17th Samuel Armistead Colloquium.  
   University of California, Davis, Davis, CA, USA. April 2024.
 
 - **From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**  

@@ -727,30 +727,30 @@ def generate_awards_section(data):
             content += f"**{award_name}**"
             if year:
                 content += f" ({format_date(year)})"
-            content += "\n"
+            content += "  \n"  # Two spaces at end for markdown line break
             
             # Institution
             if institution:
-                content += f"*{institution}*\n"
+                content += f"*{institution}*  \n"  # Two spaces at end
             
             # Amount with currency
             if amount and str(amount).strip():
                 if currency:
                     if currency.upper() == 'BRL':
-                        content += f"Amount: R$ {amount:,.2f}\n"
+                        content += f"Amount: R$ {amount:,.2f}  \n"  # Two spaces at end
                     elif currency.upper() == 'USD':
-                        content += f"Amount: ${amount:,.2f}\n"
+                        content += f"Amount: ${amount:,.2f}  \n"  # Two spaces at end
                     else:
-                        content += f"Amount: {amount} {currency}\n"
+                        content += f"Amount: {amount} {currency}  \n"  # Two spaces at end
                 else:
                     formatted_amount = format_currency_amount(amount)
-                    content += f"Amount: {formatted_amount}\n"
+                    content += f"Amount: {formatted_amount}  \n"  # Two spaces at end
             
             # Description
             if description and str(description).strip():
-                content += f"{description}\n"
+                content += f"{description}  \n"  # Two spaces at end
             
-            content += "\n"
+            content += "\n"  # Empty line between entries
     
     return content
 
@@ -796,29 +796,29 @@ def generate_funded_research_section(data):
                 content += f" ({format_date(start_year)}–{format_date(end_year)})"
             else:
                 content += f" ({format_date(start_year)})"
-        content += "\n"
+        content += "  \n"  # Two spaces at end for markdown line break
         
         # Institution
         if institution:
-            content += f"*{institution}*\n"
+            content += f"*{institution}*  \n"  # Two spaces at end
         
         # Amount with currency
         if amount and str(amount).strip():
             if currency:
                 if currency.upper() == 'BRL':
-                    content += f"Amount: R$ {float(amount):,.2f}\n"
+                    content += f"Amount: R$ {float(amount):,.2f}  \n"  # Two spaces at end
                 elif currency.upper() == 'USD':
-                    content += f"Amount: ${float(amount):,.2f}\n"
+                    content += f"Amount: ${float(amount):,.2f}  \n"  # Two spaces at end
                 else:
-                    content += f"Amount: {amount} {currency}\n"
+                    content += f"Amount: {amount} {currency}  \n"  # Two spaces at end
             else:
-                content += f"Amount: {format_currency_amount(amount)}\n"
+                content += f"Amount: {format_currency_amount(amount)}  \n"  # Two spaces at end
         
         # PI
         if pi:
-            content += f"PI: {pi}\n"
+            content += f"PI: {pi}  \n"  # Two spaces at end
         
-        content += "\n"
+        content += "\n"  # Empty line between entries
     
     return content
 

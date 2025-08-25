@@ -144,7 +144,7 @@ International Conference of Europeanists: *Radical Europe: Violence, Emancipatio
 Sciences Po Lyon & Université Lyon 2, Lyon, France, July 2024.  
 
 **Pabujá as a Community of Practices**  
-Samuel Armistead Colloquium. (17th)  
+Samuel Armistead Colloquium (17th)  
 University of California, Davis, Davis, CA, USA, April 2024.  
 
 **From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**  
@@ -168,59 +168,61 @@ University of Miami, Miami, FL, USA, March 2023.
 **Critical Ecologies and Speculative Futures**  
 *Conceiving the Environment*  
 University of Miami, Miami, FL, USA, February 2024.  
-*With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny..*  
+*With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.*  
 
 ---
 
 ## Awards and Honors
 
-**Max and Peggy Kriloff Student Travel Scholarship** (2025)
-Amount: $500.00
+**Max and Peggy Kriloff Student Travel Scholarship** (2025)  
+*University of Miami – Graduate School*  
+Amount: $500.00  
 
-**Graduate Student Travel Support** (2024)
-*University of Miami – Graduate School*
-Amount: $1,000.00
+**Graduate Student Travel Support** (2024)  
+*University of Miami – Graduate School*  
+Amount: $1,000.00  
 
-**Outstanding Scientific Award – Graduate Program in Sociology, Students’ Seminar at UFRGS** (2020)
-*UFRGS*
-For presentation in the Panel "Diversities and Intersectionalities"
+**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Graduate Program in Sociology, Students’ Seminar at UFRGS** (2020)  
+*Federal University of Rio Grande do Sul, Brasil*  
+For presentation in the Panel "Diversities and Intersectionalities"  
 
-**Outstanding Scientific Award** (2019)
-For presentation in the Panel “Psychoanalysis and Cinema”
+**Outstanding Scientific Award [Prêmio Destaque de Sessão]** (2019)  
+*Federal University of Rio Grande do Sul, Brasil*  
+For presentation in the Panel “Psychoanalysis and Cinema”  
 
-**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador] at UFRGS** (2019)
-*UFRGS*
+**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador] at UFRGS** (2019)  
+*Federal University of Rio Grande do Sul, Brasil*  
 
-**Outstanding Scientific Award – Congress UFCSPA** (2019)
-*UFCSPA*
-For presentation in the panel “Teaching”
+**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Congress UFCSPA** (2019)  
+*Federal University of Health Sciences of Porto Alegre*  
+For presentation in the panel “Teaching”  
 
 ## Funded Research
 
-**Digital Humanities Graduate Fellowship** (2025)
-*University of Miami*
-Amount: $1,000.00
-PI: Dr. Susanna Allés-Torrent
+**Digital Humanities Graduate Fellowship** (2025)  
+*University of Miami*  
+Amount: $1,000.00  
+PI: Dr. Susanna Allés-Torrent  
 
-**Digital Humanities Graduate Fellowship** (2024)
-*University of Miami*
-Amount: $1,800.00
-PI: Dr. Susanna Allés-Torrent
+**Digital Humanities Graduate Fellowship** (2024)  
+*University of Miami*  
+Amount: $1,800.00  
+PI: Dr. Susanna Allés-Torrent  
 
-**Digital Humanities Graduate Fellowship** (2023)
-*University of Miami*
-Amount: $1,000.00
-PI: Dr. Allison Schifani
+**Digital Humanities Graduate Fellowship** (2023)  
+*University of Miami*  
+Amount: $1,000.00  
+PI: Dr. Allison Schifani  
 
-**Master’s Graduate Research Fellowship** (2021–2022)
-*Coordination of Superior Level Staff Improvement (CAPES), Brazil*
-Amount: R$ 27,000.00
-PI: Dr. Adolfo Pizzinato, UFRGS
+**Master’s Graduate Research Fellowship** (2021–2022)  
+*Coordination of Superior Level Staff Improvement (CAPES), Brazil*  
+Amount: R$ 27,000.00  
+PI: Dr. Adolfo Pizzinato, UFRGS  
 
-**Undergraduate Teaching Fellowship** (2019–2021)
-*Federal University of Health Sciences of Porto Alegre (UFCSPA), Brazil*
-Amount: R$ 8,000.00
-PI: Dr. Daniela Centenaro Levandowski
+**Undergraduate Teaching Fellowship** (2019–2021)  
+*Federal University of Health Sciences of Porto Alegre (UFCSPA), Brazil*  
+Amount: R$ 8,000.00  
+PI: Dr. Daniela Centenaro Levandowski  
 
 ## Projects
 
