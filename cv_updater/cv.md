@@ -67,7 +67,7 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 1. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
     - Co-taught with Dr. Susanna Allés-Torrent
 
-2. **Basic Spanish I** (SPA 101) — Fall 2025
+2. **Basic Spanish I** (SPA 101) — Spring 2025
 
 3. **Queer Studies** (GSS 305) — Fall 2024
     - Co-taught with Dr. Steven Butterman

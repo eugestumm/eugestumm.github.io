@@ -12,7 +12,7 @@ author_profile: true
 
 - Digital Literacy Through Cultural and Literary Topics in Spanish (SPA 410/MLL 410) — Fall 2025  
   *(Co-taught with Dr. Susanna Allés-Torrent)*
-- Basic Spanish I (SPA 101) — Fall 2025
+- Basic Spanish I (SPA 101) — Spring 2025
 - Queer Studies (GSS 305) — Fall 2024  
   *(Co-taught with Dr. Steven Butterman)*
 - Intermediate Portuguese I (POR 201) — Spring 2024
