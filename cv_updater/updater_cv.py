@@ -533,7 +533,7 @@ def generate_publications_section(data):
     return content
 
 def generate_teaching_section(data):
-    """Generate Teaching Experience section with support for multi-year positions"""
+    """Generate Teaching Experience section with support for multi-year positions and numbered courses"""
     content = "## Teaching Experience\n\n"
     if 'Teaching' in data:
         teaching_df = data['Teaching']
@@ -551,6 +551,10 @@ def generate_teaching_section(data):
                 category_df = inst_df[inst_df['category'] == category]
                 # Sort by year (descending)
                 category_df = category_df.sort_values('year', ascending=False, na_position='last')
+                
+                # Initialize course counter for this specific category
+                course_number = 1
+                
                 for _, row in category_df.iterrows():
                     if row.get('course_title'):
                         course_code = row.get('course_code', '')
@@ -562,7 +566,10 @@ def generate_teaching_section(data):
                         co_instructor = row.get('co_instructor', '')
                         special_notes = row.get('special_notes', '')
                         
-                        content += f"- **{course_title}**"
+                        # CHANGED: Use number instead of bullet
+                        content += f"{course_number}. **{course_title}**"
+                        course_number += 1 # Increment the counter
+                        
                         if course_code:
                             content += f" ({course_code})"
                         # Handle date ranges
@@ -589,7 +596,7 @@ def generate_teaching_section(data):
                             details.append(special_notes)
                         if details:
                             for detail in details:
-                                content += f"  - {detail}\n"
+                                content += f"    - {detail}\n" # Indented bullet for details
                         content += "\n"
                 content += "\n" # Extra space after each category
             content += "\n" # Extra space after each institution
@@ -816,7 +823,7 @@ def generate_funded_research_section(data):
         
         # PI
         if pi:
-            content += f"PI: {pi}  \n"  # Two spaces at end
+            content += f"Supervisor: {pi}  \n"  # Two spaces at end
         
         content += "\n"  # Empty line between entries
     

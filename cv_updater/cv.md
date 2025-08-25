@@ -64,38 +64,38 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 **Instructor**
 
-- **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
-  - Co-taught with Dr. Susanna Allés-Torrent
+1. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
+    - Co-taught with Dr. Susanna Allés-Torrent
 
-- **Basic Spanish I** (SPA 101) — Fall 2025
+2. **Basic Spanish I** (SPA 101) — Fall 2025
 
-- **Queer Studies** (GSS 305) — Fall 2024
-  - Co-taught with Dr. Steven Butterman
+3. **Queer Studies** (GSS 305) — Fall 2024
+    - Co-taught with Dr. Steven Butterman
 
-- **Intermediate Portuguese I** (POR 201) — Spring 2024
+4. **Intermediate Portuguese I** (POR 201) — Spring 2024
 
-- **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
+5. **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
 
 
 **Mentored Teaching**
 
-- **Queer Studies** (SPA 330) — Spring 2024
-  - Supervised by Dr. Steven Butterman
+1. **Queer Studies** (SPA 330) — Spring 2024
+    - Supervised by Dr. Steven Butterman
 
-- **Topics in Gender and Sexuality** (GSS 305) — Fall 2023
-  - Supervised by Dr. Gema Pérez-Sánchez
+2. **Topics in Gender and Sexuality** (GSS 305) — Fall 2023
+    - Supervised by Dr. Gema Pérez-Sánchez
 
-- **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
-  - Supervised by Dr. Steven Butterman
+3. **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
+    - Supervised by Dr. Steven Butterman
 
 
 **Teaching Assistant**
 
-- **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
-  - Supervised by Dr. Steven Butterman
+1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
+    - Supervised by Dr. Steven Butterman
 
-- **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 699) — Fall 2022
-  - Supervised by Dr. Steven Butterman
+2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 699) — Fall 2022
+    - Supervised by Dr. Steven Butterman
 
 
 
@@ -103,11 +103,11 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 **Teaching Assistant**
 
-- **Diversity and Human Development** — 2022
-  - Supervised by Dr. Adolfo Pizzinato
+1. **Diversity and Human Development** — 2022
+    - Supervised by Dr. Adolfo Pizzinato
 
-- **Psychology Applied to Health Sciences** — 2022
-  - Supervised by Dr. Adolfo Pizzinato
+2. **Psychology Applied to Health Sciences** — 2022
+    - Supervised by Dr. Adolfo Pizzinato
 
 
 
@@ -115,11 +115,11 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 **Teaching Assistant**
 
-- **Developmental Psychology I** — 2018–2021
-  - Supervised by Dr. Daniela Centenaro Levandowski
+1. **Developmental Psychology I** — 2018–2021
+    - Supervised by Dr. Daniela Centenaro Levandowski
 
-- **Developmental Psychology II** — 2018–2021
-  - Supervised by Dr. Daniela Centenaro Levandowski
+2. **Developmental Psychology II** — 2018–2021
+    - Supervised by Dr. Daniela Centenaro Levandowski
 
 
 
@@ -190,7 +190,7 @@ For presentation in the Panel "Diversities and Intersectionalities"
 *Federal University of Rio Grande do Sul, Brasil*  
 For presentation in the Panel “Psychoanalysis and Cinema”  
 
-**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador] at UFRGS** (2019)  
+**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador]** (2019)  
 *Federal University of Rio Grande do Sul, Brasil*  
 
 **Outstanding Scientific Award [Prêmio Destaque de Sessão] – Congress UFCSPA** (2019)  
@@ -202,27 +202,27 @@ For presentation in the panel “Teaching”
 **Digital Humanities Graduate Fellowship** (2025)  
 *University of Miami*  
 Amount: $1,000.00  
-PI: Dr. Susanna Allés-Torrent  
+Supervisor: Dr. Susanna Allés-Torrent  
 
 **Digital Humanities Graduate Fellowship** (2024)  
 *University of Miami*  
 Amount: $1,800.00  
-PI: Dr. Susanna Allés-Torrent  
+Supervisor: Dr. Susanna Allés-Torrent  
 
 **Digital Humanities Graduate Fellowship** (2023)  
 *University of Miami*  
 Amount: $1,000.00  
-PI: Dr. Allison Schifani  
+Supervisor: Dr. Allison Schifani  
 
 **Master’s Graduate Research Fellowship** (2021–2022)  
 *Coordination of Superior Level Staff Improvement (CAPES), Brazil*  
 Amount: R$ 27,000.00  
-PI: Dr. Adolfo Pizzinato, UFRGS  
+Supervisor: Dr. Adolfo Pizzinato  
 
 **Undergraduate Teaching Fellowship** (2019–2021)  
 *Federal University of Health Sciences of Porto Alegre (UFCSPA), Brazil*  
 Amount: R$ 8,000.00  
-PI: Dr. Daniela Centenaro Levandowski  
+Supervisor: Dr. Daniela Centenaro Levandowski  
 
 ## Projects
 
