@@ -160,7 +160,7 @@ def init_cv():
     cv_content += "author: Euge Stumm\n"
     #cv_content += "fontsize: 12pt\n"
     #cv_content += "papersize: \"letter\"\n"
-    #cv_content += "geometry: \"margin=1in\"\n"
+    cv_content += "geometry: \"margin=1in\"\n"
     #cv_content += "mainfont: \"Times New Roman\"\n"
     #cv_content += "title: \"Curriculum Vitae\"\n"
     #cv_content += "permalink: /cv/\n"
@@ -179,15 +179,15 @@ def generate_header_section(data):
         if sheet in data:
             header_sheet_name = sheet
             break
-
+    
     if not header_sheet_name:
         # Fallback to a minimal header if the sheet doesn't exist
-        return "# Your Name\n\n*Your Title*  \n[email@example.com](mailto:email@example.com) | [Website](https://yourwebsite.com) | [ORCID](https://orcid.org/your-orcid) | [GitHub](https://github.com/yourusername)\n\n---\n\n"
+        return "# Your Name\n\n*Your Title* \n**Email:** [email@example.com](mailto:email@example.com) | **Website:** [yourwebsite.com](https://yourwebsite.com) | **ORCID:** [0000-1234-5678-9012](https://orcid.org/your-orcid) | **GitHub:** [@yourusername](https://github.com/yourusername)\n\n---\n\n"
     
     header_df = data[header_sheet_name]
     # We assume the first row contains the data
     row = header_df.iloc[0] if not header_df.empty else {}
-
+    
     name = row.get('name', 'Your Name')
     title = row.get('title', 'Your Title')
     email = row.get('email', '')
@@ -197,174 +197,194 @@ def generate_header_section(data):
     linkedin = row.get('linkedin', '')
     research_statement = row.get('research_statement', '')
     address = row.get('address', '')
-
+    
     content = f"# {name}\n\n"
-    #content = ""
-    
     if title:
-        content += f"*{title}*  \n"
+        content += f"*{title}*\n\n"
     
-    # Build the contact info line
+    # Build the contact info line with labels and clean URLs
     contact_info = []
+    
     if email:
-        contact_info.append(f"[{email}](mailto:{email})")
+        contact_info.append(f"**Email:** [{email}](mailto:{email})")
+    
     if website:
-        contact_info.append(f"[Website]({website})")
+        # Clean up website URL for display - remove protocol
+        website_clean = website.replace('https://', '').replace('http://', '').strip('/')
+        # Ensure the actual link has https://
+        website_url = website if website.startswith(('http://', 'https://')) else f"https://{website_clean}"
+        contact_info.append(f"**Website:** [{website_clean}]({website_url})")
+    
     if orcid:
-        # Format ORCID nicely: usually just the last 4 digits are shown in links
-        orcid_id = orcid.split('/')[-1]  # Extract just the ID from a full URL
-        contact_info.append(f"[ORCID](https://orcid.org/{orcid_id})")
+        # Format ORCID nicely: extract just the ID from a full URL if needed
+        if 'orcid.org' in orcid:
+            orcid_id = orcid.split('/')[-1]
+        else:
+            orcid_id = orcid
+        contact_info.append(f"**ORCID:** [{orcid_id}](https://orcid.org/{orcid_id})")
+    
     if github:
-        contact_info.append(f"[GitHub]({github})")
+        # Clean GitHub URL - remove protocol and extract username
+        if github.startswith('http'):
+            github_clean = github.replace('https://github.com/', '').replace('http://github.com/', '').strip('/')
+        else:
+            github_clean = github.replace('github.com/', '').replace('@', '').strip('/')
+        contact_info.append(f"**GitHub:** [@{github_clean}](https://github.com/{github_clean})")
+    
     if linkedin:
-        contact_info.append(f"[LinkedIn]({linkedin})")
+        # Clean LinkedIn URL - remove protocol and extract username
+        if linkedin.startswith('http'):
+            linkedin_clean = linkedin.replace('https://linkedin.com/in/', '').replace('http://linkedin.com/in/', '')
+            linkedin_clean = linkedin_clean.replace('https://www.linkedin.com/in/', '').replace('http://www.linkedin.com/in/', '')
+            linkedin_clean = linkedin_clean.strip('/')
+        else:
+            linkedin_clean = linkedin.replace('linkedin.com/in/', '').replace('@', '').strip('/')
+        contact_info.append(f"**LinkedIn:** [{linkedin_clean}](https://linkedin.com/in/{linkedin_clean})")
+    
     if address:
-        contact_info.append(address) # Physical address usually isn't linked
-
+        contact_info.append(address)  # Physical address usually isn't linked
+    
     if contact_info:
-        content += ' | '.join(contact_info) + "\n"
+        content += ' | '.join(contact_info) + "\n\n"
     
     # Research statement is crucial for interdisciplinary fields
     if research_statement:
         content += f"\n{research_statement}\n"
     
     content += "\n---\n\n"
-    
     return content
 
 def generate_education_section(data):
-    """Generate Education section with nested graduate certificates"""
+    """Generate Education section with bullet lists Pandoc recognizes"""
+    import datetime
+    current_year = datetime.datetime.now().year
+
     content = "## Education\n\n"
-    
-    if 'Training' in data:
-        training_df = data['Training']
-        
+
+    if "Training" in data:
+        training_df = data["Training"]
+
         # Separate PhDs and graduate certificates
         phd_entries = []
         other_entries = []
         graduate_certificates = []
-        
+
         for _, row in training_df.iterrows():
-            if row.get('degree') and row.get('title'):
-                degree = row['degree'].replace('_', ' ').lower()
-                if degree == 'doctorate':
+            if row.get("degree") and row.get("title"):
+                degree = row["degree"].replace("_", " ").lower()
+                if degree == "doctorate":
                     phd_entries.append(row)
-                elif degree == 'graduate certificate':  # This should be 'graduate certificate' not 'graduate_certificate'
+                elif degree == "graduate certificate":
                     graduate_certificates.append(row)
                 else:
                     other_entries.append(row)
-        
-        # Process PhD entries first, then nest certificates
-        for row in phd_entries:
-            status = row.get('status', '')
-            degree = row['degree'].replace('_', ' ').title()
-            title = row['title']
-            university = row.get('university', '')
-            thesis = row.get('thesis', '')
-            advisor = row.get('advisor', '')
-            advisor_link = row.get('advisor_link', '')
-            
-            # Format PhD title
-            if "Ph.D." in title:
-                display_degree = title
-            else:
-                display_degree = f"Ph.D. in {title.replace('Ph.D. in ', '')}"
-            
-            content += f"**{display_degree}**"
-            if status and status.lower() != 'finished':
-                content += f" ({status})"
-            content += "\n"  # Line break after degree
-            
+
+        def format_degree_line(degree_label, title, university, year, gpa):
+            """Return the bold degree line with year and GPA inline"""
+            line = f"**{degree_label} in {title}**"
+            if year:
+                try:
+                    year_int = int(year)
+                    if year_int > current_year:
+                        line += f", Expected {year}"
+                    else:
+                        line += f", {year}"
+                except ValueError:
+                    line += f", {year}"
             if university:
-                content += f"{university}\n"  # University on its own line
-            
-            if thesis:
-                content += f"\nThesis: *{thesis}*\n"  # Added line break before thesis
-            
-            if advisor:
-                if advisor_link:
-                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"
-                else:
-                    content += f"\nAdvisor: {advisor}\n"
-            
-            # Handle committee members
-            committee_members = []
-            for i in range(1, 4):  # committee_member1, committee_member2, committee_member3
-                member = row.get(f'commitee_member{i}', '')  # Note: typo in column name
-                member_url = row.get(f'commitee_member{i}_url', '')
-                
+                line += f", {university}"
+            if gpa:
+                line += f", GPA: {gpa}"
+            return line
+
+        def format_committee(row):
+            members = []
+            for i in range(1, 6):
+                member = row.get(f"committee_member{i}", "")
+                member_url = row.get(f"committee_member{i}_url", "")
                 if member:
                     if member_url:
-                        committee_members.append(f"[{member}]({member_url})")
+                        members.append(f"[{member}]({member_url})")
                     else:
-                        committee_members.append(member)
-            
+                        members.append(member)
+            return members
+
+        # Process PhD entries first (with nested certificates)
+        for row in phd_entries:
+            title = row["title"].replace("Ph.D. in ", "")
+            degree_line = format_degree_line(
+                "Ph.D.", title, row.get("university", ""), row.get("year", ""), row.get("gpa", "")
+            )
+            content += f"{degree_line}\n\n"  # blank line before bullets
+
+            # Thesis
+            if row.get("thesis"):
+                content += f"- Thesis: *{row['thesis']}*\n"
+
+            # Advisor
+            if row.get("advisor"):
+                if row.get("advisor_link"):
+                    content += f"- Advisor: [{row['advisor']}]({row['advisor_link']})\n"
+                else:
+                    content += f"- Advisor: {row['advisor']}\n"
+
+            # Committee
+            committee_members = format_committee(row)
             if committee_members:
-                content += f"\nCommittee: {', '.join(committee_members)}\n"
-            
-            # Add related graduate certificates - simple nested lines
-            phd_university = row.get('university', '')
-            if graduate_certificates:  # Only add line break if there are certificates
-                content += "\n"  # Add line break before certificates
+                content += f"- Committee: {', '.join(committee_members)}\n"
+
+            # Related graduate certificates
+            phd_university = row.get("university", "")
             for cert_row in graduate_certificates:
-                cert_university = cert_row.get('university', '')
-                # Match by university, or if certificate has no university, assume it belongs to this PhD
+                cert_university = cert_row.get("university", "")
                 if cert_university == phd_university or not cert_university:
-                    cert_title = cert_row.get('title', '')
-                    cert_status = cert_row.get('status', '')
-                    if cert_title:
-                        content += f"Graduate Certificate in {cert_title}"
-                        if cert_status and cert_status.lower() != 'finished':
-                            content += f" ({cert_status})"
-                        content += "\n\n"
-            
-            content += "\n"  # Extra line break between entries
-        
-        # Process other degree entries (but NOT graduate certificates - they're already nested under PhDs)
+                    cert_line = f"**Graduate Certificate in {cert_row.get('title','')}**"
+                    cert_year = cert_row.get("year", "")
+                    if cert_year:
+                        try:
+                            cert_year_int = int(cert_year)
+                            if cert_year_int > current_year:
+                                cert_line += f", Expected {cert_year}"
+                            else:
+                                cert_line += f", {cert_year}"
+                        except ValueError:
+                            cert_line += f", {cert_year}"
+                    content += f"- {cert_line}\n"
+
+            content += "\n"
+
+        # Process other degree entries (M.A., B.A., etc.)
         for row in other_entries:
-            status = row.get('status', '')
-            degree = row['degree'].replace('_', ' ').title()
-            title = row['title']
-            university = row.get('university', '')
-            thesis = row.get('thesis', '')
-            advisor = row.get('advisor', '')
-            advisor_link = row.get('advisor_link', '')
-            
-            # Format degree titles
-            if degree.lower() == 'masters':
-                if "M.A." in title:
-                    display_degree = title
+            degree = row["degree"].replace("_", " ").title()
+            title = row["title"].replace("M.A. in ", "").replace("B.A. in ", "")
+            degree_label = (
+                "M.A." if degree.lower() == "masters"
+                else "B.A." if degree.lower() == "bachelors"
+                else degree
+            )
+            degree_line = format_degree_line(
+                degree_label, title, row.get("university", ""), row.get("year", ""), row.get("gpa", "")
+            )
+            content += f"{degree_line}\n\n"  # blank line before bullets
+
+            if row.get("thesis"):
+                content += f"- Thesis: *{row['thesis']}*\n"
+
+            if row.get("advisor"):
+                if row.get("advisor_link"):
+                    content += f"- Advisor: [{row['advisor']}]({row['advisor_link']})\n"
                 else:
-                    display_degree = f"M.A. in {title.replace('M.A. in ', '')}"
-            elif degree.lower() == 'bachelors':
-                if "B.A." in title:
-                    display_degree = title
-                else:
-                    display_degree = f"B.A. in {title.replace('B.A. in ', '')}"
-            else:
-                display_degree = f"{degree} in {title}"
-            
-            content += f"**{display_degree}**"
-            if status and status.lower() != 'finished':
-                content += f" ({status})"
-            content += "\n"  # Line break after degree
-            
-            if university:
-                content += f"{university}\n"  # University on its own line
-            
-            if thesis:
-                content += f"\nThesis: *{thesis}*\n"  # Added line break before thesis
-            
-            if advisor:
-                if advisor_link:
-                    content += f"\nAdvisor: [{advisor}]({advisor_link})\n"  # Added line break before advisor
-                else:
-                    content += f"\nAdvisor: {advisor}\n"
-            
-            content += "\n"  # Extra line break between entries
-    
+                    content += f"- Advisor: {row['advisor']}\n"
+
+            committee_members = format_committee(row)
+            if committee_members:
+                content += f"- Committee: {', '.join(committee_members)}\n"
+
+            content += "\n"
+
     content += "---\n\n"
     return content
+
 
 def generate_publications_section(data):
     """Generate Publications section"""
@@ -372,30 +392,6 @@ def generate_publications_section(data):
     
     if 'Publications' in data:
         publications_df = data['Publications']
-        pub_count = sum(1 for _, row in publications_df.iterrows() if row.get('bibtex'))
-        
-        # Get year range
-        years = []
-        for _, row in publications_df.iterrows():
-            if row.get('bibtex'):
-                bibtex_entry = parse_bibtex(row['bibtex'])
-                year = bibtex_entry.get('year', '')
-                if year:
-                    try:
-                        years.append(int(year))
-                    except ValueError:
-                        pass
-        
-        year_range = ""
-        if years:
-            min_year = min(years)
-            max_year = max(years)
-            if min_year == max_year:
-                year_range = f" ({min_year})"
-            else:
-                year_range = f" ({min_year}–{max_year})"
-        
-        content += f"*{pub_count} publications{year_range}*\n\n"
         
         # Separate publication types
         journal_articles = []
@@ -532,6 +528,7 @@ def generate_publications_section(data):
     content += "---\n\n"
     return content
 
+
 def generate_teaching_section(data):
     """Generate Teaching Experience section with support for multi-year positions and numbered courses"""
     content = "## Teaching Experience\n\n"
@@ -607,15 +604,11 @@ def generate_teaching_section(data):
     return content
 
 def generate_conferences_section(data):
-    """Generate Conference Presentations section with proper Markdown line breaks"""
+    """Generate Conference Presentations section in MLA style"""
     content = "## Conference Presentations\n\n"
     
     if 'Conferences' in data:
         conferences_df = data['Conferences']
-        
-        # Count presentations
-        presentation_count = len(conferences_df)
-        content += f"*{presentation_count} presentations*\n\n"
         
         # Sort by year (descending)
         conferences_df = conferences_df.sort_values('year', ascending=False, na_position='last')
@@ -644,27 +637,27 @@ def generate_conferences_section(data):
                 year = row.get('year', '')
                 co_authors = row.get('co_authors', '')
                 
-                # Title
-                content += f"**{display_title}**  \n"  # Two spaces before newline to force line break
+                # MLA: "Title." Event details, Institution, City, Country, Date.
+                content += f"“{display_title}.”  \n"
                 
                 # Event details
                 if event_name and title and event_name != title:
                     content += f"{event_name}"
                     if event_theme:
-                        content += f": *{event_theme}*"
+                        content += f": {event_theme}"
                     if conference_number:
                         content += f" ({conference_number})"
-                    content += "  \n"
+                    content += ".  \n"
                 elif event_theme:
-                    content += f"*{event_theme}*"
+                    content += f"{event_theme}"
                     if conference_number:
                         content += f" ({conference_number})"
-                    content += "  \n"
+                    content += ".  \n"
                 
                 # Location and date
                 location_parts = [part for part in [institution, city, country] if part]
                 location_str = ", ".join(location_parts)
-                date_str = f"{month} {format_date(year)}" if month and year else year or ""
+                date_str = f"{month} {year}" if month and year else year or ""
                 
                 if location_str and date_str:
                     content += f"{location_str}, {date_str}.  \n"
@@ -675,13 +668,14 @@ def generate_conferences_section(data):
                 
                 # Co-authors
                 if co_authors:
-                    content += f"*With {co_authors}.*  \n"
+                    content += f"With {co_authors}.  \n"
                 
                 content += "\n"  # Extra blank line between entries
         
         content += "---\n\n"
     
     return content
+
 
 
 def generate_awards_section(data):

@@ -17,7 +17,7 @@ author_profile: true
 
 3. Gurski, R., Strzykalski, S., Gomes, P. G., **Stumm, E. H.**. ["The State of Art of Psychoanalysis and Education in Rio Grande do Sul".](https://doi.org/10.1590/S1678-4634202046224847) *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1-15. [DOI: 10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
 
-4. **Stumm, E. H.**, Weinmann, A. D. O.. ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the ``The Guys of the Sidewalks''".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234-249. [DOI: 10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+4. **Stumm, E. H.**, Weinmann, A. D. O.. ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the 'The Guys of the Sidewalks'".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234-249. [DOI: 10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
 
 ---
 

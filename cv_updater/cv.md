@@ -1,42 +1,40 @@
 ---
 author: Euge Stumm
+geometry: "margin=1in"
 ---
 # Euge Helyantus Stumm
 
-*Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*  
-[ehs89@miami.edu](mailto:ehs89@miami.edu) | [Website](https://eugestumm.github.io) | [ORCID](https://orcid.org/0000-0001-9087-4198) | [GitHub](https://github.com/eugestumm)
+*Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*
+
+**Email:** [ehs89@miami.edu](mailto:ehs89@miami.edu) | **Website:** [eugestumm.github.io](https://eugestumm.github.io) | **ORCID:** [0000-0001-9087-4198](https://orcid.org/0000-0001-9087-4198) | **GitHub:** [@eugestumm](https://github.com/eugestumm)
+
 
 ---
 
 ## Education
 
-**Ph.D. in Literary, Cultural, and Linguistic Studies** (In-Progress)
-University of Miami
+**Ph.D. in Literary, Cultural, and Linguistic Studies**, Expected 2027, University of Miami, GPA: 4.0
 
-Advisor: [Dr. Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
+- Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
+- Committee: [Ager Gondra](https://people.miami.edu/profile/6ab3218ab810899980f16329d9112fef), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
+- **Graduate Certificate in Digital Humanities**, Expected 2027
+- **Graduate Certificate in Second Language Acquisition and Teaching**, 2024
 
-Graduate Certificate in Digital Humanities (In-Progress)
+**M.A. in Psychology**, 2022, Federal University of Rio Grande do Sul, GPA: 4.0
 
-Graduate Certificate in Second Language Acquisition and Teaching
+- Thesis: *How to be Furro: A Digital Ethnography Among Brazilian Furry Fandoms*
+- Advisor: [Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
+- Committee: [Débora Krischke Leitão](https://scholar.google.com/citations?user=mSU1fDUAAAAJ&hl=en), [Paula Sandrine Machado](https://scholar.google.com/citations?user=uCuAJOYAAAAJ&hl=pt-BR), [Rita de Cássia Sobreira Lopes](https://scholar.google.com/citations?user=rn84oA4AAAAJ&hl=pt-BR)
 
+**B.A. in Psychology**, 2021, Federal University of Health Sciences of Porto Alegre
 
-**M.A. in Psychology**
-Federal University of Rio Grande do Sul
-
-Thesis: *How to be Furro: A Digital Ethnography Among Brazilian Furry Fandoms*
-
-Advisor: [Dr. Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
-
-**B.A. in Psychology**
-Federal University of Health Sciences of Porto Alegre
-
-Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
+- Thesis: *Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras*
+- Advisor: [Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
+- Committee: [Aline Aver Vanin](https://scholar.google.com/citations?user=7-2BWcEAAAAJ&hl=pt-BR), [Léo Tietboehl](https://scholar.google.com/citations?hl=pt-BR&user=mbjlMXgAAAAJ)
 
 ---
 
 ## Publications
-
-*7 publications (2019–2023)*
 
 ### Peer-Reviewed Journal Articles
 
@@ -46,7 +44,7 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 3. Gurski, R.; Strzykalski, S.; Gomes, P. G.; Stumm, E. H. (2020). ["The State of Art of Psychoanalysis and Education in Rio Grande do Sul".](https://doi.org/10.1590/S1678-4634202046224847) *Revista Educação e Pesquisa*, 46: 1--15. DOI: [10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
 
-4. Stumm, E. H.; Weinmann, A. D. O. (2019). ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the ``The Guys of the Sidewalks''".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, 1(11): 234--249. DOI: [10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+4. Stumm, E. H.; Weinmann, A. D. O. (2019). ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the 'The Guys of the Sidewalks'".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, 1(11): 234--249. DOI: [10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
 
 ### Book Chapters and Edited Volumes
 
@@ -127,48 +125,46 @@ Advisor: [Dr. Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-pa
 
 ## Conference Presentations
 
-*9 presentations*
-
 ### Presenter
 
-**The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish**  
-LASA 2026: *Poner el cuerpo en Latinx America*  
+“The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish.”  
+LASA 2025: Poner el cuerpo en Latinx America.  
 Latin American Studies Association, San Francisco, CA, USA, April 2025.  
 
-**Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation**  
-Harvard University’s Graduate Music Forum Conference: *TRANS\*Media*  
+“Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation.”  
+Harvard University’s Graduate Music Forum Conference: TRANS\*Media.  
 Harvard University, Cambridge, MA, USA, March 2025.  
 
-**From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics**  
-International Conference of Europeanists: *Radical Europe: Violence, Emancipation & Reaction* (30th)  
+“From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics.”  
+International Conference of Europeanists: Radical Europe: Violence, Emancipation & Reaction (30th).  
 Sciences Po Lyon & Université Lyon 2, Lyon, France, July 2024.  
 
-**Pabujá as a Community of Practices**  
-Samuel Armistead Colloquium (17th)  
+“Pabujá as a Community of Practices.”  
+Samuel Armistead Colloquium (17th).  
 University of California, Davis, Davis, CA, USA, April 2024.  
 
-**From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a form of Alliance**  
-Queen's Graduate Conference in Literature: *Orientation: This Way, That Way & The Other*  
+“From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a Form of Alliance.”  
+Queen's Graduate Conference in Literature: Orientation: This Way, That Way & The Other.  
 Queen's University, Kingston, ON, Canada, May 2023.  
 
-**What is Queer About Queer Cinema: Queering speculative fabulation**  
-Graduate and Postdoctoral Research Symposium (Fifth Annual)  
+“What is Queer About Queer Cinema: Queering Speculative Fabulation.”  
+Graduate and Postdoctoral Research Symposium (Fifth Annual).  
 University of Miami, Miami, FL, USA, March 2023.  
 
-**Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX**  
-Biennal-International Symposium Vinculaciones: *(Re)thinking the “We” in Latin America* (7th)  
+“Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX.”  
+Biennal-International Symposium Vinculaciones: (Re)thinking the “We” in Latin America (7th).  
 University of Pittsburgh, Pittsburgh, PA, USA, April 2023.  
 
-**Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and global North**  
-Department of Modern Languages and Literatures Graduate Conference: *Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*  
+“Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and Global North.”  
+Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres.  
 University of Miami, Miami, FL, USA, March 2023.  
 
 ### Organizer
 
-**Critical Ecologies and Speculative Futures**  
-*Conceiving the Environment*  
+“Critical Ecologies and Speculative Futures.”  
+Conceiving the Environment.  
 University of Miami, Miami, FL, USA, February 2024.  
-*With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.*  
+With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.  
 
 ---
 
@@ -273,38 +269,38 @@ Online installation to be displayed in a loop. The website shows a number of non
 ## Workshops and Professional Development
 
 **How to Create StoryMaps Using Leaflet and OpenStreetMaps** — University of Miami, 2025
-Workshop ministered in SPA 310 — Sephardic Literature.
+Workshop offered in SPA 310 — Sephardic Literature.
 *Supervised by Dr. Shai Cohen*
 
 **How to Use CollectionBuilder** — University of Miami, 2025
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 
 **Open-Source StoryMaps using Leaflet and OpenStreetMaps** — University of Miami, 2025
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 
 **Data Literacy: R Language and Statistics Basics** — University of Miami, 2025
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 
 **Data Literacy: Understanding Association and Causation in Data** — University of Miami, 2025
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick*
 
 **Introduction to Semantic Search with Semantra** — University of Miami, 2024
-Workshop ministered in the Department of Modern Languages and Literatures's Lecture Series
+Workshop offered in the Department of Modern Languages and Literatures's Lecture Series
 
 **Introduction to Markdown** — University of Miami, 2024
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick and Michael Soriano*
 
 **Introduction to GitHub + GitHub Pages** — University of Miami, 2024
-Workshop ministered in the Digital Humanities Interdisciplinary Research Group.
+Workshop offered in the Digital Humanities Interdisciplinary Research Group.
 *Supervised by Dr. Susanna Allés-Torrent; Co-facilitated with Elizabeth Cornick and Michael Soriano*
 
 **Pajubá 101** — University of Miami, 2023
-Workshop ministered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil.
+Workshop offered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil.
 *Supervised by Dr. Steven Butterman*
 
 ---
@@ -317,11 +313,11 @@ Workshop ministered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ B
 
 **Spanish**: Advanced
 
-**French**: Reading Proficiency
-
 **Pajubá**: Advanced
+
+**French**: Reading Proficiency
 
 ---
 
-*Last updated: August 2025*
+*Last updated: September 2025*
 
