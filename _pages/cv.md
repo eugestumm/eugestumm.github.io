@@ -16,7 +16,7 @@ geometry: "margin=1in"
 **Ph.D. in Literary, Cultural, and Linguistic Studies**, Expected 2027, University of Miami, GPA: 4.0
 
 - Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
-- Committee: [Ager Gondra](https://people.miami.edu/profile/6ab3218ab810899980f16329d9112fef), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
+- Committee: [Ager Gondra](https://orcid.org/0000-0002-8346-4489), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
 - **Graduate Certificate in Digital Humanities**, Expected 2027
 - **Graduate Certificate in Second Language Acquisition and Teaching**, 2024
 
@@ -30,29 +30,57 @@ geometry: "margin=1in"
 
 - Thesis: *Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras*
 - Advisor: [Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
-- Committee: [Aline Aver Vanin](https://scholar.google.com/citations?user=7-2BWcEAAAAJ&hl=pt-BR), [Léo Tietboehl](https://scholar.google.com/citations?hl=pt-BR&user=mbjlMXgAAAAJ)
+- Committee: [Amadeu Weinmann (co-advisor)](https://scholar.google.com/citations?user=uQxz_4oAAAAJ&hl=en&oi=ao), [Aline Aver Vanin](https://scholar.google.com/citations?user=7-2BWcEAAAAJ&hl=pt-BR), [Léo Tietboehl](https://scholar.google.com/citations?hl=pt-BR&user=mbjlMXgAAAAJ)
 
 ---
+
+## Awards and Honors
+
+**Center for the Humaties Dissertation Fellowship** (2026)  
+*University of Miami – Graduate School*  
+
+**Max and Peggy Kriloff Student Travel Scholarship** (2025)  
+*University of Miami – Graduate School*  
+Amount: $500.00  
+
+**Graduate Student Travel Support** (2024)  
+*University of Miami – Graduate School*  
+Amount: $1,000.00  
+
+**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Graduate Program in Sociology, Students’ Seminar at UFRGS** (2020)  
+*Federal University of Rio Grande do Sul, Brasil*  
+For presentation in the Panel "Diversities and Intersectionalities"  
+
+**Outstanding Scientific Award [Prêmio Destaque de Sessão]** (2019)  
+*Federal University of Rio Grande do Sul, Brasil*  
+For presentation in the Panel “Psychoanalysis and Cinema”  
+
+**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador]** (2019)  
+*Federal University of Rio Grande do Sul, Brasil*  
+
+**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Congress UFCSPA** (2019)  
+*Federal University of Health Sciences of Porto Alegre*  
+For presentation in the panel “Teaching”  
 
 ## Publications
 
 ### Peer-Reviewed Journal Articles
 
-1. Schneider, K.; Stumm, E. H.; Rocha, R. Z.; Levandowski, D. C. (2023). ["Innovative Practices in Developmental Psychology Teaching".](https://doi.org/10.1590/2175-35392023-242419-T) *Psicologia Escolar e Educacional*, 27: e242419. DOI: [10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
+1. Schneider, K.; Stumm, E. H.; Rocha, R. Z.; Levandowski, D. C. (2023). "Innovative Practices in Developmental Psychology Teaching". *Psicologia Escolar e Educacional*, 27: e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
 
-2. Stumm, E. H. (2021). ["What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon's Dogma".](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101) *Revista Contraponto*, 8(2): 169--185.
+2. Stumm, E. H. (2021). "Seriam os Goblins, na Verdade, Humanos? Colonização, Racismo e Barbárie em Dragon’s Dogma" [What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon’s Dogma]. *Revista Contraponto*, 8(2): 169--185. [https://www.seer.ufrgs.br/contraponto/article/view/117303/65101](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101)
 
-3. Gurski, R.; Strzykalski, S.; Gomes, P. G.; Stumm, E. H. (2020). ["The State of Art of Psychoanalysis and Education in Rio Grande do Sul".](https://doi.org/10.1590/S1678-4634202046224847) *Revista Educação e Pesquisa*, 46: 1--15. DOI: [10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
+3. Gurski, R.; Strzykalski, S.; Gomes, P. G.; Stumm, E. H. (2020). "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, 46: 1--15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
 
-4. Stumm, E. H.; Weinmann, A. D. O. (2019). ["The Cinema as a Creator of Prostheses: A Dildic Analysis of the 'The Guys of the Sidewalks'".](https://doi.org/10.9771/peri.v1i11.29254) *Revista Periódicus*, 1(11): 234--249. DOI: [10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+4. Stumm, E. H. (2020). "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. : 170--175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf)
+
+5. Stumm, E. H.; Weinmann, A. D. O. (2019). "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, 1(11): 234--249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
 
 ### Book Chapters and Edited Volumes
 
-1. Stumm, E. H. (2021). ["Manifesto Toward a Pirate Psychology".](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf) In *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, pp. 162--168. Regional Council of Psychology of Rio Grande do Sul.
+1. Stumm, E. H. (2021). "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. In *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, pp. 162--168. Regional Council of Psychology of Rio Grande do Sul. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf)
 
-2. Piuco, T.; Stumm, E. H. (2020). ["Queer Aesthetics: Between Empowerment and Erasure".](https://issuu.com/fashionrevolution/docs/fr-forum-2020) In *Forum Fashion Revolution 2020*, edited by Factum, A. and Carli, A. and Perini, A. and Anicet, A. and Camargo, C. and Barreto, C. and Lima, V., pp. 259--263. Ministry of Tourism and Unibes Cultural.
-
-3. Stumm, E. H. (2020). ["A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene".](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf) In *Contra o cânone: Arte, feminismo(s) e ativismos séculos XVIII a XXI Seminário Internacional*, edited by Giunta, A. and Biczel, D. and Lopes, F. and Simões, I., pp. 170--175. Mercosur Biennial Foundation.
+2. Piuco, T.; Stumm, E. H. (2020). "Estética Queer: Entre o Empoderamento e o Apagamento" [Queer Aesthetics: Between Empowerment and Erasure]. In *Fórum Fashion Revolution 2020*, edited by Factum, A. and Carli, A. and Perini, A. and Anicet, A. and Camargo, C. and Barreto, C. and Lima, V., pp. 259--263. Ministry of Tourism and Unibes Cultural. [https://issuu.com/fashionrevolution/docs/fr-forum-2020](https://issuu.com/fashionrevolution/docs/fr-forum-2020)
 
 ---
 
@@ -87,7 +115,7 @@ geometry: "margin=1in"
     - Supervised by Dr. Steven Butterman
 
 
-**Teaching Assistant**
+**Course Research Assistant**
 
 1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
     - Supervised by Dr. Steven Butterman
@@ -99,7 +127,7 @@ geometry: "margin=1in"
 
 ### Federal University of Rio Grande do Sul
 
-**Teaching Assistant**
+**Course Research Assistant**
 
 1. **Diversity and Human Development** — 2022
     - Supervised by Dr. Adolfo Pizzinato
@@ -111,7 +139,7 @@ geometry: "margin=1in"
 
 ### Federal University of Health Sciences of Porto Alegre
 
-**Teaching Assistant**
+**Course Research Assistant**
 
 1. **Developmental Psychology I** — 2018–2021
     - Supervised by Dr. Daniela Centenaro Levandowski
@@ -127,71 +155,27 @@ geometry: "margin=1in"
 
 ### Presenter
 
-“The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish.”  
-LASA 2025: Poner el cuerpo en Latinx America.  
-Latin American Studies Association, San Francisco, CA, USA, April 2025.  
+"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *LASA 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
-“Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation.”  
-Harvard University’s Graduate Music Forum Conference: TRANS\*Media.  
-Harvard University, Cambridge, MA, USA, March 2025.  
+"Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation." *Harvard University’s Graduate Music Forum Conference: TRANS\*Media*, March 2025, Harvard University, Cambridge, MA, USA.
 
-“From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics.”  
-International Conference of Europeanists: Radical Europe: Violence, Emancipation & Reaction (30th).  
-Sciences Po Lyon & Université Lyon 2, Lyon, France, July 2024.  
+"From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics." *International Conference of Europeanists: Radical Europe: Violence, Emancipation & Reaction (30th)*, July 2024, Sciences Po Lyon & Université Lyon 2, Lyon, France.
 
-“Pabujá as a Community of Practices.”  
-Samuel Armistead Colloquium (17th).  
-University of California, Davis, Davis, CA, USA, April 2024.  
+"Pabujá as a Community of Practices." *Samuel Armistead Colloquium (17th)*, April 2024, University of California, Davis, Davis, CA, USA.
 
-“From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a Form of Alliance.”  
-Queen's Graduate Conference in Literature: Orientation: This Way, That Way & The Other.  
-Queen's University, Kingston, ON, Canada, May 2023.  
+"From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a Form of Alliance." *Queen's Graduate Conference in Literature: Orientation: This Way, That Way & The Other*, May 2023, Queen's University, Kingston, ON, Canada.
 
-“What is Queer About Queer Cinema: Queering Speculative Fabulation.”  
-Graduate and Postdoctoral Research Symposium (Fifth Annual).  
-University of Miami, Miami, FL, USA, March 2023.  
+"What is Queer About Queer Cinema: Queering Speculative Fabulation." *Graduate and Postdoctoral Research Symposium (Fifth Annual)*, March 2023, University of Miami, Miami, FL, USA.
 
-“Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX.”  
-Biennal-International Symposium Vinculaciones: (Re)thinking the “We” in Latin America (7th).  
-University of Pittsburgh, Pittsburgh, PA, USA, April 2023.  
+"Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX." *Biennal-International Symposium Vinculaciones: (Re)thinking the “We” in Latin America (7th)*, April 2023, University of Pittsburgh, Pittsburgh, PA, USA.
 
-“Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and Global North.”  
-Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres.  
-University of Miami, Miami, FL, USA, March 2023.  
+"Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and Global North." *Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*, March 2023, University of Miami, Miami, FL, USA.
 
 ### Organizer
 
-“Critical Ecologies and Speculative Futures.”  
-Conceiving the Environment.  
-University of Miami, Miami, FL, USA, February 2024.  
-With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.  
+"Critical Ecologies and Speculative Futures." *Critical Ecologies and Speculative Futures: Conceiving the Environment*, February 2024, University of Miami, Miami, FL, USA. With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.
 
 ---
-
-## Awards and Honors
-
-**Max and Peggy Kriloff Student Travel Scholarship** (2025)  
-*University of Miami – Graduate School*  
-Amount: $500.00  
-
-**Graduate Student Travel Support** (2024)  
-*University of Miami – Graduate School*  
-Amount: $1,000.00  
-
-**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Graduate Program in Sociology, Students’ Seminar at UFRGS** (2020)  
-*Federal University of Rio Grande do Sul, Brasil*  
-For presentation in the Panel "Diversities and Intersectionalities"  
-
-**Outstanding Scientific Award [Prêmio Destaque de Sessão]** (2019)  
-*Federal University of Rio Grande do Sul, Brasil*  
-For presentation in the Panel “Psychoanalysis and Cinema”  
-
-**Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador]** (2019)  
-*Federal University of Rio Grande do Sul, Brasil*  
-
-**Outstanding Scientific Award [Prêmio Destaque de Sessão] – Congress UFCSPA** (2019)  
-*Federal University of Health Sciences of Porto Alegre*  
-For presentation in the panel “Teaching”  
 
 ## Funded Research
 

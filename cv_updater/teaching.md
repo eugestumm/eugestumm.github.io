@@ -29,29 +29,6 @@ author_profile: true
 - Introduction to Gender and Sexuality Studies (GSS 202) — Fall 2023  
   *Supervised by Dr. Steven Butterman*
 
-## Teaching Assistant
-
-**University of Miami**
-
-- LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (POR 699) — Spring 2023  
-  *Supervised by Dr. Steven Butterman*
-- Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo (POR 699) — Fall 2022  
-  *Supervised by Dr. Steven Butterman*
-
-**Federal University of Rio Grande do Sul**
-
-- Diversity and Human Development — 2022  
-  *Supervised by Dr. Adolfo Pizzinato*
-- Psychology Applied to Health Sciences — 2022  
-  *Supervised by Dr. Adolfo Pizzinato*
-
-**Federal University of Health Sciences of Porto Alegre**
-
-- Developmental Psychology I — 2018  
-  *Supervised by Dr. Daniela Centenaro Levandowski*
-- Developmental Psychology II — 2018  
-  *Supervised by Dr. Daniela Centenaro Levandowski*
-
 ## Workshop
 
 - **How to Create StoryMaps Using Leaflet and OpenStreetMaps**, University of Miami, 2025  
@@ -80,3 +57,26 @@ author_profile: true
 - **Pajubá 101**, University of Miami, 2023  
   Supervised by Dr. Steven Butterman  
   Workshop offered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil.
+
+## Course Research Assistant
+
+**University of Miami**
+
+- LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (POR 699) — Spring 2023  
+  *Supervised by Dr. Steven Butterman*
+- Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo (POR 699) — Fall 2022  
+  *Supervised by Dr. Steven Butterman*
+
+**Federal University of Rio Grande do Sul**
+
+- Diversity and Human Development — 2022  
+  *Supervised by Dr. Adolfo Pizzinato*
+- Psychology Applied to Health Sciences — 2022  
+  *Supervised by Dr. Adolfo Pizzinato*
+
+**Federal University of Health Sciences of Porto Alegre**
+
+- Developmental Psychology I — 2018  
+  *Supervised by Dr. Daniela Centenaro Levandowski*
+- Developmental Psychology II — 2018  
+  *Supervised by Dr. Daniela Centenaro Levandowski*

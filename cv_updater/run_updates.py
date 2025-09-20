@@ -54,34 +54,78 @@ def copy_cv_to_assets():
 def convert_cv_to_pdf():
     """Convert cv.md to cv_euge_stumm.pdf using Pandoc with LaTeX; use template only if it exists"""
     print("\nConverting cv.md to cv_euge_stumm.pdf using Pandoc + LaTeX...")
-
     cv_md = 'cv.md'
     cv_pdf = 'cv_euge_stumm.pdf'
     latex_template = os.path.join('pandoc', 'harvard_cv.tex')  # optional template
-
+    
     if not os.path.exists(cv_md):
         print(f"Error: {cv_md} not found")
         return False
-
+    
     cmd = ['pandoc', cv_md, '-o', cv_pdf, '--pdf-engine', 'xelatex']
-
+    
     # Use template only if it exists
     if os.path.exists(latex_template):
         cmd.extend(['--template', latex_template])
         print(f"Using LaTeX template: {latex_template}")
     else:
         print("No LaTeX template found; using default Pandoc LaTeX styling")
-
+    
+    # Ensure links are blue by adding LaTeX header includes
+    cmd.extend([
+        '-H', '/dev/stdin'  # This will read from stdin for header content
+    ])
+    
+    # Alternative approach: use variables to set link colors
+    cmd.extend([
+        '-V', 'colorlinks=true',
+        '-V', 'linkcolor=blue',
+        '-V', 'urlcolor=blue',
+        '-V', 'citecolor=blue'
+    ])
+    
     try:
+        # If using the stdin approach, we need to provide the header content
+        latex_header = r"""
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    filecolor=blue
+}
+"""
+        
+        # Remove the stdin approach and just use variables for simplicity
+        cmd = ['pandoc', cv_md, '-o', cv_pdf, '--pdf-engine', 'xelatex']
+        
+        # Use template only if it exists
+        if os.path.exists(latex_template):
+            cmd.extend(['--template', latex_template])
+            print(f"Using LaTeX template: {latex_template}")
+        else:
+            print("No LaTeX template found; using default Pandoc LaTeX styling")
+        
+        # Add variables to ensure blue links
+        cmd.extend([
+            '-V', 'colorlinks=true',
+            '-V', 'linkcolor=blue', 
+            '-V', 'urlcolor=blue',
+            '-V', 'citecolor=blue'
+        ])
+        
+        print("Ensuring links will be rendered in blue...")
         subprocess.run(cmd, check=True)
-        print("PDF conversion completed successfully")
+        print("PDF conversion completed successfully with blue links")
         return True
+        
     except subprocess.CalledProcessError as e:
         print(f"Error during PDF conversion: {e}")
         if e.stderr:
             print(f"Stderr: {e.stderr}")
         return False
-
 
 
 def main():

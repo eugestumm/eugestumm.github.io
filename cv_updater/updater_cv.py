@@ -417,6 +417,24 @@ def generate_publications_section(data):
         book_chapters = sort_by_year(book_chapters)
         other_publications = sort_by_year(other_publications)
         
+        # Helper function to format title with translation
+        def format_title_with_translation(title, titleaddon):
+            if not title:
+                return ""
+            
+            title_clean = title.strip('"{}')
+            formatted_title = f'"{title_clean}"'
+            
+            # Add translation in brackets if available
+            if titleaddon:
+                titleaddon_clean = titleaddon.strip('"{}')
+                formatted_title += f" [{titleaddon_clean}]"
+            
+            # Add period after the title
+            formatted_title += "."
+            
+            return formatted_title + " "
+        
         # Journal Articles
         if journal_articles:
             content += "### Peer-Reviewed Journal Articles\n\n"
@@ -424,6 +442,7 @@ def generate_publications_section(data):
             for i, article in enumerate(journal_articles, 1):
                 authors = format_author_name(article.get('author', ''))
                 title = article.get('title', '')
+                titleaddon = article.get('titleaddon', '')
                 journal = article.get('journal', '')
                 year = article.get('year', '')
                 volume = article.get('volume', '')
@@ -434,14 +453,8 @@ def generate_publications_section(data):
                 
                 content += f"{i}. {authors} ({year}). "
                 
-                if title:
-                    title_clean = title.strip('"{}')
-                    if url:
-                        content += f'["{title_clean}".]({url}) '
-                    elif doi:
-                        content += f'["{title_clean}".](https://doi.org/{doi}) '
-                    else:
-                        content += f'"{title_clean}". '
+                # Format title with translation
+                content += format_title_with_translation(title, titleaddon)
                 
                 if journal:
                     content += f"*{journal}*"
@@ -456,7 +469,10 @@ def generate_publications_section(data):
                 else:
                     content += "."
                 
-                if doi:
+                # Add URL or DOI at the end
+                if url:
+                    content += f" [{url}]({url})"
+                elif doi:
                     content += f" DOI: [{doi}](https://doi.org/{doi})"
                 
                 content += "\n\n"
@@ -468,6 +484,7 @@ def generate_publications_section(data):
             for i, chapter in enumerate(book_chapters, 1):
                 authors = format_author_name(chapter.get('author', ''))
                 title = chapter.get('title', '')
+                titleaddon = chapter.get('titleaddon', '')
                 booktitle = chapter.get('booktitle', '')
                 year = chapter.get('year', '')
                 pages = chapter.get('pages', '')
@@ -477,12 +494,8 @@ def generate_publications_section(data):
                 
                 content += f"{i}. {authors} ({year}). "
                 
-                if title:
-                    title_clean = title.strip('"{}')
-                    if url:
-                        content += f'["{title_clean}".]({url}) '
-                    else:
-                        content += f'"{title_clean}". '
+                # Format title with translation
+                content += format_title_with_translation(title, titleaddon)
                 
                 if booktitle:
                     content += f"In *{booktitle}*"
@@ -498,6 +511,10 @@ def generate_publications_section(data):
                 else:
                     content += "."
                 
+                # Add URL at the end
+                if url:
+                    content += f" [{url}]({url})"
+                
                 content += "\n\n"
         
         # Other Publications
@@ -507,27 +524,27 @@ def generate_publications_section(data):
             for i, pub in enumerate(other_publications, 1):
                 authors = format_author_name(pub.get('author', ''))
                 title = pub.get('title', '')
+                titleaddon = pub.get('titleaddon', '')
                 year = pub.get('year', '')
                 publisher = pub.get('publisher', '')
                 url = pub.get('url', '')
                 
                 content += f"{i}. {authors} ({year}). "
                 
-                if title:
-                    title_clean = title.strip('"{}')
-                    if url:
-                        content += f'["{title_clean}".]({url}) '
-                    else:
-                        content += f'"{title_clean}". '
+                # Format title with translation
+                content += format_title_with_translation(title, titleaddon)
                 
                 if publisher:
                     content += f"{publisher}."
+                
+                # Add URL at the end
+                if url:
+                    content += f" [{url}]({url})"
                 
                 content += "\n\n"
     
     content += "---\n\n"
     return content
-
 
 def generate_teaching_section(data):
     """Generate Teaching Experience section with support for multi-year positions and numbered courses"""
@@ -604,79 +621,85 @@ def generate_teaching_section(data):
     return content
 
 def generate_conferences_section(data):
-    """Generate Conference Presentations section in MLA style"""
+    """Generate Conference Presentations section in MLA style - compact single line format"""
     content = "## Conference Presentations\n\n"
-    
     if 'Conferences' in data:
         conferences_df = data['Conferences']
-        
         # Sort by year (descending)
         conferences_df = conferences_df.sort_values('year', ascending=False, na_position='last')
-        
         # Group by role
         roles = [role for role in conferences_df['role'].unique() if role]
-        
         for role in roles:
             content += f"### {role.title()}\n\n"
             role_df = conferences_df[conferences_df['role'] == role]
-            
             for _, row in role_df.iterrows():
-                # Determine title to display
+                # Get all necessary fields
                 title = row.get('title', '')
                 event_name = row.get('event_name', '')
                 display_title = title or event_name
                 if not display_title:
-                    continue  # Skip if no title or event name
+                    continue # Skip if no title or event name
                 
+                author = row.get('author', '')
+                co_authors = row.get('co_authors', '')
                 event_theme = row.get('event_theme', '')
                 conference_number = row.get('conference_number', '')
                 institution = row.get('institution', '')
                 city = row.get('city', '')
                 country = row.get('country', '')
+                day = row.get('day', '')
                 month = row.get('month', '')
                 year = row.get('year', '')
-                co_authors = row.get('co_authors', '')
                 
-                # MLA: "Title." Event details, Institution, City, Country, Date.
-                content += f"“{display_title}.”  \n"
+                # Build CV formatted entry: "Title." *Conference Name*, Month Year, Location.
+                line_parts = []
                 
-                # Event details
+                # Title in quotes
+                line_parts.append(f'"{display_title}."')
+                
+                # Conference name in italics (using markdown)
+                conference_name = ""
                 if event_name and title and event_name != title:
-                    content += f"{event_name}"
-                    if event_theme:
-                        content += f": {event_theme}"
-                    if conference_number:
-                        content += f" ({conference_number})"
-                    content += ".  \n"
-                elif event_theme:
-                    content += f"{event_theme}"
-                    if conference_number:
-                        content += f" ({conference_number})"
-                    content += ".  \n"
+                    conference_name = event_name
+                elif event_name:
+                    conference_name = event_name
                 
-                # Location and date
-                location_parts = [part for part in [institution, city, country] if part]
-                location_str = ", ".join(location_parts)
+                if conference_name:
+                    if event_theme and conference_name != event_theme:
+                        conference_name += f": {event_theme}"
+                    if conference_number:
+                        conference_name += f" ({conference_number})"
+                    line_parts.append(f"*{conference_name}*,")
+                elif event_theme:
+                    theme_name = event_theme
+                    if conference_number:
+                        theme_name += f" ({conference_number})"
+                    line_parts.append(f"*{theme_name}*,")
+                
+                # Date in "Month Year" format only
                 date_str = f"{month} {year}" if month and year else year or ""
                 
-                if location_str and date_str:
-                    content += f"{location_str}, {date_str}.  \n"
-                elif location_str:
-                    content += f"{location_str}.  \n"
+                # Location
+                location_parts = [part for part in [institution, city, country] if part]
+                location_str = ", ".join(location_parts)
+                
+                # Combine date and location
+                if date_str and location_str:
+                    line_parts.append(f"{date_str}, {location_str}.")
                 elif date_str:
-                    content += f"{date_str}.  \n"
+                    line_parts.append(f"{date_str}.")
+                elif location_str:
+                    line_parts.append(f"{location_str}.")
                 
-                # Co-authors
+                # Add co-authors if present (since you're the main author)
                 if co_authors:
-                    content += f"With {co_authors}.  \n"
+                    line_parts.append(f"With {co_authors}.")
                 
-                content += "\n"  # Extra blank line between entries
+                # Join all parts with single space and add to content
+                content += " ".join(line_parts) + "\n\n"  # Each entry on its own line with spacing
         
         content += "---\n\n"
-    
     return content
-
-
 
 def generate_awards_section(data):
     """Generate Awards and Honors section with proper currency handling"""
@@ -1061,10 +1084,10 @@ def generate_cv_markdown(data):
     # Generate each section (sections will return empty string if no data)
     cv_content += generate_header_section(data)  
     cv_content += generate_education_section(data)
+    cv_content += generate_awards_section(data)
     cv_content += generate_publications_section(data)
     cv_content += generate_teaching_section(data)
     cv_content += generate_conferences_section(data)
-    cv_content += generate_awards_section(data)
     cv_content += generate_funded_research_section(data)
     cv_content += generate_research_section(data)
     cv_content += generate_workshops_section(data)
@@ -1102,16 +1125,18 @@ def main():
     
     print(f"Academic CV successfully generated and saved to {output_file}")
     print("\nCV includes the following sections:")
-    print("1. Education")
-    print("2. Publications") 
-    print("3. Teaching Experience")
-    print("4. Conference Presentations")
-    print("5. Awards and Honors")
-    print("6. Research Projects")
-    print("7. Workshops and Professional Development")
-    print("8. Languages")
-    print("9. Academic Service")
-    print("10. Professional Memberships")
+    print("1. Header")
+    print("2. Education")
+    print("3. Awards and Honors")
+    print("4. Publications")
+    print("5. Teaching Experience")
+    print("6. Conference Presentations")
+    print("7. Funded Research")
+    print("8. Projects")
+    print("9. Workshops and Professional Development")
+    print("10. Languages")
+    print("11. Academic Service")
+    print("12. Professional Memberships")
 
 if __name__ == "__main__":
     main()
