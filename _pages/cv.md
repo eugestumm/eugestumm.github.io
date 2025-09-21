@@ -4,7 +4,7 @@ geometry: "margin=1in"
 ---
 # Euge Helyantus Stumm
 
-*Ph.D. Candidate in Literary, Cultural, and Linguistic Studies*
+*Ph.D. Candidate in Literary, Cultural, and Linguistic Studies (University of Miami)*
 
 **Email:** [ehs89@miami.edu](mailto:ehs89@miami.edu) | **Website:** [eugestumm.github.io](https://eugestumm.github.io) | **ORCID:** [0000-0001-9087-4198](https://orcid.org/0000-0001-9087-4198) | **GitHub:** [@eugestumm](https://github.com/eugestumm)
 
@@ -36,7 +36,7 @@ geometry: "margin=1in"
 
 ## Awards and Honors
 
-**Center for the Humaties Dissertation Fellowship** (2026)  
+**Center for the Humanities Dissertation Fellowship** (2026)  
 *University of Miami – Graduate School*  
 
 **Max and Peggy Kriloff Student Travel Scholarship** (2025)  
