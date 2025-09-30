@@ -153,7 +153,7 @@ For presentation in the panel “Teaching”
 
 ## Conference Presentations
 
-### Presenter
+### Graduate Presentations
 
 "The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *LASA 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
@@ -171,11 +171,33 @@ For presentation in the panel “Teaching”
 
 "Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and Global North." *Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*, March 2023, University of Miami, Miami, FL, USA.
 
-### Organizer
 
-"Critical Ecologies and Speculative Futures." *Critical Ecologies and Speculative Futures: Conceiving the Environment*, February 2024, University of Miami, Miami, FL, USA. With Jacob Dennis, Kathy Rubio, Massiel Medina, and Neta Kanny.
 
----
+### Undergraduate Presentations
+
+"Pode a travesti filmar? Marcas do cinema dirigido por travestis e mulheres trans no Brasil." *Salão de Iniciação Científica (XXXI)*, October 2019, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+"Autopoiéticas somatoficcionais no cartoon infantil Steve Universe." *Simpósio Gênero e Infância: Direitos Humanos, Educação e Psicanálise*, October 2019, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+"Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras." *Congresso UFCSPA (I)*, October 2019, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil.
+
+"Prótese, câmera, ação: diálogos entre a dildotectonia somatoficcional de Paul B. Preciado e a análise fílmica psicanalítica." *Colóquio Filosofia e Psicanálise (I)*, September 2019, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+"Irromperes (pós)identitários e multidões sexopolíticas." *Colóquio Filosofia e Psicanálise (I)*, September 2019, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre, Brazil. With Thainan Piuco.
+
+"Apresentação e resultados do projeto 'Compreendendo o Desenvolvimento Humano' a partir de atividades práticas de ensino e avaliação." *Congresso UFCSPA (I)*, October 2019, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil. With Karoline Schneider.
+
+"Por uma análise díldica: contribuições estranhadas a partir do estudo de pornochanchadas." *Mostra de Trabalhos de Ensino, Pesquisa e Extensão (IV)*, September 2018, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil.
+
+"Por uma psicanálise, de fato, anal: incunsciente e contribuições bichas." *Encontro da Regional Sul da ABRAPSO (XVII)*, November 2018, Brazilian Association of Social Psychology, Porto Alegre, Brazil.
+
+"Pornochanchadas e a erótica: perspectivas e subversões." *Salão de Iniciação Científica (XXX)*, October 2018, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+"Enigmas do a posteriori: devir-estagiário." *Ecos do Estágio: Enigmas dos DesEncontros: Narrativas da Escuta*, November 2017, Sigmund Freud Psychoanalytical Association, Porto Alegre, Brazil.
+
+"Retratos da Produção Acadêmica de Psicanálise e Educação no Rio Grande do Sul." *Salão de Iniciação Científica (XXIX)*, October 2017, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+
 
 ## Funded Research
 
@@ -206,49 +228,21 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ## Projects
 
-### [Pajubá Digital Archive](https://eugestumm.github.io/PajubaDigitalArchive/)
+### Digital Scholarship
 
-**Years:** 2025 | **Type:** Digital Archive | **Status:** In-Progress
+"Pajubá Digital Archive" (2025) [https://eugestumm.github.io/PajubaDigitalArchive/](https://eugestumm.github.io/PajubaDigitalArchive/)
 
-This digital archive features cultural productions and academic works that center around Pajubá. Pajubá (or Bajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY.
+"Digital Mapping Néstor Perlongher's 'O Negócio do Michê'" (2024) [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/)
 
-**Technologies/Methods:** CollectionBuilder and d3.js
+### Creative Work
 
-**Collaborators:** Dr. Susanna Allés-Torrent and Dr. Steven Butterman (Supervisors)
+"Transylvania Witch" (2021) [https://transylvania-witch.tumblr.com/](https://transylvania-witch.tumblr.com/)
 
----
+"Non-binary in Binary" (2021) [https://non-binary-in-binary.tumblr.com/](https://non-binary-in-binary.tumblr.com/)
 
-### [Digital Mapping Néstor Perlongher's "O Negócio do Michê"](https://eugestumm.github.io/negociodomiche_visualization/)
+"Happy New Years Left" (2019) [https://happy-new-years-left.tumblr.com/](https://happy-new-years-left.tumblr.com/)
 
-**Years:** 2024 | **Type:** StoryMap | **Status:** Published
-
-An interactive StoryMap that digitally reconstructs the São Paulo locations from Néstor Perlongher’s "O Negócio do michê," restoring details lost in later editions. This project uses open-source mapping tools (LeafLet and OpenStreetMaps) to visualize the spatial sequence of his original ethnography.
-
-**Technologies/Methods:** Leaflet and OpenStreetMaps
-
-**Collaborators:** Susanna Allés-Torrent (Supervisor)
-
----
-
-### [Transylvania Witch](https://transylvania-witch.tumblr.com/)
-
-**Years:** 2021 | **Type:** Installation | **Status:** Published
-
-Online installation to be played in a loop. The website plays a spell that claims transforming you into a transgender woman. The installation consists of putting it in a public space and observing people’s reaction to the spell. If any of them become a transgender woman, please tell me!
-
-**Technologies/Methods:** HTML
-
----
-
-### [Non-binary in Binary](https://non-binary-in-binary.tumblr.com/)
-
-**Years:** 2021 | **Type:** Installation | **Status:** Published
-
-Online installation to be displayed in a loop. The website shows a number of non-binary identities (xenogender, mtx, demiboy, etc) converted into binary code. My goal is to reflect how non-binary gender identities cannot be understood in binary logics. This project was exhibited in the Museum of Contemporary Art of Rio Grande do Sul, Brazil.
-
-**Technologies/Methods:** HTML and Javascript
-
----
+"Eu te amo" (2018) [https://poieticalab.itch.io/eu-te-amo](https://poieticalab.itch.io/eu-te-amo)
 
 ## Workshops and Professional Development
 

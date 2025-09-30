@@ -621,84 +621,103 @@ def generate_teaching_section(data):
     return content
 
 def generate_conferences_section(data):
-    """Generate Conference Presentations section in MLA style - compact single line format"""
+    """Generate Conference Presentations section in Harvard style - compact single line format"""
     content = "## Conference Presentations\n\n"
+    
     if 'Conferences' in data:
-        conferences_df = data['Conferences']
+        # Add this right after getting the conferences_df
+        conferences_df = data['Conferences'].copy()
+
+        # Convert year to numeric, coercing errors to NaN
+        conferences_df['year'] = pd.to_numeric(conferences_df['year'], errors='coerce')
+
+        # NOW sort by year (descending)
+        conferences_df = conferences_df.sort_values('year', ascending=False, na_position='last')
         # Sort by year (descending)
         conferences_df = conferences_df.sort_values('year', ascending=False, na_position='last')
-        # Group by role
-        roles = [role for role in conferences_df['role'].unique() if role]
-        for role in roles:
-            content += f"### {role.title()}\n\n"
-            role_df = conferences_df[conferences_df['role'] == role]
-            for _, row in role_df.iterrows():
-                # Get all necessary fields
-                title = row.get('title', '')
-                event_name = row.get('event_name', '')
-                display_title = title or event_name
-                if not display_title:
-                    continue # Skip if no title or event name
-                
-                author = row.get('author', '')
-                co_authors = row.get('co_authors', '')
-                event_theme = row.get('event_theme', '')
-                conference_number = row.get('conference_number', '')
-                institution = row.get('institution', '')
-                city = row.get('city', '')
-                country = row.get('country', '')
-                day = row.get('day', '')
-                month = row.get('month', '')
-                year = row.get('year', '')
-                
-                # Build CV formatted entry: "Title." *Conference Name*, Month Year, Location.
-                line_parts = []
-                
-                # Title in quotes
-                line_parts.append(f'"{display_title}."')
-                
-                # Conference name in italics (using markdown)
-                conference_name = ""
-                if event_name and title and event_name != title:
-                    conference_name = event_name
-                elif event_name:
-                    conference_name = event_name
-                
-                if conference_name:
-                    if event_theme and conference_name != event_theme:
-                        conference_name += f": {event_theme}"
-                    if conference_number:
-                        conference_name += f" ({conference_number})"
-                    line_parts.append(f"*{conference_name}*,")
-                elif event_theme:
-                    theme_name = event_theme
-                    if conference_number:
-                        theme_name += f" ({conference_number})"
-                    line_parts.append(f"*{theme_name}*,")
-                
-                # Date in "Month Year" format only
-                date_str = f"{month} {year}" if month and year else year or ""
-                
-                # Location
-                location_parts = [part for part in [institution, city, country] if part]
-                location_str = ", ".join(location_parts)
-                
-                # Combine date and location
-                if date_str and location_str:
-                    line_parts.append(f"{date_str}, {location_str}.")
-                elif date_str:
-                    line_parts.append(f"{date_str}.")
-                elif location_str:
-                    line_parts.append(f"{location_str}.")
-                
-                # Add co-authors if present (since you're the main author)
-                if co_authors:
-                    line_parts.append(f"With {co_authors}.")
-                
-                # Join all parts with single space and add to content
-                content += " ".join(line_parts) + "\n\n"  # Each entry on its own line with spacing
         
-        content += "---\n\n"
+        # Define section mapping based on role
+        sections = {
+            'Graduate Presentations': 'presenter_graduate',
+            'Undergraduate Presentations': 'presenter_undergraduate'
+        }
+        
+        for section_title, role_value in sections.items():
+            # Filter by role
+            section_df = conferences_df[conferences_df['role'] == role_value]
+            
+            if not section_df.empty:
+                content += f"### {section_title}\n\n"
+                
+                for _, row in section_df.iterrows():
+                    # Get all necessary fields
+                    title = row.get('title', '')
+                    event_name = row.get('event_name', '')
+                    display_title = title or event_name
+                    
+                    if not display_title:
+                        continue  # Skip if no title or event name
+                    
+                    author = row.get('author', '')
+                    co_authors = row.get('co_authors', '')
+                    event_theme = row.get('event_theme', '')
+                    conference_number = row.get('conference_number', '')
+                    institution = row.get('institution', '')
+                    city = row.get('city', '')
+                    country = row.get('country', '')
+                    day = row.get('day', '')
+                    month = row.get('month', '')
+                    year = row.get('year', '')
+                    
+                    # Build CV formatted entry: "Title." *Conference Name*, Month Year, Location.
+                    line_parts = []
+                    
+                    # Title in quotes
+                    line_parts.append(f'"{display_title}."')
+                    
+                    # Conference name in italics (using markdown)
+                    conference_name = ""
+                    if event_name and title and event_name != title:
+                        conference_name = event_name
+                    elif event_name:
+                        conference_name = event_name
+                    
+                    if conference_name:
+                        if event_theme and conference_name != event_theme:
+                            conference_name += f": {event_theme}"
+                        if conference_number:
+                            conference_name += f" ({conference_number})"
+                        line_parts.append(f"*{conference_name}*,")
+                    elif event_theme:
+                        theme_name = event_theme
+                        if conference_number:
+                            theme_name += f" ({conference_number})"
+                        line_parts.append(f"*{theme_name}*,")
+                    
+                    # Date in "Month Year" format only
+                    date_str = f"{month} {year}" if month and year else year or ""
+                    
+                    # Location
+                    location_parts = [part for part in [institution, city, country] if part]
+                    location_str = ", ".join(location_parts)
+                    
+                    # Combine date and location
+                    if date_str and location_str:
+                        line_parts.append(f"{date_str}, {location_str}.")
+                    elif date_str:
+                        line_parts.append(f"{date_str}.")
+                    elif location_str:
+                        line_parts.append(f"{location_str}.")
+                    
+                    # Add co-authors if present (since you're the main author)
+                    if co_authors:
+                        line_parts.append(f"With {co_authors}.")
+                    
+                    # Join all parts with single space and add to content
+                    content += " ".join(line_parts) + "\n\n"  # Each entry on its own line with spacing
+                
+                content += "\n\n"
+    
     return content
 
 def generate_awards_section(data):
@@ -846,65 +865,92 @@ def generate_funded_research_section(data):
     
     return content
 
-
 def generate_research_section(data):
     """Generate Projects section"""
     content = "## Projects\n\n"
     if 'Projects' in data:
         projects_df = data['Projects']
-        
         # Sort projects by most recent first
         # Convert start_date to datetime for proper sorting, handling potential None values
         projects_df['start_date_parsed'] = pd.to_datetime(projects_df['start_date'], errors='coerce')
         projects_df_sorted = projects_df.sort_values('start_date_parsed', ascending=False, na_position='last')
         
-        for _, row in projects_df_sorted.iterrows():
-            if row.get('title'):
-                short_title = row.get('short_title', '')
-                title = row['title']
-                status = row.get('status', '')
-                start_date = row.get('start_date', '')
-                end_date = row.get('end_date', '')
-                description = row.get('description', '')
-                url = row.get('url', '')
-                technologies = row.get('technologies', '')
-                collaborators = row.get('collaborators', '')
-                project_type = row.get('project_type', '')
+        # Check if project_type column exists and has values
+        if 'project_type' in projects_df_sorted.columns and projects_df_sorted['project_type'].notna().any():
+            # Group by project_type
+            # Get unique project types, prioritizing Digital Scholarship first
+            unique_types = projects_df_sorted['project_type'].dropna().unique()
+            
+            # Sort so Digital Scholarship comes first, then Creative Work, then others
+            type_order = []
+            for t in ['Digital Scholarship', 'Creative Work']:
+                if t in unique_types:
+                    type_order.append(t)
+            # Add any other types
+            for t in unique_types:
+                if t not in type_order:
+                    type_order.append(t)
+            
+            for project_type in type_order:
+                project_group = projects_df_sorted[projects_df_sorted['project_type'] == project_type]
                 
-                display_title = short_title if short_title else title
-                
-                if url:
-                    content += f"### [{display_title}]({url})\n\n"
-                else:
-                    content += f"### {display_title}\n\n"
-                
-                # Project details
-                details = []
-                if start_date:
-                    date_range = format_date(start_date)
-                    if end_date and end_date != start_date:
-                        date_range += f"–{format_date(end_date)}"
-                    details.append(f"**Years:** {date_range}")
-                
-                if project_type:
-                    details.append(f"**Type:** {project_type}")
-                
-                if status:
-                    details.append(f"**Status:** {status}")
-                
-                if details:
-                    content += " | ".join(details) + "\n\n"
-                
-                if description:
-                    content += f"{description}\n\n"
-                
-                if technologies:
-                    content += f"**Technologies/Methods:** {technologies}\n\n"
-                
-                if collaborators:
-                    content += f"**Collaborators:** {collaborators}\n\n"
-                
-                content += "---\n\n"
+                if not project_group.empty:
+                    content += f"### {project_type}\n\n"
+                    
+                    for _, row in project_group.iterrows():
+                        if row.get('title'):
+                            short_title = row.get('short_title', '')
+                            title = row['title']
+                            start_date = row.get('start_date', '')
+                            end_date = row.get('end_date', '')
+                            url = row.get('url', '')
+                            
+                            display_title = short_title if short_title else title
+                            
+                            content += f'"{display_title}" '
+
+                            if start_date:
+                                date_range = format_date(start_date)
+                                if end_date and end_date != start_date:
+                                    date_range += f"–{format_date(end_date)}"
+                                content += f"({date_range})"
+                            else:
+                                content += f"({date_range})"
+
+                            
+                            # Add URL as markdown link if available
+                            if pd.notna(url):
+                                content += f" [{url}]({url})"
+                            
+                            content += "\n\n"
+        else:
+            # If no project_type column or all values are NaN, just list all projects
+            for _, row in projects_df_sorted.iterrows():
+                if row.get('title'):
+                    short_title = row.get('short_title', '')
+                    title = row['title']
+                    start_date = row.get('start_date', '')
+                    end_date = row.get('end_date', '')
+                    url = row.get('url', '')
+                    
+                    display_title = short_title if short_title else title
+                    
+                    content += f'"{display_title}"'
+                    
+                    # Use end_date if it exists, otherwise show start_date-present
+                    if pd.notna(end_date):
+                        end_year = pd.to_datetime(end_date, errors='coerce').year
+                        if pd.notna(end_year):
+                            content += f" ({int(end_year)})"
+                    elif pd.notna(start_date):
+                        start_year = pd.to_datetime(start_date, errors='coerce').year
+                        if pd.notna(start_year):
+                            content += f" ({int(start_year)}-present)"
+                    
+                    if pd.notna(url):
+                        content += f", [{url}]({url})"
+                    
+                    content += ".\n\n"
         
         # Clean up the temporary column
         projects_df.drop('start_date_parsed', axis=1, inplace=True)

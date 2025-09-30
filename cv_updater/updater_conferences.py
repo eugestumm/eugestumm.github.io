@@ -2,10 +2,9 @@
 """
 Conferences CV Generator
 Reads conference presentations from an ODS spreadsheet (tab: "Conferences")
-and generates a Jekyll-friendly Markdown page grouped by role.
+and generates a Jekyll-friendly Markdown page in Harvard CV style.
 
-Output body has role sections as H2 (## Presenter, ## Organizer) and NO extra
-"Conferences" heading in the content. Front matter is included for Jekyll.
+Output uses compact single-line format: "Title." *Conference Name*, Month Year, Location.
 
 Required packages:
     pip install pandas requests odfpy
@@ -23,8 +22,12 @@ SHEET_NAME = "Conferences"
 URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4TyMkL-aPWhYseDOToCruWUmoiM72tPAzGWvb_DauEtXZZxuHy3AVXFXAQ6DbEuU-T5S5yS9lt2xS/pub?output=ods"
 OUTPUT_FILE = "conferences.md"
 
-# Roles to include + order (Presenter first, then Organizer)
-ROLE_ORDER = ["presenter", "organizer"]
+# Roles to include + order (Graduate first, then Undergraduate)
+ROLE_ORDER = ["presenter_graduate", "presenter_undergraduate"]
+ROLE_HEADINGS = {
+    "presenter_graduate": "Graduate Presentations",
+    "presenter_undergraduate": "Undergraduate Presentations"
+}
 
 
 # ----------------------------
@@ -139,63 +142,79 @@ def clean_and_validate_data(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _join_nonempty(parts, sep=", "):
-    return sep.join([p for p in parts if p])
-
-
 def format_conference_entry(row: pd.Series) -> str:
     """
-    Digital Humanities–style formatting with clean line breaks:
-    - **Title** (with co-authors)
-    - Number + Event + : "Theme".
-    - Institution, City, Country. Month Year.
-    - *Special notes* (optional)
+    Harvard CV style formatting - compact single line:
+    "Title." *Conference Name*, Month Year, Location. With Co-authors.
     """
     title = row.get("title", "").strip()
+    event_name = row.get("event_name", "").strip()
+    display_title = title or event_name
+    
+    if not display_title:
+        return ""
+    
     co_authors = row.get("co_authors", "").strip()
-    number = row.get("conference_number", "").strip()
-    event = row.get("event_name", "").strip()
-    theme = row.get("event_theme", "").strip()
+    event_theme = row.get("event_theme", "").strip()
+    conference_number = row.get("conference_number", "").strip()
     institution = row.get("institution", "").strip()
     city = row.get("city", "").strip()
     country = row.get("country", "").strip()
     month_disp = row.get("month_display", "").strip()
     year = row.get("year")
-    notes = row.get("special_notes", "").strip()
-
-    # Line 1: Title (+ co-authors)
-    main = f"**{title}**"
+    
+    line_parts = []
+    
+    # Title in quotes
+    line_parts.append(f'"{display_title}."')
+    
+    # Conference name in italics
+    conference_name = ""
+    if event_name and title and event_name != title:
+        conference_name = event_name
+    elif event_name:
+        conference_name = event_name
+    
+    if conference_name:
+        if event_theme and conference_name != event_theme:
+            conference_name += f": {event_theme}"
+        if conference_number:
+            conference_name += f" ({conference_number})"
+        line_parts.append(f"*{conference_name}*,")
+    elif event_theme:
+        theme_name = event_theme
+        if conference_number:
+            theme_name += f" ({conference_number})"
+        line_parts.append(f"*{theme_name}*,")
+    
+    # Date in "Month Year" format only
+    year_str = str(int(year)) if pd.notna(year) else ""
+    date_str = f"{month_disp} {year_str}".strip() if month_disp and year_str else year_str
+    
+    # Location
+    location_parts = [part for part in [institution, city, country] if part]
+    location_str = ", ".join(location_parts)
+    
+    # Combine date and location
+    if date_str and location_str:
+        line_parts.append(f"{date_str}, {location_str}.")
+    elif date_str:
+        line_parts.append(f"{date_str}.")
+    elif location_str:
+        line_parts.append(f"{location_str}.")
+    
+    # Add co-authors if present
     if co_authors:
-        main += f" (with {co_authors})"
-
-    # Line 2: Event string
-    event_lead = _join_nonempty(
-        [f"{number} {event}".strip() if number and event else (number or event)]
-    , sep="")
-
-    event_line = event_lead
-    if theme:
-        # Colon + italicized theme
-        event_line += f': *{theme}*'
-    if event_line:
-        event_line += "."
-
-    # Line 3: Venue + date
-    venue_parts = _join_nonempty([institution, _join_nonempty([city, country])])
-    date_parts = " ".join([p for p in [month_disp, str(int(year)) if pd.notna(year) else ""] if p])
-    venue_date_line = _join_nonempty([venue_parts, date_parts], sep=". ") + "."
-
-    # Optional notes
-    if notes:
-        return f"{main}  \n  {event_line}  \n  {venue_date_line}  \n  *{notes}*"
-    else:
-        return f"{main}  \n  {event_line}  \n  {venue_date_line}"
+        line_parts.append(f"With {co_authors}.")
+    
+    # Join all parts with single space
+    return " ".join(line_parts)
 
 
 def generate_markdown(df: pd.DataFrame) -> str:
     """
     Build full Markdown with Jekyll front matter, then role sections as H2.
-    No extra "Conferences" heading in the body.
+    Uses Harvard CV style formatting.
     """
     lines = [
         "---",
@@ -224,20 +243,21 @@ def generate_markdown(df: pd.DataFrame) -> str:
         if block.empty:
             continue
 
-        heading = role.replace("_", " ").title()  # presenter → Presenter
+        heading = ROLE_HEADINGS.get(role, role.replace("_", " ").title())
         lines.append(f"## {heading}")
         lines.append("")
 
         block = sort_block(block)
         for _, row in block.iterrows():
             entry = format_conference_entry(row)
-            lines.append(f"- {entry}")
-            lines.append("")  # blank line between items
+            if entry:  # Only add non-empty entries
+                lines.append(entry)
+                lines.append("")  # blank line between items
 
-    # If nothing matched ROLE_ORDER, still say something
-    if lines[-1] == "":
-        # remove trailing blank line
+    # Remove trailing blank line if present
+    if lines and lines[-1] == "":
         lines = lines[:-1]
+    
     return "\n".join(lines)
 
 
