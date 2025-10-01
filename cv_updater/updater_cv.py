@@ -54,8 +54,8 @@ def parse_bibtex(bibtex):
     
     return entry
 
-def format_author_name(author_str):
-    """Format author names in Harvard style"""
+def format_author_name(author_str, style='mla'):
+    """Format author names in Harvard or MLA style"""
     if not author_str:
         return ""
     
@@ -82,8 +82,16 @@ def format_author_name(author_str):
             else:
                 formatted_authors.append(author.strip())
     
-    # Join authors with semicolons
-    return '; '.join(formatted_authors)
+    # Join authors based on style
+    if style == 'mla':
+        if len(formatted_authors) == 1:
+            return formatted_authors[0]
+        elif len(formatted_authors) == 2:
+            return f"{formatted_authors[0]}, and {formatted_authors[1]}"
+        else:
+            return ', '.join(formatted_authors[:-1]) + f", and {formatted_authors[-1]}"
+    else:  # harvard style (default)
+        return '; '.join(formatted_authors)
 
 def format_date(year):
     """Format year, handling ranges and single years"""
@@ -455,6 +463,10 @@ def generate_publications_section(data):
                 
                 # Format title with translation
                 content += format_title_with_translation(title, titleaddon)
+
+                # Fix page ranges: replace double hyphen with en dash
+                if pages:
+                    pages = pages.replace("--", "–")
                 
                 if journal:
                     content += f"*{journal}*"
@@ -482,7 +494,7 @@ def generate_publications_section(data):
             content += "### Book Chapters and Edited Volumes\n\n"
             
             for i, chapter in enumerate(book_chapters, 1):
-                authors = format_author_name(chapter.get('author', ''))
+                authors = format_author_name(chapter.get('author', ''), style='mla')
                 title = chapter.get('title', '')
                 titleaddon = chapter.get('titleaddon', '')
                 booktitle = chapter.get('booktitle', '')
@@ -491,31 +503,72 @@ def generate_publications_section(data):
                 publisher = chapter.get('publisher', '')
                 editor = chapter.get('editor', '')
                 url = chapter.get('url', '')
-                
-                content += f"{i}. {authors} ({year}). "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
-                
-                if booktitle:
-                    content += f"In *{booktitle}*"
-                
+
+                # Fix page ranges: replace double hyphen with en dash
+                if pages:
+                    pages = pages.replace("--", "–")
+
+                # Format editors - convert "Last, First" to "First Last"
+                formatted_editors = ""
                 if editor:
-                    content += f", edited by {editor}"
-                
+                    # Split by " and " to get individual editors
+                    editor_list = [name.strip() for name in editor.split(" and ") if name.strip()]
+                    
+                    # Convert each editor from "Last, First" to "First Last"
+                    converted_editors = []
+                    for ed in editor_list:
+                        if ',' in ed:
+                            parts = [p.strip() for p in ed.split(',', 1)]
+                            if len(parts) == 2:
+                                converted_editors.append(f"{parts[1]} {parts[0]}")
+                            else:
+                                converted_editors.append(ed)
+                        else:
+                            converted_editors.append(ed)
+                    
+                    # MLA: Use "et al." if more than 3 editors
+                    if len(converted_editors) > 3:
+                        formatted_editors = converted_editors[0] + " et al."
+                    elif len(converted_editors) > 1:
+                        formatted_editors = ", ".join(converted_editors[:-1]) + ", and " + converted_editors[-1]
+                    elif converted_editors:
+                        formatted_editors = converted_editors[0]
+
+                # --- MLA-style order ---
+                content += f"{i}. {authors} "
+
+                # Chapter/article title in quotes
+                content += format_title_with_translation(title, titleaddon)
+
+                # Book title italicized
+                if booktitle:
+                    content += f"*{booktitle}*"
+
+                # Editors
+                if formatted_editors:
+                    content += f", edited by {formatted_editors}"
+
+                # Publisher + year
+                if publisher:
+                    content += f", {publisher}"
+                if year:
+                    content += f", {year}"
+
+                # Page range
                 if pages:
                     content += f", pp. {pages}"
-                
-                if publisher:
-                    content += f". {publisher}."
-                else:
-                    content += "."
-                
-                # Add URL at the end
+
+                content += "."
+
+                # Add URL or DOI at the end
                 if url:
                     content += f" [{url}]({url})"
-                
+                elif doi:
+                    content += f" DOI: [{doi}](https://doi.org/{doi})"
+
                 content += "\n\n"
+
+
         
         # Other Publications
         if other_publications:

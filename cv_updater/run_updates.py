@@ -132,10 +132,10 @@ def main():
     # Run all updater scripts
     updater_scripts = [
         'updater_projects.py',
-        'updater_publications.py',
         'updater_teaching.py',
         'updater_conferences.py',
-        'updater_cv.py'
+        'updater_cv.py',
+        'updater_publications.py'
     ]
     
     for script in updater_scripts:

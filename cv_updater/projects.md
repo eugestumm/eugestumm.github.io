@@ -65,6 +65,6 @@ Online installation calculating happy new years' left based on average Brazilian
 
 Online installation on the meaning of love.
 
-**Technologies**: nan
+**Technologies**: Unity3D
 
 ---
