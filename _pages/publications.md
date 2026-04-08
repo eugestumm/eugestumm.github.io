@@ -21,7 +21,7 @@ author_profile: true
 
 ## Book Chapters and Edited Volumes
 
-1. Stumm, Euge, and Papadopoulos, Ben "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions". *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
+1. Stumm, Euge "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions". *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
 
 2. Stumm, Euge Helyantus, and Butterman, Steven "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions". *SAGE LGBTQ Studies Handbook*, Vol. 1, edited by Nael Bhanji et al., SAGE Publications, **forthcoming 2026**.
 
@@ -33,7 +33,7 @@ author_profile: true
 
 ## Digital Scholarship
 
-1. Stumm, Euge "Pajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/PajubaDigitalArchive/](https://eugestumm.github.io/PajubaDigitalArchive/)
+1. Stumm, Euge "Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/)
 
 2. Stumm, Euge, and Papadopoulos, Ben "Gender-Inclusive Spanish Digital Archive". 2025. [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/)
 
@@ -41,11 +41,11 @@ author_profile: true
 
 ## Manuscripts Under Review
 
-1. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. **[Peer-Reviewed Journal Article]**
+1. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Peer-Reviewed Journal Article]**
 
-2. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
+2. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. **[Peer-Reviewed Journal Article]**
 
-3. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Book Chapter]**
+3. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
 
 4. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". **[Review]**
 

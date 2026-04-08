@@ -36,40 +36,63 @@ geometry: "margin=1in"
 
 ## Awards and Honors
 
+**Dean's Fellowship** (2026)  
+*University of Miami – Graduate School*  
+
+**UMIA Field Research Grant** (2026)  
+*University of Miami – Institute for Advanced Study of the Americas (UMIA)*  
+$2,000.00  
+
 **Dr. Edward Alexander Bouchet Graduate Honor Society** (2026)  
 *Howard University & Yale University – University of Miami Chapter*  
 
+**Graduate Activity Fee Allocation Committee Travel Scholarship** (2026)  
+*University of Miami – Graduate School*  
+$500.00  
+
 **Max and Peggy Kriloff Student Travel Scholarship** (2026)  
 *University of Miami – Graduate School*  
-Amount: $500.00  
+$500.00  
 
 **Center for the Humanities Dissertation Fellowship** (2026)  
+*University of Miami – Digital Humanities*  
+
+**Digital Humanities Graduate Fellowship** (2025)  
 *University of Miami – Graduate School*  
+$1,000.00  
 
 **Max and Peggy Kriloff Student Travel Scholarship** (2025)  
 *University of Miami – Graduate School*  
-Amount: $500.00  
+$500.00  
+
+**Digital Humanities Graduate Fellowship** (2024)  
+*University of Miami – Digital Humanities*  
+$1,800.00  
 
 **Graduate Student Travel Support** (2024)  
 *University of Miami – Graduate School*  
-Amount: $1,000.00  
+$1,000.00  
 
-**Dean's Fellowship** (2022-2023, 2026-2027)  
+**Digital Humanities Graduate Fellowship** (2023)  
+*University of Miami – Digital Humanities*  
+$1,000.00  
+
+**Dean's Fellowship** (2022)  
 *University of Miami – Graduate School*  
 
 **Outstanding Scientific Award [Prêmio Destaque de Sessão] – Graduate Program in Sociology, Students’ Seminar at UFRGS** (2020)  
-*Federal University of Rio Grande do Sul, Brasil*  
+*Federal University of Rio Grande do Sul, Brazil*  
 For presentation in the Panel "Diversities and Intersectionalities"  
 
 **Outstanding Scientific Award [Prêmio Destaque de Sessão]** (2019)  
-*Federal University of Rio Grande do Sul, Brasil*  
+*Federal University of Rio Grande do Sul, Brazil*  
 For presentation in the Panel “Psychoanalysis and Cinema”  
 
 **Nomination – Human Sciences’ Young Researcher Award [Prêmio Jovem Pesquisador]** (2019)  
-*Federal University of Rio Grande do Sul, Brasil*  
+*Federal University of Rio Grande do Sul, Brazil*  
 
 **Outstanding Scientific Award [Prêmio Destaque de Sessão] – Congress UFCSPA** (2019)  
-*Federal University of Health Sciences of Porto Alegre*  
+*Federal University of Health Sciences of Porto Alegre, Brazil*  
 For presentation in the panel “Teaching”  
 
 ---
@@ -92,7 +115,7 @@ For presentation in the panel “Teaching”
 
 ### Book Chapters and Edited Volumes
 
-1. Stumm, Euge, and Papadopoulos, Ben "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions". *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
+1. Stumm, Euge "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions". *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
 
 2. Stumm, Euge Helyantus, and Butterman, Steven "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions". *SAGE LGBTQ Studies Handbook*, Vol. 1, edited by Nael Bhanji et al., SAGE Publications, **forthcoming 2026**.
 
@@ -104,7 +127,7 @@ For presentation in the panel “Teaching”
 
 ### Digital Scholarship
 
-1. Stumm, Euge "Pajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/PajubaDigitalArchive/](https://eugestumm.github.io/PajubaDigitalArchive/)
+1. Stumm, Euge "Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/)
 
 2. Stumm, Euge, and Papadopoulos, Ben "Gender-Inclusive Spanish Digital Archive". 2025. [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/)
 
@@ -112,11 +135,11 @@ For presentation in the panel “Teaching”
 
 ### Manuscripts Under Review
 
-1. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. **[Peer-Reviewed Journal Article]**
+1. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Peer-Reviewed Journal Article]**
 
-2. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
+2. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. **[Peer-Reviewed Journal Article]**
 
-3. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Book Chapter]**
+3. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
 
 4. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". **[Review]**
 
@@ -193,7 +216,9 @@ For presentation in the panel “Teaching”
 
 ### Graduate Presentations
 
-"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *LASA 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
+"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, Illinois, USA. With Alexandra Arana Blas.
+
+"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
 "Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation." *Harvard University’s Graduate Music Forum Conference: TRANS\*Media*, March 2025, Harvard University, Cambridge, MA, USA.
 
@@ -213,17 +238,17 @@ For presentation in the panel “Teaching”
 
 ### Undergraduate Presentations
 
-"Pode a travesti filmar? Marcas do cinema dirigido por travestis e mulheres trans no Brasil." *Salão de Iniciação Científica (XXXI)*, October 2019, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
-
 "Autopoiéticas somatoficcionais no cartoon infantil Steve Universe." *Simpósio Gênero e Infância: Direitos Humanos, Educação e Psicanálise*, October 2019, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
+
+"Pode a travesti filmar? Marcas do cinema dirigido por travestis e mulheres trans no Brasil." *Salão de Iniciação Científica (XXXI)*, October 2019, Federal University of Rio Grande do Sul, Porto Alegre, Brazil.
 
 "Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras." *Congresso UFCSPA (I)*, October 2019, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil.
 
-"Prótese, câmera, ação: diálogos entre a dildotectonia somatoficcional de Paul B. Preciado e a análise fílmica psicanalítica." *Colóquio Filosofia e Psicanálise (I)*, September 2019, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre, Brazil.
+"Apresentação e resultados do projeto 'Compreendendo o Desenvolvimento Humano' a partir de atividades práticas de ensino e avaliação." *Congresso UFCSPA (I)*, October 2019, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil. With Karoline Schneider.
 
 "Irromperes (pós)identitários e multidões sexopolíticas." *Colóquio Filosofia e Psicanálise (I)*, September 2019, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre, Brazil. With Thainan Piuco.
 
-"Apresentação e resultados do projeto 'Compreendendo o Desenvolvimento Humano' a partir de atividades práticas de ensino e avaliação." *Congresso UFCSPA (I)*, October 2019, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil. With Karoline Schneider.
+"Prótese, câmera, ação: diálogos entre a dildotectonia somatoficcional de Paul B. Preciado e a análise fílmica psicanalítica." *Colóquio Filosofia e Psicanálise (I)*, September 2019, Pontifical Catholic University of Rio Grande do Sul, Porto Alegre, Brazil.
 
 "Por uma análise díldica: contribuições estranhadas a partir do estudo de pornochanchadas." *Mostra de Trabalhos de Ensino, Pesquisa e Extensão (IV)*, September 2018, Federal University of Health Sciences of Porto Alegre, Porto Alegre, Brazil.
 
@@ -238,21 +263,6 @@ For presentation in the panel “Teaching”
 
 
 ## Funded Research
-
-**Digital Humanities Graduate Fellowship** (2025)  
-*University of Miami*  
-Amount: $1,000.00  
-Supervisor: Dr. Susanna Allés-Torrent  
-
-**Digital Humanities Graduate Fellowship** (2024)  
-*University of Miami*  
-Amount: $1,800.00  
-Supervisor: Dr. Susanna Allés-Torrent  
-
-**Digital Humanities Graduate Fellowship** (2023)  
-*University of Miami*  
-Amount: $1,000.00  
-Supervisor: Dr. Allison Schifani  
 
 **Master’s Graduate Research Fellowship** (2021–2022)  
 *Coordination of Superior Level Staff Improvement (CAPES), Brazil*  
@@ -291,16 +301,16 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ### University Service
 
-**Co-convenor, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–present)
+**Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–present)
     - With Dr. Brenna Munro
 
-**Co-convenor, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–present)
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–present)
     - With Elizabeth Cornick and Dr. Susanna Allés-Torrent
 
-**Co-convenor, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2024–April 2025)
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2024–April 2025)
     - With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent
 
-**Co-convenor, Queer Studies Interdisciplinary Research Group**, University of Miami (August 2023–April 2024)
+**Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (August 2023–April 2024)
     - With Elizabeth Cornick
 
 
@@ -356,7 +366,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 - University of Miami Chapter (Doctoral Student Membership), 2026–present
 
-**Regional Council of Psychology of Rio Grande do Sul, Brazil** (Psychologist, #35206), 2021–present
+**Regional Council of Psychology of Rio Grande do Sul, Brazil** (Psychologist, #35206), 2021–2023
 
 
 **Latin American Studies Association** (Member), 2024–present
@@ -367,7 +377,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 **Society for Cinema and Media Studies** (Member), 2025–present
 
 
-**Modern Languages Association** (Member), 2024–2025
+**Modern Languages Association** (Member), 2024–present
 
 
 **Núcleo de Estudos e Intervenção Psicossocial à Diversidade [Center for Studies and Psychosocial Intervention in Diversity]** (Graduate Research Assistant), 2021–2022
@@ -395,5 +405,5 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ---
 
-*Last updated: February 2026*
+*Last updated: April 2026*
 

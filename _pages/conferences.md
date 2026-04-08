@@ -7,7 +7,9 @@ author_profile: true
 
 ## Graduate Presentations
 
-"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *LASA 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
+"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, Illinois, USA. With Alexandra Arana Blas.
+
+"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
 "Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation." *Harvard University’s Graduate Music Forum Conference: TRANS\*Media*, March 2025, Harvard University, Cambridge, MA, USA.
 

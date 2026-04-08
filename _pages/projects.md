@@ -5,11 +5,11 @@ permalink: /projects/
 author_profile: true
 ---
 
-## [Pajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)](https://eugestumm.github.io/PajubaDigitalArchive/)
+## [Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)](https://eugestumm.github.io/BajubaDigitalArchive/)
 
 **Year**: 2025; **Type**: Digital Scholarship
 
-This digital archive features cultural productions and academic works that center around Pajubá. Pajubá (or Bajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY.
+This digital archive features cultural productions and academic works that center around Bajubá. Bajubá (or Pajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY.
 
 **Technologies**: CollectionBuilder and d3.js
 

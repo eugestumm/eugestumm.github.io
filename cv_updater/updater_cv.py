@@ -12,16 +12,13 @@ def fetch_sheet_data(url):
         response = requests.get(url)
         response.raise_for_status()
         
-        # Read the ODS file
         ods_data = BytesIO(response.content)
         xl = pd.ExcelFile(ods_data)
         
-        # Create a dictionary of all sheets
         sheets_dict = {}
         for sheet_name in xl.sheet_names:
             df = xl.parse(sheet_name)
-            # Replace NaN values with empty strings
-            df = df.replace({np.nan: None})
+            df = df.astype(object).where(pd.notnull(df), None)
             sheets_dict[sheet_name] = df
         
         return sheets_dict
@@ -1048,10 +1045,10 @@ def generate_awards_section(data):
             # Amount with currency
             if amount and str(amount).strip():
                 if currency:
-                    if currency.upper() == 'BRL':
-                        content += f"Amount: R$ {amount:,.2f}  \n"  # Two spaces at end
-                    elif currency.upper() == 'USD':
-                        content += f"Amount: ${amount:,.2f}  \n"  # Two spaces at end
+                    if str(currency).upper() == 'BRL':
+                        content += f"R$ {amount:,.2f}  \n"  # Two spaces at end
+                    elif str(currency).upper() == 'USD':
+                        content += f"${amount:,.2f}  \n"  # Two spaces at end
                     else:
                         content += f"Amount: {amount} {currency}  \n"  # Two spaces at end
                 else:
