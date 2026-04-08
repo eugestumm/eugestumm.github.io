@@ -188,7 +188,7 @@ def generate_header_section(data):
     
     if not header_sheet_name:
         # Fallback to a minimal header if the sheet doesn't exist
-        return "# Your Name\n\n*Your Title* \n**Email:** [email@example.com](mailto:email@example.com) | **Website:** [yourwebsite.com](https://yourwebsite.com) | **ORCID:** [0000-1234-5678-9012](https://orcid.org/your-orcid) | **GitHub:** [@yourusername](https://github.com/yourusername)\n\n---\n\n"
+        return "# Your Name\n\n*Your Title* \n**Email:** [email@example.com](mailto:email@example.com) | **Website:** [yourwebsite.com](https://yourwebsite.com) | **ORCID:** [0000-1234-5678-9012](https://orcid.org/your-orcid) | **GitHub:** [@yourusername](https://github.com/yourusername)\n\n"
     
     header_df = data[header_sheet_name]
     # We assume the first row contains the data
@@ -251,13 +251,17 @@ def generate_header_section(data):
         contact_info.append(address)  # Physical address usually isn't linked
     
     if contact_info:
-        content += ' | '.join(contact_info) + "\n\n"
+        lines = []
+        for i in range(0, len(contact_info), 3):
+            chunk = contact_info[i:i+3]
+            lines.append(' | '.join(chunk))
+    content += '  \n'.join(lines) + "\n\n"
     
     # Research statement is crucial for interdisciplinary fields
     if research_statement:
         content += f"\n{research_statement}\n"
     
-    content += "\n---\n\n"
+    content += ""
     return content
 
 def generate_education_section(data):
@@ -344,7 +348,7 @@ def generate_education_section(data):
             for cert_row in graduate_certificates:
                 cert_university = cert_row.get("university", "")
                 if cert_university == phd_university or not cert_university:
-                    cert_line = f"**Graduate Certificate in {cert_row.get('title','')}**"
+                    cert_line = f"*Graduate Certificate in {cert_row.get('title','')}*"
                     cert_year = cert_row.get("year", "")
                     if cert_year:
                         try:
@@ -388,7 +392,7 @@ def generate_education_section(data):
 
             content += "\n"
 
-    content += "---\n\n"
+    content += "\n\n"
     return content
 
 def generate_publications_section(data):
@@ -805,7 +809,7 @@ def generate_publications_section(data):
                 
                 content += "\n\n"
     
-    content += "---\n\n"
+    content += "\n\n"
     return content
 
 def generate_teaching_section(data):
@@ -878,7 +882,7 @@ def generate_teaching_section(data):
             content += "\n" # Extra space after each institution
         
         # Add separator only at the end of the entire section
-        content += "---\n\n"
+        content += "\n\n"
     
     return content
 
@@ -1061,7 +1065,7 @@ def generate_awards_section(data):
             
             content += "\n"  # Empty line between entries
     
-    content += "---\n\n"
+    content += "\n\n"
     return content
 
 def generate_funded_research_section(data):
@@ -1249,7 +1253,7 @@ def generate_languages_section(data):
                 content += f": {proficiency}"
             content += "\n\n"  # Changed to double newline for spacing between languages
     
-    content += "---\n\n"
+    content += "\n\n"
     return content
 
 def generate_service_section(data):
@@ -1496,7 +1500,7 @@ def generate_service_section(data):
                 
                 content += "\n"
     
-    content += "---\n\n"
+    content += "\n\n"
     return content
 
 def generate_memberships_section(data):
@@ -1606,7 +1610,7 @@ def generate_memberships_section(data):
         
         content += "\n"
     
-    content += "---\n\n"
+    content += "\n\n"
     
     return content
 

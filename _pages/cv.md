@@ -6,10 +6,8 @@ geometry: "margin=1in"
 
 *Ph.D. Candidate in Literary, Cultural, and Linguistic Studies (University of Miami)*
 
-**Email:** [ehs89@miami.edu](mailto:ehs89@miami.edu) | **Website:** [eugestumm.github.io](https://eugestumm.github.io) | **ORCID:** [0000-0001-9087-4198](https://orcid.org/0000-0001-9087-4198) | **GitHub:** [@eugestumm](https://github.com/eugestumm)
-
-
----
+**Email:** [ehs89@miami.edu](mailto:ehs89@miami.edu) | **Website:** [eugestumm.github.io](https://eugestumm.github.io) | **ORCID:** [0000-0001-9087-4198](https://orcid.org/0000-0001-9087-4198)  
+**GitHub:** [@eugestumm](https://github.com/eugestumm)
 
 ## EDUCATION
 
@@ -17,8 +15,8 @@ geometry: "margin=1in"
 
 - Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 - Committee: [Ager Gondra](https://orcid.org/0000-0002-8346-4489), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
-- **Graduate Certificate in Digital Humanities**, Expected 2027
-- **Graduate Certificate in Second Language Acquisition and Teaching**, 2024
+- *Graduate Certificate in Digital Humanities*, Expected 2027
+- *Graduate Certificate in Second Language Acquisition and Teaching*, 2024
 
 **M.A. in Psychology**, 2022, Federal University of Rio Grande do Sul, GPA: 4.0
 
@@ -32,7 +30,7 @@ geometry: "margin=1in"
 - Advisor: [Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
 - Committee: [Amadeu Weinmann (co-advisor)](https://scholar.google.com/citations?user=uQxz_4oAAAAJ&hl=en&oi=ao), [Aline Aver Vanin](https://scholar.google.com/citations?user=7-2BWcEAAAAJ&hl=pt-BR), [Léo Tietboehl](https://scholar.google.com/citations?hl=pt-BR&user=mbjlMXgAAAAJ)
 
----
+
 
 ## AWARDS AND HONORS
 
@@ -95,7 +93,7 @@ For presentation in the Panel “Psychoanalysis and Cinema”
 *Federal University of Health Sciences of Porto Alegre, Brazil*  
 For presentation in the panel “Teaching”  
 
----
+
 
 ## PUBLICATIONS
 
@@ -143,7 +141,7 @@ For presentation in the panel “Teaching”
 
 4. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". **[Review]**
 
----
+
 
 ## TEACHING EXPERIENCE
 
@@ -210,7 +208,7 @@ For presentation in the panel “Teaching”
 
 
 
----
+
 
 ## CONFERENCE PRESENTATIONS
 
@@ -358,7 +356,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
     - Workshop 
 
 
----
+
 
 ## PROFESSIONAL MEMBERSHIPS
 
@@ -389,7 +387,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 **Núcleo de Pesquisa em Psicanálise e Educação [Research Group on Psychoanalysis, Education, and Culture], Federal University of Rio Grande do Sul** (Undergraduate Research Assistant), 2016–2017
 
 
----
+
 
 ## LANGUAGES
 
@@ -403,7 +401,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 **French**: Reading Proficiency
 
----
+
 
 *Last updated: April 2026*
 
