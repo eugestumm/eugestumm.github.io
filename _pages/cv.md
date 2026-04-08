@@ -11,7 +11,7 @@ geometry: "margin=1in"
 
 ---
 
-## Education
+## EDUCATION
 
 **Ph.D. in Literary, Cultural, and Linguistic Studies**, Expected 2027, University of Miami, GPA: 4.0
 
@@ -34,7 +34,7 @@ geometry: "margin=1in"
 
 ---
 
-## Awards and Honors
+## AWARDS AND HONORS
 
 **Dean's Fellowship** (2026)  
 *University of Miami – Graduate School*  
@@ -97,7 +97,7 @@ For presentation in the panel “Teaching”
 
 ---
 
-## Publications
+## PUBLICATIONS
 
 ### Peer-Reviewed Journal Articles
 
@@ -145,11 +145,11 @@ For presentation in the panel “Teaching”
 
 ---
 
-## Teaching Experience
+## TEACHING EXPERIENCE
 
 ### University of Miami
 
-**Instructor**
+***Instructor***
 
 1. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
     - Co-taught with Dr. Susanna Allés-Torrent
@@ -164,7 +164,7 @@ For presentation in the panel “Teaching”
 5. **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
 
 
-**Mentored Teaching**
+***Mentored Teaching***
 
 1. **Queer Studies** (SPA 330) — Spring 2024
     - Supervised by Dr. Steven Butterman
@@ -176,7 +176,7 @@ For presentation in the panel “Teaching”
     - Supervised by Dr. Steven Butterman
 
 
-**Course Research Assistant**
+***Course Research Assistant***
 
 1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
     - Supervised by Dr. Steven Butterman
@@ -188,7 +188,7 @@ For presentation in the panel “Teaching”
 
 ### Federal University of Rio Grande do Sul
 
-**Course Research Assistant**
+***Course Research Assistant***
 
 1. **Diversity and Human Development** — 2022
     - Supervised by Dr. Adolfo Pizzinato
@@ -200,7 +200,7 @@ For presentation in the panel “Teaching”
 
 ### Federal University of Health Sciences of Porto Alegre
 
-**Course Research Assistant**
+***Course Research Assistant***
 
 1. **Developmental Psychology I** — 2018–2021
     - Supervised by Dr. Daniela Centenaro Levandowski
@@ -212,7 +212,7 @@ For presentation in the panel “Teaching”
 
 ---
 
-## Conference Presentations
+## CONFERENCE PRESENTATIONS
 
 ### Graduate Presentations
 
@@ -262,7 +262,7 @@ For presentation in the panel “Teaching”
 
 
 
-## Funded Research
+## FUNDED RESEARCH
 
 **Master’s Graduate Research Fellowship** (2021–2022)  
 *Coordination of Superior Level Staff Improvement (CAPES), Brazil*  
@@ -274,7 +274,7 @@ Supervisor: Dr. Adolfo Pizzinato
 Amount: R$ 8,000.00  
 Supervisor: Dr. Daniela Centenaro Levandowski  
 
-## Projects
+## PROJECTS
 
 ### Creative Work
 
@@ -286,7 +286,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 "Eu te amo" (2018) [https://poieticalab.itch.io/eu-te-amo](https://poieticalab.itch.io/eu-te-amo)
 
-## Service
+## SERVICE
 
 ### Thesis Supervision
 
@@ -360,7 +360,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ---
 
-## Professional Memberships
+## PROFESSIONAL MEMBERSHIPS
 
 **Dr. Edward Alexander Bouchet Graduate Honor Society**
 
@@ -391,7 +391,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ---
 
-## Languages
+## LANGUAGES
 
 **Portuguese**: Native
 

@@ -265,7 +265,7 @@ def generate_education_section(data):
     import datetime
     current_year = datetime.datetime.now().year
 
-    content = "## Education\n\n"
+    content = "## EDUCATION\n\n"
 
     if "Training" in data:
         training_df = data["Training"]
@@ -393,7 +393,7 @@ def generate_education_section(data):
 
 def generate_publications_section(data):
     """Generate Publications section"""
-    content = "## Publications\n\n"
+    content = "## PUBLICATIONS\n\n"
     
     if 'Publications' in data:
         publications_df = data['Publications']
@@ -810,7 +810,7 @@ def generate_publications_section(data):
 
 def generate_teaching_section(data):
     """Generate Teaching Experience section with support for multi-year positions and numbered courses"""
-    content = "## Teaching Experience\n\n"
+    content = "## TEACHING EXPERIENCE\n\n"
     if 'Teaching' in data:
         teaching_df = data['Teaching']
         # Exclude workshops from main teaching section
@@ -823,7 +823,7 @@ def generate_teaching_section(data):
             # Group by category within institution
             categories = [cat for cat in inst_df['category'].unique() if cat]
             for category in categories:
-                content += f"**{category}**\n\n" # Changed from #### to **bold**
+                content += f"***{category}***\n\n" # Changed from #### to **bold**
                 category_df = inst_df[inst_df['category'] == category]
                 # Sort by year (descending)
                 category_df = category_df.sort_values('year', ascending=False, na_position='last')
@@ -884,7 +884,7 @@ def generate_teaching_section(data):
 
 def generate_conferences_section(data):
     """Generate Conference Presentations section in Harvard style - compact single line format"""
-    content = "## Conference Presentations\n\n"
+    content = "## CONFERENCE PRESENTATIONS\n\n"
     
     if 'Conferences' in data:
         # Add this right after getting the conferences_df
@@ -1014,7 +1014,7 @@ def generate_awards_section(data):
             return str(amount)
     # ----------------------
     
-    content = "## Awards and Honors\n\n"
+    content = "## AWARDS AND HONORS\n\n"
     
     # Sort by year (descending)
     try:
@@ -1082,7 +1082,7 @@ def generate_funded_research_section(data):
         print("No valid entries found in FundedResearch sheet")
         return ""
     
-    content = "## Funded Research\n\n"
+    content = "## FUNDED RESEARCH\n\n"
     
     # Sort by start_year (descending)
     funded_df = funded_df.sort_values('start_year', ascending=False, na_position='last')
@@ -1134,7 +1134,7 @@ def generate_funded_research_section(data):
 
 def generate_research_section(data):
     """Generate Projects section"""
-    content = "## Projects\n\n"
+    content = "## PROJECTS\n\n"
     if 'Projects' in data:
         projects_df = data['Projects']
         
@@ -1237,7 +1237,7 @@ def generate_languages_section(data):
     if not has_valid_entries:
         return ""
     
-    content = "## Languages\n\n"
+    content = "## LANGUAGES\n\n"
     
     for _, row in languages_df.iterrows():
         if row.get('language'):
@@ -1264,7 +1264,7 @@ def generate_service_section(data):
     if not has_valid_entries:
         return ""
     
-    content = "## Service\n\n"
+    content = "## SERVICE\n\n"
     
     # Define the order of service categories for academic CVs
     category_order = [
@@ -1552,7 +1552,7 @@ def generate_memberships_section(data):
                         'end': end_year
                     })
     
-    content = "## Professional Memberships\n\n"
+    content = "## PROFESSIONAL MEMBERSHIPS\n\n"
     
     for organization, data_dict in memberships_by_org.items():
         content += f"**{organization}**"
