@@ -7,7 +7,9 @@ author_profile: true
 
 ## Graduate Presentations
 
-"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, Illinois, USA. With Alexandra Arana Blas.
+"Innovative Archival Strategies for Marginalized Linguistic Communities: The B/Pajubá Digital Archive." *Annual Yale Bouchet Conference on Graduate Education: Historic Milestones and Future Directions: Innovative Strategies to Empower the Next Generation of Scholars (22nd)*, April 2026, Edward Alexander Bouchet Graduate Honor Society, Yale University, New Haven, CN, USA.
+
+"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, IL, USA. With Alexandra Arana Blas.
 
 "The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 

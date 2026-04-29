@@ -37,6 +37,10 @@ geometry: "margin=1in"
 **Dean's Fellowship** (2026)  
 *University of Miami – Graduate School*  
 
+**Digital Humanities Graduate Fellowship** (2026)  
+*University of Miami – Digital Humanities*  
+$2,000.00  
+
 **UMIA Field Research Grant** (2026)  
 *University of Miami – Institute for Advanced Study of the Americas (UMIA)*  
 $2,000.00  
@@ -53,15 +57,15 @@ $500.00
 $500.00  
 
 **Center for the Humanities Dissertation Fellowship** (2026)  
-*University of Miami – Digital Humanities*  
-
-**Digital Humanities Graduate Fellowship** (2025)  
 *University of Miami – Graduate School*  
-$1,000.00  
 
 **Max and Peggy Kriloff Student Travel Scholarship** (2025)  
 *University of Miami – Graduate School*  
 $500.00  
+
+**Digital Humanities Graduate Fellowship** (2025)  
+*University of Miami – Digital Humanities*  
+$1,000.00  
 
 **Digital Humanities Graduate Fellowship** (2024)  
 *University of Miami – Digital Humanities*  
@@ -214,7 +218,9 @@ For presentation in the panel “Teaching”
 
 ### Graduate Presentations
 
-"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, Illinois, USA. With Alexandra Arana Blas.
+"Innovative Archival Strategies for Marginalized Linguistic Communities: The B/Pajubá Digital Archive." *Annual Yale Bouchet Conference on Graduate Education: Historic Milestones and Future Directions: Innovative Strategies to Empower the Next Generation of Scholars (22nd)*, April 2026, Edward Alexander Bouchet Graduate Honor Society, Yale University, New Haven, CN, USA.
+
+"Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, IL, USA. With Alexandra Arana Blas.
 
 "The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
@@ -313,6 +319,9 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 
 ### Professional Development
+
+**Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2026)
+    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Workshop on Alliances: Gender-Inclusive Language, History, and the Struggle against Colonialism**, Latin American Studies Association (October 28, 2025)
     - Workshop sponsored by the Sexualities Section. With Dr. Ben Papadopoulos.
