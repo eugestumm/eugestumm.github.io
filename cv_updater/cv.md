@@ -37,6 +37,10 @@ geometry: "margin=1in"
 **Dean's Fellowship** (2026)  
 *University of Miami – Graduate School*  
 
+**2025-2026 Outstanding Graduate Student Award** (2026)  
+*University of Miami – Michele Bowman Underwood Department of Modern Languages and Literatures*  
+$500.00  
+
 **Digital Humanities Graduate Fellowship** (2026)  
 *University of Miami – Digital Humanities*  
 $2,000.00  
@@ -412,5 +416,5 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 
 
-*Last updated: April 2026*
+*Last updated: May 2026*
 
