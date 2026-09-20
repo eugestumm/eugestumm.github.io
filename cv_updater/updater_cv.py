@@ -991,7 +991,7 @@ def generate_awards_section(data):
     if 'Awards' not in data or data['Awards'].empty:
         return ""
     
-    awards_df = data['Awards']
+    awards_df = data['Awards'].copy()
     
     # Check if there are any actual awards
     has_awards = any(row.get('award_name') for _, row in awards_df.iterrows())
@@ -1016,16 +1016,28 @@ def generate_awards_section(data):
             return f"${float(amount):,.2f}"
         except (ValueError, TypeError):
             return str(amount)
+
+    def year_sort_key(year):
+        """Convert any year value (int, float, '2021', '2019-2020', blank,
+        None, NaN) into a numeric key. Unparseable values sort last."""
+        if year is None or (isinstance(year, float) and pd.isna(year)):
+            return np.nan
+        if isinstance(year, (int, float)):
+            return float(year)
+        match = re.search(r'\d{4}', str(year))  # grabs "2019" out of "2019-2020"
+        return float(match.group()) if match else np.nan
     # ----------------------
     
     content = "## AWARDS AND HONORS\n\n"
     
-    # Sort by year (descending)
-    try:
-        awards_df = awards_df.sort_values('year', ascending=False, na_position='last')
-    except TypeError:
-        # Handle mixed types in year column (e.g., "2022-2023" and numeric years)
-        pass
+    # Sort by year (descending), tie-broken by original spreadsheet row order.
+    # kind='stable' guarantees rows with equal (or unparseable) year keys keep
+    # their original relative order — this never raises, unlike sorting the
+    # raw 'year' column directly.
+    awards_df['_year_sort'] = awards_df['year'].apply(year_sort_key)
+    awards_df = awards_df.sort_values(
+        '_year_sort', ascending=False, na_position='last', kind='stable'
+    ).drop(columns='_year_sort')
     
     for _, row in awards_df.iterrows():
         if row.get('award_name'):
@@ -1036,34 +1048,30 @@ def generate_awards_section(data):
             currency = row.get('currency', '')
             description = row.get('description', '')
             
-            # Award name and year
             content += f"**{award_name}**"
             if year:
                 content += f" ({format_date(year)})"
-            content += "  \n"  # Two spaces at end for markdown line break
+            content += "  \n"
             
-            # Institution
             if institution:
-                content += f"*{institution}*  \n"  # Two spaces at end
+                content += f"*{institution}*  \n"
             
-            # Amount with currency
             if amount and str(amount).strip():
                 if currency:
                     if str(currency).upper() == 'BRL':
-                        content += f"R$ {amount:,.2f}  \n"  # Two spaces at end
+                        content += f"R$ {amount:,.2f}  \n"
                     elif str(currency).upper() == 'USD':
-                        content += f"${amount:,.2f}  \n"  # Two spaces at end
+                        content += f"${amount:,.2f}  \n"
                     else:
-                        content += f"Amount: {amount} {currency}  \n"  # Two spaces at end
+                        content += f"Amount: {amount} {currency}  \n"
                 else:
                     formatted_amount = format_currency_amount(amount)
-                    content += f"Amount: {formatted_amount}  \n"  # Two spaces at end
+                    content += f"Amount: {formatted_amount}  \n"
             
-            # Description
             if description and str(description).strip():
-                content += f"{description}  \n"  # Two spaces at end
+                content += f"{description}  \n"
             
-            content += "\n"  # Empty line between entries
+            content += "\n"
     
     content += "\n\n"
     return content

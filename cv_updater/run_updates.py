@@ -34,26 +34,6 @@ def copy_to_pages():
 def copy_cv_to_assets():
     """Copy cv_euge_stumm.pdf to assets directory"""
     print("\nCopying cv_euge_stumm.pdf to assets directory...")
-    
-    cv_pdf = 'cv_euge_stumm.pdf'
-    assets_dir = os.path.join(os.path.dirname(os.getcwd()), 'assets')
-    
-    # Create assets directory if it doesn't exist
-    os.makedirs(assets_dir, exist_ok=True)
-    
-    if os.path.exists(cv_pdf):
-        dest_path = os.path.join(assets_dir, cv_pdf)
-        try:
-            shutil.copy2(cv_pdf, dest_path)
-            print(f"Successfully copied {cv_pdf} to assets directory")
-        except Exception as e:
-            print(f"Error copying {cv_pdf} to assets: {e}")
-    else:
-        print(f"Error: {cv_pdf} not found - cannot copy to assets")
-
-def copy_cv_to_assets():
-    """Copy cv_euge_stumm.pdf to assets directory"""
-    print("\nCopying cv_euge_stumm.pdf to assets directory...")
     cv_pdf = 'cv_euge_stumm.pdf'
     assets_dir = os.path.join(os.path.dirname(os.getcwd()), 'assets')
     

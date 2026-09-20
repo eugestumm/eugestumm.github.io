@@ -15,7 +15,7 @@ geometry: "margin=1in"
 
 - Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 - Committee: [Ager Gondra](https://orcid.org/0000-0002-8346-4489), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
-- *Graduate Certificate in Digital Humanities*, Expected 2027
+- *Graduate Certificate in Digital Humanities*, 2026
 - *Graduate Certificate in Second Language Acquisition and Teaching*, 2024
 
 **M.A. in Psychology**, 2022, Federal University of Rio Grande do Sul, GPA: 4.0
@@ -24,7 +24,7 @@ geometry: "margin=1in"
 - Advisor: [Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
 - Committee: [Débora Krischke Leitão](https://scholar.google.com/citations?user=mSU1fDUAAAAJ&hl=en), [Paula Sandrine Machado](https://scholar.google.com/citations?user=uCuAJOYAAAAJ&hl=pt-BR), [Rita de Cássia Sobreira Lopes](https://scholar.google.com/citations?user=rn84oA4AAAAJ&hl=pt-BR)
 
-**B.A. in Psychology**, 2021, Federal University of Health Sciences of Porto Alegre
+**B.A. in Psychology**, 2021, Federal University of Health Sciences of Porto Alegre, GPA: 3.57
 
 - Thesis: *Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras [Always Characters, Sometimes Actors, Never Directors: The Cinema Made by Brazilian Trans Women and Travesti Directors]*
 - Advisor: [Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
@@ -36,6 +36,14 @@ geometry: "margin=1in"
 
 **Dean's Fellowship** (2026)  
 *University of Miami – Graduate School*  
+
+**Doctoral Archival and Specialized Research Award** (2026)  
+*University of Miami – College of Arts and Sciences*  
+$2,000.00  
+
+**Summer Doctoral Micro-Grant** (2026)  
+*University of Miami – Graduate School*  
+$5,000.00  
 
 **2025-2026 Outstanding Graduate Student Award** (2026)  
 *University of Miami – Michele Bowman Underwood Department of Modern Languages and Literatures*  
@@ -63,13 +71,13 @@ $500.00
 **Center for the Humanities Dissertation Fellowship** (2026)  
 *University of Miami – Graduate School*  
 
-**Max and Peggy Kriloff Student Travel Scholarship** (2025)  
-*University of Miami – Graduate School*  
-$500.00  
-
 **Digital Humanities Graduate Fellowship** (2025)  
 *University of Miami – Digital Humanities*  
 $1,000.00  
+
+**Max and Peggy Kriloff Student Travel Scholarship** (2025)  
+*University of Miami – Graduate School*  
+$500.00  
 
 **Digital Humanities Graduate Fellowship** (2024)  
 *University of Miami – Digital Humanities*  
@@ -107,13 +115,15 @@ For presentation in the panel “Teaching”
 
 ### Peer-Reviewed Journal Articles
 
-1. Meireles, Eduarda, Stumm, Euge, and Levandowski, Daniela "Trajetórias de Parentalidade: Experiências de Pessoas Trans e Não Binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, **forthcoming 2026**.
+1. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094)
 
-2. Schneider, Karoline, Stumm, Euge Helyantus, Rocha, Roberta Zanini da, and Levandowski, Daniela Centenaro "Innovative Practices in Developmental Psychology Teaching". *Psicologia Escolar e Educacional*, 27: e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
+2. Meireles, Eduarda, Stumm, Euge, and Levandowski, Daniela "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, 1(24): 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775)
 
-3. Gurski, Rose, Strzykalski, Stephanie, Gomes, Paula Grus, and Stumm, Euge Helyantus "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, 46: 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
+3. Schneider, Karoline, Stumm, Euge Helyantus, Rocha, Roberta Zanini da, and Levandowski, Daniela Centenaro "Innovative Practices in Developmental Psychology Teaching". *Psicologia Escolar e Educacional*, 27: e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
 
-4. Stumm, Euge Helyantus, and Weinmann, Amadeu de Oliveira "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, 1(11): 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+4. Gurski, Rose, Strzykalski, Stephanie, Gomes, Paula Grus, and Stumm, Euge Helyantus "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, 46: 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
+
+5. Stumm, Euge Helyantus, and Weinmann, Amadeu de Oliveira "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, 1(11): 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
 
 ### Invited Publications
 
@@ -131,6 +141,10 @@ For presentation in the panel “Teaching”
 
 5. Stumm, Euge Helyantus "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. *Contra o Cânone: Arte, Feminismo(s) e Ativismos Séculos XVIII a XXI. Seminário Internacional*, edited by Andrea Giunta et al., Fundação Bienal do Mercosul, 2020, pp. 170–175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf)
 
+### Reviews
+
+1. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". *Reviews in Digital Humanities*, **forthcoming**.
+
 ### Digital Scholarship
 
 1. Stumm, Euge "Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/)
@@ -143,11 +157,7 @@ For presentation in the panel “Teaching”
 
 1. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Peer-Reviewed Journal Article]**
 
-2. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. **[Peer-Reviewed Journal Article]**
-
-3. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
-
-4. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". **[Review]**
+2. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
 
 
 
@@ -184,10 +194,10 @@ For presentation in the panel “Teaching”
 
 ***Course Research Assistant***
 
-1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 699) — Spring 2023
+1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 691) — Spring 2023
     - Supervised by Dr. Steven Butterman
 
-2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 699) — Fall 2022
+2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 691) — Fall 2022
     - Supervised by Dr. Steven Butterman
 
 
@@ -226,7 +236,7 @@ For presentation in the panel “Teaching”
 
 "Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, IL, USA. With Alexandra Arana Blas.
 
-"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as an Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
+"The Poet is Present: Marico Carmona’s Bodily Presence in Poetry Slams as a Strategy Towards Inclusive Language in Spanish." *Latin 2025: Poner el cuerpo en Latinx America*, April 2025, Latin American Studies Association, San Francisco, CA, USA.
 
 "Brazilian Funk in Pajubá: How Travesti Funkeiras Utilize Cryptolects for Collective Enunciation." *Harvard University’s Graduate Music Forum Conference: TRANS\*Media*, March 2025, Harvard University, Cambridge, MA, USA.
 
@@ -240,7 +250,7 @@ For presentation in the panel “Teaching”
 
 "Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX." *Biennal-International Symposium Vinculaciones: (Re)thinking the “We” in Latin America (7th)*, April 2023, University of Pittsburgh, Pittsburgh, PA, USA.
 
-"Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and Global North." *Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*, March 2023, University of Miami, Miami, FL, USA.
+"Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and the Global North." *Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*, March 2023, University of Miami, Miami, FL, USA.
 
 
 
@@ -309,10 +319,13 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ### University Service
 
-**Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–present)
+**Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–May 2026)
     - With Dr. Brenna Munro
 
-**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–present)
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2026–present)
+    - With Elizabeth Cornick, Dr. Ludovic Monpelat and Dr. Chloe Edmonson
+
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–May 2026)
     - With Elizabeth Cornick and Dr. Susanna Allés-Torrent
 
 **Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2024–April 2025)
@@ -416,5 +429,5 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 
 
-*Last updated: May 2026*
+*Last updated: September 2026*
 

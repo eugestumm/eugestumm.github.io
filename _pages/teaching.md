@@ -33,9 +33,9 @@ author_profile: true
 
 **University of Miami**
 
-- LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (POR 699) — Spring 2023  
+- LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox (POR 691) — Spring 2023  
   *Supervised by Dr. Steven Butterman*
-- Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo (POR 699) — Fall 2022  
+- Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo (POR 691) — Fall 2022  
   *Supervised by Dr. Steven Butterman*
 
 **Federal University of Rio Grande do Sul**
