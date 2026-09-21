@@ -13,6 +13,7 @@ geometry: "margin=1in"
 
 **Ph.D. in Literary, Cultural, and Linguistic Studies**, Expected 2027, University of Miami, GPA: 4.0
 
+- Thesis: *Tongue Twisting: Pajubá and Gender-Inclusive Spanish as Strategies To Navigate Invisibility and Visibility in Brazil and Argentina*
 - Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 - Committee: [Ager Gondra](https://orcid.org/0000-0002-8346-4489), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
 - *Graduate Certificate in Digital Humanities*, 2026
