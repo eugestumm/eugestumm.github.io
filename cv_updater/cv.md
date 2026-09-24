@@ -172,17 +172,19 @@ For presentation in the panel “Teaching”
 
 ***Instructor***
 
-1. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
+1. **Basic Spanish I** (SPA 101) — Summer 2026
+
+2. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
     - Co-taught with Dr. Susanna Allés-Torrent
 
-2. **Basic Spanish I** (SPA 101) — Spring 2025
+3. **Basic Spanish I** (SPA 101) — Spring 2025
 
-3. **Queer Studies** (GSS 305) — Fall 2024
+4. **Queer Studies** (GSS 305) — Fall 2024
     - Co-taught with Dr. Steven Butterman
 
-4. **Intermediate Portuguese I** (POR 201) — Spring 2024
+5. **Intermediate Portuguese I** (POR 201) — Spring 2024
 
-5. **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
+6. **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
 
 
 ***Mentored Teaching***
