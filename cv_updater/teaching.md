@@ -10,7 +10,7 @@ author_profile: true
 
 **University of Miami**
 
-- Basic Spanish I (SPA 101) — Summer 2026
+- Basic Spanish I – Online (SPA 101) — Summer 2026
 - Digital Literacy Through Cultural and Literary Topics in Spanish (SPA 410/MLL 410) — Fall 2025  
   *(Co-taught with Dr. Susanna Allés-Torrent)*
 - Basic Spanish I (SPA 101) — Spring 2025
