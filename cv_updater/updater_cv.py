@@ -411,6 +411,7 @@ def generate_publications_section(data):
         book_chapters = []
         book_chapters_review = []
         digital_scholarship = []
+        software = []
         other_publications = []
         
         for _, row in publications_df.iterrows():
@@ -421,6 +422,9 @@ def generate_publications_section(data):
                 if bibtex_entry.get('type') == 'online':
                     # Digital scholarship projects
                     digital_scholarship.append(bibtex_entry)
+                elif bibtex_entry.get('type') == 'software':
+                    # Software
+                    software.append(bibtex_entry)
                 elif bibtex_entry.get('type') == 'article':
                     # Check if it's a review first
                     if 'review' in note:
@@ -460,6 +464,7 @@ def generate_publications_section(data):
         book_chapters = sort_by_year(book_chapters)
         book_chapters_review = sort_by_year(book_chapters_review)
         digital_scholarship = sort_by_year(digital_scholarship)
+        software = sort_by_year(software)
         other_publications = sort_by_year(other_publications)
         
         # Helper function to format title with translation
@@ -752,6 +757,45 @@ def generate_publications_section(data):
                 if url:
                     content += f"[{url}]({url})"
                 
+                content += "\n\n"
+        
+        # Software
+        if software:
+            content += "### Software\n\n"
+
+            for i, sw in enumerate(software, 1):
+                authors = format_author_name(sw.get('author', ''))
+                title = sw.get('title', '').strip('"{}')
+                version = sw.get('version', '')
+                year = sw.get('year', '')
+                license_ = sw.get('license', '')
+                url = sw.get('url', '')
+                repository = sw.get('repository', '')
+
+                # MLA convention: software titles are italicized, not quoted
+                content += f"{i}. {authors} *{title}*."
+
+                details = []
+                if version:
+                    details.append(f"Version {version}")
+                if year:
+                    details.append(str(year))
+                if details:
+                    content += " " + ", ".join(details) + "."
+
+                if license_:
+                    content += f" {license_} License."
+
+                # Lineage / credit for upstream projects (from the note field)
+                sw_note = sw.get('note', '').strip()
+                if sw_note:
+                    content += f" {sw_note.rstrip('.')}."
+
+                if url:
+                    content += f" [{url}]({url})"
+                if repository and repository != url:
+                    content += f" Code: [{repository}]({repository})"
+
                 content += "\n\n"
         
         # Manuscripts Under Review (includes articles, book chapters, and reviews)

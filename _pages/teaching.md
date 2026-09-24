@@ -22,9 +22,9 @@ author_profile: true
 
 **University of Miami**
 
-- Queer Studies (SPA 330) — Spring 2024  
+- Queer Studies (GSS 305) — Spring 2024  
   *Supervised by Dr. Steven Butterman*
-- Topics in Gender and Sexuality (GSS 305) — Fall 2023  
+- Topics in Gender and Sexuality (SPA 330) — Fall 2023  
   *Supervised by Dr. Gema Pérez-Sánchez*
 - Introduction to Gender and Sexuality Studies (GSS 202) — Fall 2023  
   *Supervised by Dr. Steven Butterman*

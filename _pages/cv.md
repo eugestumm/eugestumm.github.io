@@ -154,6 +154,10 @@ For presentation in the panel “Teaching”
 
 3. Stumm, Euge "Digital mapping Néstor Perlongher's "O Negócio do Michê". 2024. [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/)
 
+### Software
+
+1. Stumm, Euge Helyantus *CollectionBuilder-Remix*. Version 0.1.0, 2026. MIT License. Extends CollectionBuilder-GH by Evan Peter Williamson, Devin Becker, and Olivia Wikle. [https://eugestumm.github.io/CollectionBuilder-Remix/](https://eugestumm.github.io/CollectionBuilder-Remix/) Code: [https://github.com/eugestumm/CollectionBuilder-Remix](https://github.com/eugestumm/CollectionBuilder-Remix)
+
 ### Manuscripts Under Review
 
 1. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Peer-Reviewed Journal Article]**
@@ -183,10 +187,10 @@ For presentation in the panel “Teaching”
 
 ***Mentored Teaching***
 
-1. **Queer Studies** (SPA 330) — Spring 2024
+1. **Queer Studies** (GSS 305) — Spring 2024
     - Supervised by Dr. Steven Butterman
 
-2. **Topics in Gender and Sexuality** (GSS 305) — Fall 2023
+2. **Topics in Gender and Sexuality** (SPA 330) — Fall 2023
     - Supervised by Dr. Gema Pérez-Sánchez
 
 3. **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
