@@ -223,7 +223,7 @@ For presentation in the panel “Teaching”
 
 ### Federal University of Health Sciences of Porto Alegre
 
-***Course Research Assistant***
+***Undergraduate Course Research Assistant***
 
 1. **Developmental Psychology I** — 2018–2021
     - Supervised by Dr. Daniela Centenaro Levandowski

@@ -46,6 +46,8 @@ author_profile: true
 - Psychology Applied to Health Sciences — 2022  
   *Supervised by Dr. Adolfo Pizzinato*
 
+## Undergraduate Course Research Assistant
+
 **Federal University of Health Sciences of Porto Alegre**
 
 - Developmental Psychology I — 2018  
