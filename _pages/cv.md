@@ -116,13 +116,13 @@ For presentation in the panel “Teaching”
 
 ### Peer-Reviewed Journal Articles
 
-1. Meurer, Camila, et al. "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*, vol. 9, no. 24, 2026. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094).
+1. Meurer, Camila, Euge Stumm, and Daniela Levandowski. "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*, vol. 9, no. 24, 2026. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094).
 
-2. Meireles, Eduarda, et al. "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, vol. 1, no. 24, 2026, pp. 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775).
+2. Meireles, Eduarda, Euge Stumm, and Daniela Levandowski. "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, vol. 1, no. 24, 2026, pp. 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775).
 
-3. Schneider, Karoline, et al. "Innovative Practices in Developmental Psychology Teaching." *Psicologia Escolar e Educacional*, vol. 27, 2023, p. e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T).
+3. Schneider, Karoline, Euge Helyantus Stumm, Roberta Zanini da Rocha, and Daniela Centenaro Levandowski. "Innovative Practices in Developmental Psychology Teaching." *Psicologia Escolar e Educacional*, vol. 27, 2023, p. e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T).
 
-4. Gurski, Rose, et al. "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847).
+4. Gurski, Rose, Stephanie Strzykalski, Paula Grus Gomes, and Euge Helyantus Stumm. "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847).
 
 5. Stumm, Euge Helyantus, and Amadeu de Oliveira Weinmann. "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254).
 
@@ -162,7 +162,7 @@ For presentation in the panel “Teaching”
 
 1. Stumm, Euge. "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women." **[Peer-Reviewed Journal Article]**
 
-2. Stumm, Euge, et al. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
+2. Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
 
 
 

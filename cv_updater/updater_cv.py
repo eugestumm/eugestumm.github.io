@@ -409,7 +409,7 @@ def generate_publications_section(data):
 
     # MLA 9 lists only the first author + "et al." when there are 3 or more.
     # Set to True to list every co-author (common on CVs).
-    LIST_ALL_AUTHORS = False
+    LIST_ALL_AUTHORS = True
 
     # ------------------------------------------------------------------
     # Helpers
