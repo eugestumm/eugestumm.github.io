@@ -329,7 +329,7 @@ def generate_education_section(data):
 
             # Thesis
             if row.get("thesis"):
-                content += f"- Thesis: *{row['thesis']}*\n"
+                content += f"- Dissertation: *{row['thesis']}*\n"
 
             # Advisor
             if row.get("advisor"):
@@ -396,463 +396,321 @@ def generate_education_section(data):
     return content
 
 def generate_publications_section(data):
-    """Generate Publications section"""
+    """Generate Publications section in MLA 9 style.
+
+    All formatting helpers live inside this function so nothing else in the
+    script needs to change. Relies only on `re` (already imported) and on
+    the existing parse_bibtex().
+    """
     content = "## PUBLICATIONS\n\n"
-    
-    if 'Publications' in data:
-        publications_df = data['Publications']
-        
-        # Separate publication types and status
-        journal_articles = []
-        journal_articles_review = []
-        invited_publications = []
-        reviews = []
-        reviews_review = []
-        book_chapters = []
-        book_chapters_review = []
-        digital_scholarship = []
-        software = []
-        other_publications = []
-        
-        for _, row in publications_df.iterrows():
-            if row.get('bibtex'):
-                bibtex_entry = parse_bibtex(row['bibtex'])
-                note = bibtex_entry.get('note', '').lower()
-                
-                if bibtex_entry.get('type') == 'online':
-                    # Digital scholarship projects
-                    digital_scholarship.append(bibtex_entry)
-                elif bibtex_entry.get('type') == 'software':
-                    # Software
-                    software.append(bibtex_entry)
-                elif bibtex_entry.get('type') == 'article':
-                    # Check if it's a review first
-                    if 'review' in note:
-                        if 'submitted' in note:
-                            reviews_review.append(bibtex_entry)
-                        else:
-                            # Both published and accepted reviews go here
-                            reviews.append(bibtex_entry)
-                    # Check if it's invited
-                    elif 'invited' in note:
-                        invited_publications.append(bibtex_entry)
-                    # Check status from note field
-                    elif 'submitted' in note:
-                        journal_articles_review.append(bibtex_entry)
-                    else:
-                        # Published and accepted articles go together
-                        journal_articles.append(bibtex_entry)
-                elif bibtex_entry.get('type') in ['incollection', 'inproceedings']:
-                    # Check if submitted
-                    if 'submitted' in note:
-                        book_chapters_review.append(bibtex_entry)
-                    else:
-                        # Published, accepted, and forthcoming go together
-                        book_chapters.append(bibtex_entry)
-                else:
-                    other_publications.append(bibtex_entry)
-        
-        # Sort by year (descending)
-        def sort_by_year(entries):
-            return sorted(entries, key=lambda x: int(x.get('year', 0) or 0), reverse=True)
-        
-        journal_articles = sort_by_year(journal_articles)
-        journal_articles_review = sort_by_year(journal_articles_review)
-        invited_publications = sort_by_year(invited_publications)
-        reviews = sort_by_year(reviews)
-        reviews_review = sort_by_year(reviews_review)
-        book_chapters = sort_by_year(book_chapters)
-        book_chapters_review = sort_by_year(book_chapters_review)
-        digital_scholarship = sort_by_year(digital_scholarship)
-        software = sort_by_year(software)
-        other_publications = sort_by_year(other_publications)
-        
-        # Helper function to format title with translation
-        def format_title_with_translation(title, titleaddon):
-            if not title:
-                return ""
-            
-            title_clean = title.strip('"{}')
-            formatted_title = f'"{title_clean}"'
-            
-            # Add translation in brackets if available
-            if titleaddon:
-                titleaddon_clean = titleaddon.strip('"{}')
-                formatted_title += f" [{titleaddon_clean}]"
-            
-            # Add period after the title
-            formatted_title += "."
-            
-            return formatted_title + " "
-        
-        # Journal Articles (Published and Accepted)
-        if journal_articles:
-            content += "### Peer-Reviewed Journal Articles\n\n"
-            
-            for i, article in enumerate(journal_articles, 1):
-                authors = format_author_name(article.get('author', ''))
-                title = article.get('title', '')
-                titleaddon = article.get('titleaddon', '')
-                journal = article.get('journal', '')
-                year = article.get('year', '')
-                volume = article.get('volume', '')
-                number = article.get('number', '')
-                pages = article.get('pages', '')
-                doi = article.get('doi', '')
-                url = article.get('url', '')
-                note = article.get('note', '').lower()
-                
-                content += f"{i}. {authors} "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
 
-                # Fix page ranges: replace double hyphen with en dash
-                if pages:
-                    pages = pages.replace("--", "–")
-                
-                if journal:
-                    content += f"*{journal}*"
-                
-                if volume:
-                    content += f", {volume}"
-                    if number:
-                        content += f"({number})"
-                
-                if pages:
-                    content += f": {pages}"
-                
-                # Add forthcoming status if applicable
-                if 'accepted' in note:
-                    if year:
-                        content += f", **forthcoming {year}**"
-                    else:
-                        content += ", **forthcoming**"
-                
-                content += "."
-                
-                # Add URL or DOI at the end
-                if url:
-                    content += f" [{url}]({url})"
-                elif doi:
-                    content += f" DOI: [{doi}](https://doi.org/{doi})"
-                
-                content += "\n\n"
-        
-        # Invited Publications
-        if invited_publications:
-            content += "### Invited Publications\n\n"
-            
-            for i, article in enumerate(invited_publications, 1):
-                authors = format_author_name(article.get('author', ''))
-                title = article.get('title', '')
-                titleaddon = article.get('titleaddon', '')
-                journal = article.get('journal', '')
-                year = article.get('year', '')
-                volume = article.get('volume', '')
-                number = article.get('number', '')
-                pages = article.get('pages', '')
-                doi = article.get('doi', '')
-                url = article.get('url', '')
-                
-                content += f"{i}. {authors} ({year}). "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
+    if 'Publications' not in data:
+        return content + "\n\n"
 
-                # Fix page ranges: replace double hyphen with en dash
-                if pages:
-                    pages = pages.replace("--", "–")
-                
-                if journal:
-                    content += f"*{journal}*"
-                
-                if volume:
-                    content += f", {volume}"
-                    if number:
-                        content += f"({number})"
-                
-                if pages:
-                    content += f": {pages}."
-                else:
-                    content += "."
-                
-                # Add URL or DOI at the end
-                if url:
-                    content += f" [{url}]({url})"
-                elif doi:
-                    content += f" DOI: [{doi}](https://doi.org/{doi})"
-                
-                content += "\n\n"
-        
-        # Book Chapters (Published, Accepted, and Forthcoming)
-        if book_chapters:
-            content += "### Book Chapters and Edited Volumes\n\n"
-            
-            for i, chapter in enumerate(book_chapters, 1):
-                authors = format_author_name(chapter.get('author', ''), style='mla')
-                title = chapter.get('title', '')
-                titleaddon = chapter.get('titleaddon', '')
-                booktitle = chapter.get('booktitle', '')
-                year = chapter.get('year', '')
-                volume = chapter.get('volume', '')
-                chapter_num = chapter.get('chapter', '')
-                pages = chapter.get('pages', '')
-                publisher = chapter.get('publisher', '')
-                editor = chapter.get('editor', '')
-                url = chapter.get('url', '')
-                doi = chapter.get('doi', '')
-                note = chapter.get('note', '').lower()
+    # MLA 9 lists only the first author + "et al." when there are 3 or more.
+    # Set to True to list every co-author (common on CVs).
+    LIST_ALL_AUTHORS = False
 
-                # Fix page ranges: replace double hyphen with en dash
-                if pages:
-                    pages = pages.replace("--", "–")
+    # ------------------------------------------------------------------
+    # Helpers
+    # ------------------------------------------------------------------
+    def clean(s):
+        """Strip BibTeX braces and stray surrounding quotes."""
+        if s is None:
+            return ""
+        return re.sub(r'[{}]', '', str(s)).strip().strip('"').strip()
 
-                # Format editors - convert "Last, First" to "First Last"
-                formatted_editors = ""
-                if editor:
-                    # Split by " and " to get individual editors
-                    editor_list = [name.strip() for name in editor.split(" and ") if name.strip()]
-                    
-                    # Convert each editor from "Last, First" to "First Last"
-                    converted_editors = []
-                    for ed in editor_list:
-                        if ',' in ed:
-                            parts = [p.strip() for p in ed.split(',', 1)]
-                            if len(parts) == 2:
-                                converted_editors.append(f"{parts[1]} {parts[0]}")
-                            else:
-                                converted_editors.append(ed)
-                        else:
-                            converted_editors.append(ed)
-                    
-                    # MLA: Use "et al." if more than 3 editors
-                    if len(converted_editors) > 3:
-                        formatted_editors = converted_editors[0] + " et al."
-                    elif len(converted_editors) > 1:
-                        formatted_editors = ", ".join(converted_editors[:-1]) + ", and " + converted_editors[-1]
-                    elif converted_editors:
-                        formatted_editors = converted_editors[0]
+    def end_period(s):
+        """Add a period unless the text already ends with . ? or !"""
+        s = s.rstrip()
+        if not s:
+            return s
+        return s if s.endswith(('.', '?', '!')) else s + "."
 
-                # --- MLA-style order ---
-                content += f"{i}. {authors} "
+    def first_last(name):
+        """Return (first, last) from 'Last, First' or 'First Last'."""
+        if ',' in name:
+            last, first = [p.strip() for p in name.split(',', 1)]
+        else:
+            parts = name.split()
+            last, first = parts[-1], ' '.join(parts[:-1])
+        return first, last
 
-                # Chapter/article title in quotes
-                content += format_title_with_translation(title, titleaddon)
+    def mla_authors(author_str):
+        """First author inverted ('Last, First'), the rest 'First Last'."""
+        names = [n.strip() for n in re.split(r'\s+and\s+', clean(author_str)) if n.strip()]
+        if not names:
+            return ""
+        first, last = first_last(names[0])
+        lead = f"{last}, {first}" if first else last
+        others = [' '.join(p for p in first_last(n) if p) for n in names[1:]]
 
-                # Book title italicized with volume if available
-                if booktitle:
-                    content += f"*{booktitle}*"
-                    if volume:
-                        content += f", Vol. {volume}"
+        if not others:
+            return lead
+        if len(others) == 1:
+            return f"{lead}, and {others[0]}"
+        if LIST_ALL_AUTHORS:
+            return f"{lead}, " + ", ".join(others[:-1]) + f", and {others[-1]}"
+        return f"{lead}, et al."
 
-                # Editors
-                if formatted_editors:
-                    content += f", edited by {formatted_editors}"
+    def author_part(entry):
+        """'Author. ' with the MLA period after the author element."""
+        a = mla_authors(entry.get('author', ''))
+        return end_period(a) + " " if a else ""
 
-                # Publisher
-                if publisher:
-                    content += f", {publisher}"
-                
-                # Check if it's forthcoming or accepted
-                if 'forthcoming' in note or 'accepted' in note:
-                    if year:
-                        content += f", **forthcoming {year}**"
-                    else:
-                        content += ", **forthcoming**"
-                else:
-                    # Published - include year
-                    if year:
-                        content += f", {year}"
-                
-                # Page range (only for published chapters)
-                if pages and 'forthcoming' not in note and 'accepted' not in note:
-                    content += f", pp. {pages}"
+    def mla_editors(editor_str):
+        """'edited by' names: 'First Last', 'A and B', or 'A et al.'"""
+        eds = []
+        for ed in re.split(r'\s+and\s+', clean(editor_str)):
+            ed = ed.strip()
+            if ed:
+                eds.append(' '.join(p for p in first_last(ed) if p))
+        if not eds:
+            return ""
+        if len(eds) == 1:
+            return eds[0]
+        if len(eds) == 2:
+            return f"{eds[0]} and {eds[1]}"
+        return f"{eds[0]} et al."
 
-                content += "."
+    def mla_title(title, titleaddon='', italic=False):
+        """Quoted title for parts of works, italic for standalone works.
+        Translation (titleaddon) goes in brackets after the title."""
+        t = clean(title)
+        if not t:
+            return ""
+        addon = clean(titleaddon)
+        if italic:
+            s = f"*{t}*"
+            if addon:
+                return f"{s} [{addon}]. "
+            return (s if t.endswith(('.', '?', '!')) else s + ".") + " "
+        if addon:
+            return f'"{t}" [{addon}]. '
+        return f'"{end_period(t)}" '  # period goes inside the quotes
 
-                # Add URL or DOI at the end
-                if url:
-                    content += f" [{url}]({url})"
-                elif doi:
-                    content += f" DOI: [{doi}](https://doi.org/{doi})"
+    def mla_pages(pages):
+        p = clean(pages).replace('--', '–').replace('-', '–')
+        if not p:
+            return ""
+        return f"pp. {p}" if ('–' in p or ',' in p) else f"p. {p}"
 
-                content += "\n\n"
-        
-        # Reviews (Published and Accepted)
-        if reviews:
-            content += "### Reviews\n\n"
-            
-            for i, article in enumerate(reviews, 1):
-                authors = format_author_name(article.get('author', ''))
-                title = article.get('title', '')
-                titleaddon = article.get('titleaddon', '')
-                journal = article.get('journal', '')
-                year = article.get('year', '')
-                volume = article.get('volume', '')
-                number = article.get('number', '')
-                pages = article.get('pages', '')
-                doi = article.get('doi', '')
-                url = article.get('url', '')
-                note = article.get('note', '').lower()
-                
-                content += f"{i}. {authors} "
-                
-                # Format title (reviews typically start with "Review of" or similar)
-                content += format_title_with_translation(title, titleaddon)
+    def mla_link(entry):
+        """MLA prefers the DOI (as a https://doi.org/ link) over a URL."""
+        doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', clean(entry.get('doi')), flags=re.I)
+        url = clean(entry.get('url'))
+        if doi:
+            return f" [https://doi.org/{doi}](https://doi.org/{doi})."
+        if url:
+            return f" [{url}]({url})."
+        return ""
 
-                # Fix page ranges: replace double hyphen with en dash
-                if pages:
-                    pages = pages.replace("--", "–")
-                
-                if journal:
-                    content += f"*{journal}*"
-                
-                if volume:
-                    content += f", {volume}"
-                    if number:
-                        content += f"({number})"
-                
-                if pages:
-                    content += f": {pages}"
-                
-                # Add forthcoming status or under review status if applicable
-                if 'accepted' in note:
-                    content += ", **forthcoming**"
-                elif 'submitted' in note:
-                    content += ", **under review**"
-                
-                content += "."
-                
-                # Add URL or DOI at the end
-                if url:
-                    content += f" [{url}]({url})"
-                elif doi:
-                    content += f" DOI: [{doi}](https://doi.org/{doi})"
-                
-                content += "\n\n"
-        
-        # Digital Scholarship
-        if digital_scholarship:
-            content += "### Digital Scholarship\n\n"
-            
-            for i, project in enumerate(digital_scholarship, 1):
-                authors = format_author_name(project.get('author', ''))
-                title = project.get('title', '')
-                titleaddon = project.get('titleaddon', '')
-                year = project.get('year', '')
-                url = project.get('url', '')
-                note = project.get('note', '')
-                
-                content += f"{i}. {authors} "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
-                
-                # Add year
-                if year:
-                    content += f"{year}. "
-                
-                # Add URL
-                if url:
-                    content += f"[{url}]({url})"
-                
-                content += "\n\n"
-        
-        # Software
-        if software:
-            content += "### Software\n\n"
+    def note_of(entry):
+        return clean(entry.get('note')).lower()
 
-            for i, sw in enumerate(software, 1):
-                authors = format_author_name(sw.get('author', ''))
-                title = sw.get('title', '').strip('"{}')
-                version = sw.get('version', '')
-                year = sw.get('year', '')
-                license_ = sw.get('license', '')
-                url = sw.get('url', '')
-                repository = sw.get('repository', '')
+    def is_submitted(note):
+        return 'submitted' in note or 'under review' in note
 
-                # MLA convention: software titles are italicized, not quoted
-                content += f"{i}. {authors} *{title}*."
+    def is_forthcoming(note):
+        return 'accepted' in note or 'forthcoming' in note
 
-                details = []
-                if version:
-                    details.append(f"Version {version}")
-                if year:
-                    details.append(str(year))
-                if details:
-                    content += " " + ", ".join(details) + "."
+    def is_review(note):
+        # Ignore "under review" / "peer-reviewed" so they aren't mistaken
+        # for book reviews.
+        stripped = re.sub(r'under review|peer[- ]?reviewed', '', note)
+        return 'review' in stripped
 
-                if license_:
-                    content += f" {license_} License."
+    def year_key(entry):
+        m = re.search(r'\d{4}', clean(entry.get('year')))
+        return int(m.group()) if m else 0
 
-                # Lineage / credit for upstream projects (from the note field)
-                sw_note = sw.get('note', '').strip()
-                if sw_note:
-                    content += f" {sw_note.rstrip('.')}."
+    def sort_by_year(entries):
+        return sorted(entries, key=year_key, reverse=True)
 
-                if url:
-                    content += f" [{url}]({url})"
-                if repository and repository != url:
-                    content += f" Code: [{repository}]({repository})"
+    # ------------------------------------------------------------------
+    # Entry formatters
+    # ------------------------------------------------------------------
+    def format_article(e):
+        """Author. "Title." *Journal*, vol. X, no. Y, Year, pp. A–B. DOI."""
+        note = note_of(e)
+        year = clean(e.get('year'))
+        out = author_part(e) + mla_title(e.get('title'), e.get('titleaddon'))
 
-                content += "\n\n"
-        
-        # Manuscripts Under Review (includes articles, book chapters, and reviews)
-        manuscripts_under_review = journal_articles_review + book_chapters_review + reviews_review
-        manuscripts_under_review = sort_by_year(manuscripts_under_review)
-        
-        if manuscripts_under_review:
-            content += "### Manuscripts Under Review\n\n"
-            
-            for i, item in enumerate(manuscripts_under_review, 1):
-                authors = format_author_name(item.get('author', ''))
-                title = item.get('title', '')
-                titleaddon = item.get('titleaddon', '')
-                note = item.get('note', '').lower()
-                item_type = item.get('type', '')
-                
-                content += f"{i}. {authors} "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
-                
-                # Add manuscript type tag
-                if 'review' in note:
-                    content += "**[Review]**"
-                elif item_type in ['incollection', 'inproceedings']:
-                    content += "**[Book Chapter]**"
-                else:
-                    content += "**[Peer-Reviewed Journal Article]**"
-                
-                content += "\n\n"
-        
-        # Other Publications
-        if other_publications:
-            content += "### Other Publications\n\n"
-            
-            for i, pub in enumerate(other_publications, 1):
-                authors = format_author_name(pub.get('author', ''))
-                title = pub.get('title', '')
-                titleaddon = pub.get('titleaddon', '')
-                year = pub.get('year', '')
-                publisher = pub.get('publisher', '')
-                url = pub.get('url', '')
-                
-                content += f"{i}. {authors} ({year}). "
-                
-                # Format title with translation
-                content += format_title_with_translation(title, titleaddon)
-                
-                if publisher:
-                    content += f"{publisher}."
-                
-                # Add URL at the end
-                if url:
-                    content += f" [{url}]({url})"
-                
-                content += "\n\n"
-    
+        parts = []
+        if clean(e.get('journal')):
+            parts.append(f"*{clean(e.get('journal'))}*")
+        if clean(e.get('volume')):
+            parts.append(f"vol. {clean(e.get('volume'))}")
+        if clean(e.get('number')):
+            parts.append(f"no. {clean(e.get('number'))}")
+        if is_forthcoming(note):
+            parts.append(f"**forthcoming {year}**" if year else "**forthcoming**")
+        else:
+            if year:
+                parts.append(year)
+            pages = mla_pages(e.get('pages'))
+            if pages:
+                parts.append(pages)
+
+        if parts:
+            out += end_period(", ".join(parts))
+        return out + mla_link(e)
+
+    def format_chapter(e):
+        """Author. "Title." *Book*, edited by X, vol. N, Publisher, Year, pp. A–B."""
+        note = note_of(e)
+        year = clean(e.get('year'))
+        out = author_part(e) + mla_title(e.get('title'), e.get('titleaddon'))
+
+        parts = []
+        if clean(e.get('booktitle')):
+            parts.append(f"*{clean(e.get('booktitle'))}*")
+        editors = mla_editors(e.get('editor'))
+        if editors:
+            parts.append(f"edited by {editors}")
+        if clean(e.get('volume')):
+            parts.append(f"vol. {clean(e.get('volume'))}")
+        if clean(e.get('publisher')):
+            parts.append(clean(e.get('publisher')))
+        if is_forthcoming(note):
+            parts.append(f"**forthcoming {year}**" if year else "**forthcoming**")
+        else:
+            if year:
+                parts.append(year)
+            pages = mla_pages(e.get('pages'))
+            if pages:
+                parts.append(pages)
+
+        if parts:
+            out += end_period(", ".join(parts))
+        return out + mla_link(e)
+
+    def format_digital(e):
+        """Author. *Title*. Publisher, Year, URL."""
+        out = author_part(e) + mla_title(e.get('title'), e.get('titleaddon'), italic=True)
+        parts = []
+        publisher = clean(e.get('organization') or e.get('publisher'))
+        if publisher:
+            parts.append(publisher)
+        if clean(e.get('year')):
+            parts.append(clean(e.get('year')))
+        url = clean(e.get('url'))
+        if url:
+            parts.append(f"[{url}]({url})")
+        if parts:
+            out += ", ".join(parts) + "."
+        return out
+
+    def format_software(e):
+        """Author. *Title*. Version X, Year. License. Note. URL Code: repo"""
+        out = author_part(e) + mla_title(e.get('title'), italic=True).rstrip()
+        details = []
+        if clean(e.get('version')):
+            details.append(f"Version {clean(e.get('version'))}")
+        if clean(e.get('year')):
+            details.append(clean(e.get('year')))
+        if details:
+            out += " " + ", ".join(details) + "."
+        if clean(e.get('license')):
+            out += f" {clean(e.get('license'))} License."
+        if clean(e.get('note')):
+            out += f" {end_period(clean(e.get('note')))}"
+        url = clean(e.get('url'))
+        repo = clean(e.get('repository'))
+        if url:
+            out += f" [{url}]({url})"
+        if repo and repo != url:
+            out += f" Code: [{repo}]({repo})"
+        return out
+
+    def format_manuscript(e):
+        """Author. "Title." **[Type]**"""
+        note = note_of(e)
+        out = author_part(e) + mla_title(e.get('title'), e.get('titleaddon'))
+        if is_review(note):
+            out += "**[Review]**"
+        elif e.get('type') in ['incollection', 'inproceedings']:
+            out += "**[Book Chapter]**"
+        else:
+            out += "**[Peer-Reviewed Journal Article]**"
+        return out
+
+    def format_other(e):
+        """Author. *Title*. Publisher, Year. URL.  (quoted title if not standalone)"""
+        standalone = e.get('type') in ['book', 'phdthesis', 'mastersthesis', 'thesis', 'report']
+        out = author_part(e) + mla_title(e.get('title'), e.get('titleaddon'), italic=standalone)
+        parts = []
+        publisher = clean(e.get('publisher') or e.get('school') or e.get('institution'))
+        if publisher:
+            parts.append(publisher)
+        if clean(e.get('year')):
+            parts.append(clean(e.get('year')))
+        if parts:
+            out += end_period(", ".join(parts))
+        return out + mla_link(e)
+
+    # ------------------------------------------------------------------
+    # Classify entries
+    # ------------------------------------------------------------------
+    journal_articles = []
+    journal_articles_review = []
+    invited_publications = []
+    reviews = []
+    reviews_review = []
+    book_chapters = []
+    book_chapters_review = []
+    digital_scholarship = []
+    software = []
+    other_publications = []
+
+    for _, row in data['Publications'].iterrows():
+        if not row.get('bibtex'):
+            continue
+        entry = parse_bibtex(row['bibtex'])
+        note = note_of(entry)
+        etype = entry.get('type', '').lower()
+
+        if etype == 'online':
+            digital_scholarship.append(entry)
+        elif etype == 'software':
+            software.append(entry)
+        elif etype == 'article':
+            if is_review(note):
+                (reviews_review if is_submitted(note) else reviews).append(entry)
+            elif 'invited' in note:
+                invited_publications.append(entry)
+            elif is_submitted(note):
+                journal_articles_review.append(entry)
+            else:
+                journal_articles.append(entry)
+        elif etype in ['incollection', 'inproceedings']:
+            (book_chapters_review if is_submitted(note) else book_chapters).append(entry)
+        else:
+            other_publications.append(entry)
+
+    # ------------------------------------------------------------------
+    # Output sections
+    # ------------------------------------------------------------------
+    manuscripts_under_review = journal_articles_review + book_chapters_review + reviews_review
+
+    sections = [
+        ("Peer-Reviewed Journal Articles", journal_articles, format_article),
+        ("Invited Publications", invited_publications, format_article),
+        ("Book Chapters and Edited Volumes", book_chapters, format_chapter),
+        ("Reviews", reviews, format_article),
+        ("Digital Scholarship", digital_scholarship, format_digital),
+        ("Software", software, format_software),
+        ("Manuscripts Under Review", manuscripts_under_review, format_manuscript),
+        ("Other Publications", other_publications, format_other),
+    ]
+
+    for heading, entries, formatter in sections:
+        if not entries:
+            continue
+        content += f"### {heading}\n\n"
+        for i, entry in enumerate(sort_by_year(entries), 1):
+            content += f"{i}. {formatter(entry)}\n\n"
+
     content += "\n\n"
     return content
 
@@ -1328,7 +1186,7 @@ def generate_service_section(data):
         'University Service',
         'Departmental Service',
         'Professional Development',
-        'Teaching Workshops',
+        'Invited Workshops',
         'Professional Service',
         'Community Engagement',
         'Editorial Service',

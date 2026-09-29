@@ -11,21 +11,21 @@ geometry: "margin=1in"
 
 ## EDUCATION
 
-**Ph.D. in Literary, Cultural, and Linguistic Studies**, Expected 2027, University of Miami, GPA: 4.0
+**Ph.D. in Literary, Cultural, and Linguistic Studies (Cognate: Anthropology)**, Expected 2027, University of Miami
 
-- Thesis: *Tongue Twisting: Pajubá and Gender-Inclusive Spanish as Strategies to Navigate Invisibility and Visibility in Brazil and Argentina*
+- Dissertation: *Tongue Twisting: Pajubá and Gender-Inclusive Spanish as Strategies to Navigate Invisibility and Visibility in Brazil and Argentina*
 - Advisor: [Steven Butterman](https://people.miami.edu/profile/0901841aec6ac4f4f40a0176b3156b3f)
 - Committee: [Ager Gondra](https://orcid.org/0000-0002-8346-4489), [Claire Oueslati-Porter](https://people.miami.edu/profile/7673e06c53adb71799e3faf386cf2164), [Gema Pérez-Sánchez](https://scholar.google.com/citations?user=eh0I93EAAAAJ&hl=en&oi=ao), [Yolanda Martínez-San Miguel](https://scholar.google.com/citations?user=H-OAKTQAAAAJ&hl=en&oi=ao)
 - *Graduate Certificate in Digital Humanities*, 2026
 - *Graduate Certificate in Second Language Acquisition and Teaching*, 2024
 
-**M.A. in Psychology**, 2022, Federal University of Rio Grande do Sul, GPA: 4.0
+**M.A. in Psychology**, 2022, Federal University of Rio Grande do Sul
 
 - Thesis: *How to be Furro: A Digital Ethnography Among Brazilian Furry Fandoms*
 - Advisor: [Adolfo Pizzinato](https://scholar.google.com/citations?user=rgNEiA8AAAAJ&hl=es)
 - Committee: [Débora Krischke Leitão](https://scholar.google.com/citations?user=mSU1fDUAAAAJ&hl=en), [Paula Sandrine Machado](https://scholar.google.com/citations?user=uCuAJOYAAAAJ&hl=pt-BR), [Rita de Cássia Sobreira Lopes](https://scholar.google.com/citations?user=rn84oA4AAAAJ&hl=pt-BR)
 
-**B.A. in Psychology**, 2021, Federal University of Health Sciences of Porto Alegre, GPA: 3.57
+**B.A. in Psychology**, 2021, Federal University of Health Sciences of Porto Alegre
 
 - Thesis: *Sempre personagens, às vezes atrizes, nunca diretoras: o cinema feito por diretoras trans e travestis brasileiras [Always Characters, Sometimes Actors, Never Directors: The Cinema Made by Brazilian Trans Women and Travesti Directors]*
 - Advisor: [Maria Paula Prates](https://www.anthro.ox.ac.uk/people/dr-maria-paula-prates)
@@ -116,53 +116,53 @@ For presentation in the panel “Teaching”
 
 ### Peer-Reviewed Journal Articles
 
-1. Meurer, Camila, Stumm, Euge, and Levandowski, Daniela "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094)
+1. Meurer, Camila, et al. "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*, vol. 9, no. 24, 2026. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094).
 
-2. Meireles, Eduarda, Stumm, Euge, and Levandowski, Daniela "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, 1(24): 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775)
+2. Meireles, Eduarda, et al. "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, vol. 1, no. 24, 2026, pp. 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775).
 
-3. Schneider, Karoline, Stumm, Euge Helyantus, Rocha, Roberta Zanini da, and Levandowski, Daniela Centenaro "Innovative Practices in Developmental Psychology Teaching". *Psicologia Escolar e Educacional*, 27: e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T)
+3. Schneider, Karoline, et al. "Innovative Practices in Developmental Psychology Teaching." *Psicologia Escolar e Educacional*, vol. 27, 2023, p. e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T).
 
-4. Gurski, Rose, Strzykalski, Stephanie, Gomes, Paula Grus, and Stumm, Euge Helyantus "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, 46: 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847)
+4. Gurski, Rose, et al. "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847).
 
-5. Stumm, Euge Helyantus, and Weinmann, Amadeu de Oliveira "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, 1(11): 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254)
+5. Stumm, Euge Helyantus, and Amadeu de Oliveira Weinmann. "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254).
 
 ### Invited Publications
 
-1. Stumm, Euge Helyantus (2021). "Seriam os Goblins, na Verdade, Humanos? Colonização, Racismo e Barbárie em Dragon’s Dogma" [What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon’s Dogma]. *Revista Contraponto*, 8(2): 169–185. [https://www.seer.ufrgs.br/contraponto/article/view/117303/65101](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101)
+1. Stumm, Euge Helyantus. "Seriam os Goblins, na Verdade, Humanos? Colonização, Racismo e Barbárie em Dragon’s Dogma" [What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon’s Dogma]. *Revista Contraponto*, vol. 8, no. 2, 2021, pp. 169–185. [https://www.seer.ufrgs.br/contraponto/article/view/117303/65101](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101).
 
 ### Book Chapters and Edited Volumes
 
-1. Stumm, Euge "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions". *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
+1. Stumm, Euge. "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions." *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
 
-2. Stumm, Euge Helyantus, and Butterman, Steven "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions". *SAGE LGBTQ Studies Handbook*, Vol. 1, edited by Nael Bhanji et al., SAGE Publications, **forthcoming 2026**.
+2. Stumm, Euge Helyantus, and Steven Butterman. "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions." *SAGE LGBTQ Studies Handbook*, edited by Nael Bhanji et al., vol. 1, SAGE Publications, **forthcoming 2026**.
 
-3. Stumm, Euge Helyantus "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162–168. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf)
+3. Stumm, Euge Helyantus. "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162–168. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf).
 
-4. Piuco, Thainan, and Stumm, Euge Helyantus "Estética Queer: Entre o Empoderamento e o Apagamento" [Queer Aesthetics: Between Empowerment and Erasure]. *Fórum Fashion Revolution 2020*, edited by Ana Beatriz Simon Factum et al., Ministry of Tourism and Unibes Cultural, 2020, pp. 259–263. [https://issuu.com/fashionrevolution/docs/fr-forum-2020](https://issuu.com/fashionrevolution/docs/fr-forum-2020)
+4. Piuco, Thainan, and Euge Helyantus Stumm. "Estética Queer: Entre o Empoderamento e o Apagamento" [Queer Aesthetics: Between Empowerment and Erasure]. *Fórum Fashion Revolution 2020*, edited by Ana Beatriz Simon Factum et al., Ministry of Tourism and Unibes Cultural, 2020, pp. 259–263. [https://issuu.com/fashionrevolution/docs/fr-forum-2020](https://issuu.com/fashionrevolution/docs/fr-forum-2020).
 
-5. Stumm, Euge Helyantus "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. *Contra o Cânone: Arte, Feminismo(s) e Ativismos Séculos XVIII a XXI. Seminário Internacional*, edited by Andrea Giunta et al., Fundação Bienal do Mercosul, 2020, pp. 170–175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf)
+5. Stumm, Euge Helyantus. "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. *Contra o Cânone: Arte, Feminismo(s) e Ativismos Séculos XVIII a XXI. Seminário Internacional*, edited by Andrea Giunta et al., Fundação Bienal do Mercosul, 2020, pp. 170–175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf).
 
 ### Reviews
 
-1. Stumm, Euge "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'". *Reviews in Digital Humanities*, **forthcoming**.
+1. Stumm, Euge. "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'." *Reviews in Digital Humanities*, **forthcoming 2026**.
 
 ### Digital Scholarship
 
-1. Stumm, Euge "Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)". 2025. [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/)
+1. Stumm, Euge. *Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)*. 2025, [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/).
 
-2. Stumm, Euge, and Papadopoulos, Ben "Gender-Inclusive Spanish Digital Archive". 2025. [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/)
+2. Stumm, Euge, and Ben Papadopoulos. *Gender-Inclusive Spanish Digital Archive*. 2025, [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/).
 
-3. Stumm, Euge "Digital mapping Néstor Perlongher's "O Negócio do Michê". 2024. [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/)
+3. Stumm, Euge. *Digital mapping Néstor Perlongher's "O Negócio do Michê*. 2024, [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/).
 
 ### Software
 
-1. Stumm, Euge Helyantus *CollectionBuilder-Remix*. Version 0.1.0, 2026. MIT License. Extends CollectionBuilder-GH by Evan Peter Williamson, Devin Becker, and Olivia Wikle. [https://eugestumm.github.io/CollectionBuilder-Remix/](https://eugestumm.github.io/CollectionBuilder-Remix/) Code: [https://github.com/eugestumm/CollectionBuilder-Remix](https://github.com/eugestumm/CollectionBuilder-Remix)
+1. Stumm, Euge Helyantus. *CollectionBuilder-Remix*. Version 0.1.0, 2026. MIT License. Extends CollectionBuilder-GH by Evan Peter Williamson, Devin Becker, and Olivia Wikle. [https://eugestumm.github.io/CollectionBuilder-Remix/](https://eugestumm.github.io/CollectionBuilder-Remix/) Code: [https://github.com/eugestumm/CollectionBuilder-Remix](https://github.com/eugestumm/CollectionBuilder-Remix)
 
 ### Manuscripts Under Review
 
-1. Stumm, Euge "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women". **[Peer-Reviewed Journal Article]**
+1. Stumm, Euge. "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women." **[Peer-Reviewed Journal Article]**
 
-2. Stumm, Euge, Hamann, Cristiano, and Pizzinato, Adolfo "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South". **[Book Chapter]**
+2. Stumm, Euge, et al. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
 
 
 
@@ -201,10 +201,10 @@ For presentation in the panel “Teaching”
 
 ***Course Research Assistant***
 
-1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 691) — Spring 2023
+1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 322) — Spring 2023
     - Supervised by Dr. Steven Butterman
 
-2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 691) — Fall 2022
+2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 322) — Fall 2022
     - Supervised by Dr. Steven Butterman
 
 
@@ -342,7 +342,7 @@ Supervisor: Dr. Daniela Centenaro Levandowski
     - With Elizabeth Cornick
 
 
-### Professional Development
+### Invited Workshops
 
 **Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2026)
     - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
