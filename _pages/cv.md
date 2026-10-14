@@ -164,6 +164,10 @@ For presentation in the panel “Teaching”
 
 2. Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
 
+### Manuscripts in Preparation
+
+1. Allés-Torrent, Susanna, Euge Stumm, Elizabeth Cornick, and Leo Fein. "Sobre el 'Bien tratar a toda la generación de las mujeres' o cómo cuantificar la virtud en la Castilla del siglo XV" [On the 'Bien tratar a toda la generación de las mujeres', or How to Quantify Virtue in Fifteenth-Century Castile]. **[Peer-Reviewed Journal Article]**
+
 
 
 ## TEACHING EXPERIENCE
@@ -436,5 +440,5 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 
 
-*Last updated: September 2026*
+*Last updated: October 2026*
 

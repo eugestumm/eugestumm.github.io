@@ -514,6 +514,9 @@ def generate_publications_section(data):
     def is_forthcoming(note):
         return 'accepted' in note or 'forthcoming' in note
 
+    def is_in_prep(note):
+        return 'in preparation' in note or 'in prep' in note
+
     def is_review(note):
         # Ignore "under review" / "peer-reviewed" so they aren't mistaken
         # for book reviews.
@@ -661,6 +664,7 @@ def generate_publications_section(data):
     book_chapters_review = []
     digital_scholarship = []
     software = []
+    in_preparation = []
     other_publications = []
 
     for _, row in data['Publications'].iterrows():
@@ -674,6 +678,8 @@ def generate_publications_section(data):
             digital_scholarship.append(entry)
         elif etype == 'software':
             software.append(entry)
+        elif is_in_prep(note):
+            in_preparation.append(entry)
         elif etype == 'article':
             if is_review(note):
                 (reviews_review if is_submitted(note) else reviews).append(entry)
@@ -701,6 +707,7 @@ def generate_publications_section(data):
         ("Digital Scholarship", digital_scholarship, format_digital),
         ("Software", software, format_software),
         ("Manuscripts Under Review", manuscripts_under_review, format_manuscript),
+        ("Manuscripts in Preparation", in_preparation, format_manuscript),
         ("Other Publications", other_publications, format_other),
     ]
 
