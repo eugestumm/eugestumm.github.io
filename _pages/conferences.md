@@ -7,6 +7,8 @@ author_profile: true
 
 ## Graduate Presentations
 
+"Workshop: Finally a Workshop for Humanists: How To Build A Digital Archive From Zero to CollectionBuilder." *FLDH America 250 & Florida Digital Humanities: Local, National, & International Connections*, October 2026, University of South Florida, Saint Petersburg, FL, USA.
+
 "Innovative Archival Strategies for Marginalized Linguistic Communities: The B/Pajubá Digital Archive." *Annual Yale Bouchet Conference on Graduate Education: Historic Milestones and Future Directions: Innovative Strategies to Empower the Next Generation of Scholars (22nd)*, April 2026, Edward Alexander Bouchet Graduate Honor Society, Yale University, New Haven, CN, USA.
 
 "Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, IL, USA. With Alexandra Arana Blas.
