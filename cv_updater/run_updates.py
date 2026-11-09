@@ -1,10 +1,20 @@
 import subprocess
 import os
 import shutil
+import sys
 
-def run_updater(script_name):
+# The website's _pages folder (one level up from this script's folder)
+PAGES_DIR = os.path.join(os.path.dirname(os.getcwd()), '_pages')
+
+
+def run_updater(script_name, *args):
+    """Run one script; report if it fails instead of carrying on silently."""
     print(f"\nRunning {script_name}...")
-    subprocess.run(['python3', script_name])
+    result = subprocess.run([sys.executable, script_name, *args])
+    if result.returncode != 0:
+        print(f"⚠️  {script_name} exited with an error (code {result.returncode})")
+    return result.returncode == 0
+
 
 def show_file_content(file_name):
     print(f"\nContent of {file_name}:")
@@ -14,75 +24,28 @@ def show_file_content(file_name):
     except Exception as e:
         print(f"Error reading {file_name}: {e}")
 
+
 def copy_to_pages():
+    """Copy the website pages to ../_pages. The CV (cv.md and
+    cv_euge_stumm.pdf) is published by create_cv_latex.py instead."""
     print("\nCopying files to _pages directory...")
-    parent_pages_dir = os.path.join(os.path.dirname(os.getcwd()), '_pages')
-    
-    # Create _pages directory if it doesn't exist
-    os.makedirs(parent_pages_dir, exist_ok=True)
-    
-    files_to_copy = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md', 'cv.md', 'cv_euge_stumm.pdf']
+    files_to_copy = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md']
     for file in files_to_copy:
         if os.path.exists(file):  # Only copy files that exist
-            dest_path = os.path.join(parent_pages_dir, file)
+            dest_path = os.path.join(PAGES_DIR, file)
             try:
                 shutil.copy2(file, dest_path)
                 print(f"Successfully copied {file} to _pages directory")
             except Exception as e:
                 print(f"Error copying {file}: {e}")
 
-def copy_cv_to_assets():
-    """Copy cv_euge_stumm.pdf to assets directory"""
-    print("\nCopying cv_euge_stumm.pdf to assets directory...")
-    cv_pdf = 'cv_euge_stumm.pdf'
-    assets_dir = os.path.join(os.path.dirname(os.getcwd()), 'assets')
-    
-    # Create assets directory if it doesn't exist
-    os.makedirs(assets_dir, exist_ok=True)
-    
-    if os.path.exists(cv_pdf):
-        dest_path = os.path.join(assets_dir, cv_pdf)
-        try:
-            shutil.copy2(cv_pdf, dest_path)
-            print(f"Successfully copied {cv_pdf} to assets directory")
-        except Exception as e:
-            print(f"Error copying {cv_pdf} to assets: {e}")
-    else:
-        print(f"Error: {cv_pdf} not found - cannot copy to assets")
-
-
-def convert_cv_to_pdf():
-    """Convert cv.md to cv_euge_stumm.pdf using Pandoc with LaTeX"""
-    print("\nConverting cv.md to cv_euge_stumm.pdf using Pandoc + LaTeX...")
-    cv_md = 'cv.md'
-    cv_pdf = 'cv_euge_stumm.pdf'
-    
-    if not os.path.exists(cv_md):
-        print(f"Error: {cv_md} not found")
-        return False
-    
-    cmd = [
-        'pandoc', cv_md, '-o', cv_pdf,
-        '--pdf-engine', 'xelatex',
-        '-V', 'colorlinks=true',
-        '-V', 'linkcolor=blue',
-        '-V', 'urlcolor=blue',
-        '-V', 'citecolor=blue'
-    ]
-    
-    try:
-        subprocess.run(cmd, check=True)
-        print("PDF conversion completed successfully with blue links")
-        return True
-    except subprocess.CalledProcessError as e:
-        print(f"Error during PDF conversion: {e}")
-        if e.stderr:
-            print(f"Stderr: {e.stderr}")
-        return False
-
 
 def main():
-    # Run all updater scripts
+    # Create _pages first, so create_cv_latex.py can publish the CV into it
+    os.makedirs(PAGES_DIR, exist_ok=True)
+
+    # Run all updater scripts. updater_cv.py writes both CVs as Markdown:
+    # cv.md (research) and cv_teaching.md (teaching).
     updater_scripts = [
         'updater_projects.py',
         'updater_teaching.py',
@@ -90,22 +53,23 @@ def main():
         'updater_cv.py',
         'updater_publications.py'
     ]
-    
+
     for script in updater_scripts:
         run_updater(script)
-    
+
     # Show content of generated files
     files_to_show = ['projects.md', 'publications.md', 'teaching.md', 'conferences.md', 'cv.md']
     for file in files_to_show:
         show_file_content(file)
-    
-    # Convert cv.md to cv_euge_stumm.pdf
-    if convert_cv_to_pdf():
-        # Copy cv_euge_stumm.pdf to assets directory only if conversion was successful
-        copy_cv_to_assets()
-    
-    # Copy all files to _pages directory (including the generated PDF)
+
+    # Build both CV PDFs (cv_euge_stumm.pdf, cv_euge_stumm_teaching.pdf) and
+    # publish the research CV: PDF to ../assets and ../_pages, and a
+    # website-ready cv.md to ../_pages.
+    run_updater('create_cv_latex.py')
+
+    # Copy the other website pages to _pages
     copy_to_pages()
+
 
 if __name__ == "__main__":
     main()

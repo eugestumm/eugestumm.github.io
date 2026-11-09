@@ -1,6 +1,6 @@
 ---
 author: Euge Stumm
-geometry: "margin=1in"
+generator: updater_cv.py
 ---
 # Euge Helyantus Stumm
 
@@ -116,57 +116,57 @@ For presentation in the panel “Teaching”
 
 ### Peer-Reviewed Journal Articles
 
-1. Meurer, Camila, Euge Stumm, and Daniela Levandowski. "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*, vol. 9, no. 24, 2026. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094).
+- Meurer, Camila, Euge Stumm, and Daniela Levandowski. "Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenting and Gender Nomenclatures in Trans and Non-Binary Perspectives]. *Revista Brasileira de Estudos da Homocultura*, vol. 9, no. 24, 2026. [https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094](https://periodicoscientificos.ufmt.br/ojs/index.php/rebeh/article/view/20094).
 
-2. Meireles, Eduarda, Euge Stumm, and Daniela Levandowski. "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, vol. 1, no. 24, 2026, pp. 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775).
+- Meireles, Eduarda, Euge Stumm, and Daniela Levandowski. "Trajetórias de Parentalidade: invenções e desobediências de pessoas trans e não binárias" [Trajectories of Parenthood: Experiences of Trans and Non-Binary People]. *Periódicus*, vol. 1, no. 24, 2026, pp. 133–167. [https://doi.org/10.9771/peri.v1i24.61775](https://doi.org/10.9771/peri.v1i24.61775).
 
-3. Schneider, Karoline, Euge Helyantus Stumm, Roberta Zanini da Rocha, and Daniela Centenaro Levandowski. "Innovative Practices in Developmental Psychology Teaching." *Psicologia Escolar e Educacional*, vol. 27, 2023, p. e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T).
+- Schneider, Karoline, Euge Helyantus Stumm, Roberta Zanini da Rocha, and Daniela Centenaro Levandowski. "Innovative Practices in Developmental Psychology Teaching." *Psicologia Escolar e Educacional*, vol. 27, 2023, p. e242419. [https://doi.org/10.1590/2175-35392023-242419-T](https://doi.org/10.1590/2175-35392023-242419-T).
 
-4. Gurski, Rose, Stephanie Strzykalski, Paula Grus Gomes, and Euge Helyantus Stumm. "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847).
+- Gurski, Rose, Stephanie Strzykalski, Paula Grus Gomes, and Euge Helyantus Stumm. "O Estado da Arte em Psicanálise e Educação no Rio Grande do Sul (2000-2016)" [The State of the Art of Psychoanalysis and Education in Rio Grande do Sul (2000-2016)]. *Revista Educação e Pesquisa*, vol. 46, 2020, pp. 1–15. [https://doi.org/10.1590/S1678-4634202046224847](https://doi.org/10.1590/S1678-4634202046224847).
 
-5. Stumm, Euge Helyantus, and Amadeu de Oliveira Weinmann. "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254).
+- Stumm, Euge Helyantus, and Amadeu de Oliveira Weinmann. "O Cinema como Criador de Próteses: Uma Análise Díldica de 'Os Rapazes das Calçadas'" [The Cinema as a Creator of Prostheses: A Dildic Analysis of 'The Guys of the Sidewalks']. *Revista Periódicus*, vol. 1, no. 11, 2019, pp. 234–249. [https://doi.org/10.9771/peri.v1i11.29254](https://doi.org/10.9771/peri.v1i11.29254).
 
 ### Invited Publications
 
-1. Stumm, Euge Helyantus. "Seriam os Goblins, na Verdade, Humanos? Colonização, Racismo e Barbárie em Dragon’s Dogma" [What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon’s Dogma]. *Revista Contraponto*, vol. 8, no. 2, 2021, pp. 169–185. [https://www.seer.ufrgs.br/contraponto/article/view/117303/65101](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101).
+- Stumm, Euge Helyantus. "Seriam os Goblins, na Verdade, Humanos? Colonização, Racismo e Barbárie em Dragon’s Dogma" [What if Goblins Were, Actually, Humans? Colonization, Racism, and Barbarism in Dragon’s Dogma]. *Revista Contraponto*, vol. 8, no. 2, 2021, pp. 169–185. [https://www.seer.ufrgs.br/contraponto/article/view/117303/65101](https://www.seer.ufrgs.br/contraponto/article/view/117303/65101).
 
 ### Book Chapters and Edited Volumes
 
-1. Stumm, Euge. "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions." *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
+- Stumm, Euge. "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions." *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
 
-2. Stumm, Euge Helyantus, and Steven Butterman. "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions." *SAGE LGBTQ Studies Handbook*, edited by Nael Bhanji et al., vol. 1, SAGE Publications, **forthcoming 2026**.
+- Stumm, Euge Helyantus, and Steven Butterman. "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions." *SAGE LGBTQ Studies Handbook*, edited by Nael Bhanji et al., vol. 1, SAGE Publications, **forthcoming 2026**.
 
-3. Stumm, Euge Helyantus. "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162–168. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf).
+- Stumm, Euge Helyantus. "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162–168. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf).
 
-4. Piuco, Thainan, and Euge Helyantus Stumm. "Estética Queer: Entre o Empoderamento e o Apagamento" [Queer Aesthetics: Between Empowerment and Erasure]. *Fórum Fashion Revolution 2020*, edited by Ana Beatriz Simon Factum et al., Ministry of Tourism and Unibes Cultural, 2020, pp. 259–263. [https://issuu.com/fashionrevolution/docs/fr-forum-2020](https://issuu.com/fashionrevolution/docs/fr-forum-2020).
+- Piuco, Thainan, and Euge Helyantus Stumm. "Estética Queer: Entre o Empoderamento e o Apagamento" [Queer Aesthetics: Between Empowerment and Erasure]. *Fórum Fashion Revolution 2020*, edited by Ana Beatriz Simon Factum et al., Ministry of Tourism and Unibes Cultural, 2020, pp. 259–263. [https://issuu.com/fashionrevolution/docs/fr-forum-2020](https://issuu.com/fashionrevolution/docs/fr-forum-2020).
 
-5. Stumm, Euge Helyantus. "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. *Contra o Cânone: Arte, Feminismo(s) e Ativismos Séculos XVIII a XXI. Seminário Internacional*, edited by Andrea Giunta et al., Fundação Bienal do Mercosul, 2020, pp. 170–175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf).
+- Stumm, Euge Helyantus. "Uma Gameografia Menor? Multidões Sexopolíticas e as Produções Artísticas Dissidentes no Cenário Independente de Games" [A Minor Gameography? Sex-political Multitudes and the Dissident Artistic Productions in the Indie Games Scene]. *Contra o Cânone: Arte, Feminismo(s) e Ativismos Séculos XVIII a XXI. Seminário Internacional*, edited by Andrea Giunta et al., Fundação Bienal do Mercosul, 2020, pp. 170–175. [https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf](https://21cf08b2-90b0-4b83-97f9-807117bee408.filesusr.com/ugd/af02ce_25e71233bb4b4c42877ad2ac1b95b75b.pdf).
 
 ### Reviews
 
-1. Stumm, Euge. "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'." *Reviews in Digital Humanities*, **forthcoming 2026**.
+- Stumm, Euge. "A Review of 'Digital Edition of Fernando Pessoa. Projects and Publications'." *Reviews in Digital Humanities*, **forthcoming 2026**.
 
 ### Digital Scholarship
 
-1. Stumm, Euge. *Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)*. 2025, [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/).
+- Stumm, Euge. *Bajubá Digital Archive: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)*. 2025, [https://eugestumm.github.io/BajubaDigitalArchive/](https://eugestumm.github.io/BajubaDigitalArchive/).
 
-2. Stumm, Euge, and Ben Papadopoulos. *Gender-Inclusive Spanish Digital Archive*. 2025, [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/).
+- Stumm, Euge, and Ben Papadopoulos. *Gender-Inclusive Spanish Digital Archive*. 2025, [https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/](https://eugestumm.github.io/gender-inclusive-spanish-digital-archive/).
 
-3. Stumm, Euge. *Digital mapping Néstor Perlongher's "O Negócio do Michê*. 2024, [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/).
+- Stumm, Euge. *Digital mapping Néstor Perlongher's "O Negócio do Michê*. 2024, [https://eugestumm.github.io/negociodomiche_visualization/](https://eugestumm.github.io/negociodomiche_visualization/).
 
 ### Software
 
-1. Stumm, Euge Helyantus. *CollectionBuilder-Remix*. Version 0.1.0, 2026. MIT License. Extends CollectionBuilder-GH by Evan Peter Williamson, Devin Becker, and Olivia Wikle. [https://eugestumm.github.io/CollectionBuilder-Remix/](https://eugestumm.github.io/CollectionBuilder-Remix/) Code: [https://github.com/eugestumm/CollectionBuilder-Remix](https://github.com/eugestumm/CollectionBuilder-Remix)
+- Stumm, Euge Helyantus. *CollectionBuilder-Remix*. Version 0.1.0, 2026. MIT License. Extends CollectionBuilder-GH by Evan Peter Williamson, Devin Becker, and Olivia Wikle. [https://eugestumm.github.io/CollectionBuilder-Remix/](https://eugestumm.github.io/CollectionBuilder-Remix/) Code: [https://github.com/eugestumm/CollectionBuilder-Remix](https://github.com/eugestumm/CollectionBuilder-Remix)
 
 ### Manuscripts Under Review
 
-1. Stumm, Euge. "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women." **[Peer-Reviewed Journal Article]**
+- Stumm, Euge. "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women." **[Peer-Reviewed Journal Article]**
 
-2. Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
+- Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
 
 ### Manuscripts in Preparation
 
-1. Allés-Torrent, Susanna, Euge Stumm, Elizabeth Cornick, and Leo Fein. "Sobre el 'Bien tratar a toda la generación de las mujeres' o cómo cuantificar la virtud en la Castilla del siglo XV" [On the 'Bien tratar a toda la generación de las mujeres', or How to Quantify Virtue in Fifteenth-Century Castile]. **[Peer-Reviewed Journal Article]**
+- Allés-Torrent, Susanna, Euge Stumm, Elizabeth Cornick, and Leo Fein. "Sobre el 'Bien tratar a toda la generación de las mujeres' o cómo cuantificar la virtud en la Castilla del siglo XV" [On the 'Bien tratar a toda la generación de las mujeres', or How to Quantify Virtue in Fifteenth-Century Castile]. **[Peer-Reviewed Journal Article]**
 
 
 
@@ -174,68 +174,52 @@ For presentation in the panel “Teaching”
 
 ### University of Miami
 
-***Instructor***
+*Instructor*
 
-1. **Basic Spanish I – Online** (SPA 101) — Summer 2026
-
-2. **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
+- **Basic Spanish I – Online** (SPA 101) — Summer 2026
+- **Digital Literacy Through Cultural and Literary Topics in Spanish** (SPA 410/MLL 410) — Fall 2025
     - Co-taught with Dr. Susanna Allés-Torrent
-
-3. **Basic Spanish I** (SPA 101) — Spring 2025
-
-4. **Queer Studies** (GSS 305) — Fall 2024
+- **Basic Spanish I** (SPA 101) — Spring 2025
+- **Queer Studies** (GSS 305) — Fall 2024
     - Co-taught with Dr. Steven Butterman
+- **Intermediate Portuguese I** (POR 201) — Spring 2024
+- **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
 
-5. **Intermediate Portuguese I** (POR 201) — Spring 2024
+*Mentored Teaching*
 
-6. **Beginning Portuguese for Spanish Speakers** (POR 105) — Fall 2023
-
-
-***Mentored Teaching***
-
-1. **Queer Studies** (GSS 305) — Spring 2024
+- **Queer Studies** (GSS 305) — Spring 2024
     - Supervised by Dr. Steven Butterman
-
-2. **Topics in Gender and Sexuality** (SPA 330) — Fall 2023
+- **Topics in Gender and Sexuality** (SPA 330) — Fall 2023
     - Supervised by Dr. Gema Pérez-Sánchez
-
-3. **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
+- **Introduction to Gender and Sexuality Studies** (GSS 202) — Fall 2023
     - Supervised by Dr. Steven Butterman
 
+*Course Research Assistant*
 
-***Course Research Assistant***
-
-1. **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 322) — Spring 2023
+- **LGBTQIA+ Brazil: Queering & Querying the Paradise of Paradox** (POR 322) — Spring 2023
     - Supervised by Dr. Steven Butterman
-
-2. **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 322) — Fall 2022
+- **Contemporary Brazilian Film: From Cinema Novo to Cinema Novíssimo** (POR 322) — Fall 2022
     - Supervised by Dr. Steven Butterman
-
 
 
 ### Federal University of Rio Grande do Sul
 
-***Course Research Assistant***
+*Course Research Assistant*
 
-1. **Diversity and Human Development** — 2022
+- **Diversity and Human Development** — 2022
     - Supervised by Dr. Adolfo Pizzinato
-
-2. **Psychology Applied to Health Sciences** — 2022
+- **Psychology Applied to Health Sciences** — 2022
     - Supervised by Dr. Adolfo Pizzinato
-
 
 
 ### Federal University of Health Sciences of Porto Alegre
 
-***Undergraduate Course Research Assistant***
+*Undergraduate Course Research Assistant*
 
-1. **Developmental Psychology I** — 2018–2021
+- **Developmental Psychology I** — 2018–2021
     - Supervised by Dr. Daniela Centenaro Levandowski
-
-2. **Developmental Psychology II** — 2018–2021
+- **Developmental Psychology II** — 2018–2021
     - Supervised by Dr. Daniela Centenaro Levandowski
-
-
 
 
 
@@ -264,7 +248,6 @@ For presentation in the panel “Teaching”
 "Quando a estrela é coadjuvante: a personagem queer no cinema brasileiro entre a primeira e a segunda metade do século XX." *Biennal-International Symposium Vinculaciones: (Re)thinking the “We” in Latin America (7th)*, April 2023, University of Pittsburgh, Pittsburgh, PA, USA.
 
 "Machorras, Viados, and Sapas: Post-feminism and Furry alliances in Latin America and the Global North." *Department of Modern Languages and Literatures Graduate Conference: Transcultural Expressions: Conflict, Identity, And Revitalization In Multicultural Spheres*, March 2023, University of Miami, Miami, FL, USA.
-
 
 
 ### Undergraduate Presentations
@@ -305,6 +288,7 @@ Supervisor: Dr. Adolfo Pizzinato
 Amount: R$ 8,000.00  
 Supervisor: Dr. Daniela Centenaro Levandowski  
 
+
 ## PROJECTS
 
 ### Creative Work
@@ -317,74 +301,94 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 "Eu te amo" (2018) [https://poieticalab.itch.io/eu-te-amo](https://poieticalab.itch.io/eu-te-amo)
 
+
 ## SERVICE
 
 ### Thesis Supervision
 
 **Co-advisor** for Camila Maurer, Federal University of Health Sciences of Porto Alegre, Brazil (2024–2025)
-    - *"Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenthood and Gender Nomenclatures in Trans and Non-Binary Perspectives]*
-    - Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
+
+- *"Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenthood and Gender Nomenclatures in Trans and Non-Binary Perspectives]*
+- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
 
 **Co-advisor** for Eduarda Meireles, Federal University of Health Sciences of Porto Alegre, Brazil (2023–2024)
-    - *"Trajetórias rumo à parentalidade: experiências de pessoas trans e não binárias" [Trajectories Toward Parenthood: The Experience of Trans and Non-Binary People]*
-    - Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
+
+- *"Trajetórias rumo à parentalidade: experiências de pessoas trans e não binárias" [Trajectories Toward Parenthood: The Experience of Trans and Non-Binary People]*
+- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
 
 
 ### University Service
 
 **Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–May 2026)
-    - With Dr. Brenna Munro
 
-**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2026–present)
-    - With Elizabeth Cornick, Dr. Ludovic Monpelat and Dr. Chloe Edmonson
+- With Dr. Brenna Munro
 
 **Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–May 2026)
-    - With Elizabeth Cornick and Dr. Susanna Allés-Torrent
+
+- With Elizabeth Cornick and Dr. Susanna Allés-Torrent
+
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2026–present)
+
+- With Elizabeth Cornick, Dr. Ludovic Monpelat and Dr. Chloe Edmonson
 
 **Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2024–April 2025)
-    - With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent
+
+- With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent
 
 **Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (August 2023–April 2024)
-    - With Elizabeth Cornick
+
+- With Elizabeth Cornick
 
 
 ### Invited Workshops
 
 **Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2026)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Workshop on Alliances: Gender-Inclusive Language, History, and the Struggle against Colonialism**, Latin American Studies Association (October 28, 2025)
-    - Workshop sponsored by the Sexualities Section. With Dr. Ben Papadopoulos.
+
+- Workshop sponsored by the Sexualities Section. With Dr. Ben Papadopoulos.
 
 **Vibe Coding: Teaching Humanists How to Vibe Code**, University of Miami (November 18, 2025)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **How to Create StoryMaps Using Leaflet and OpenStreetMaps**, University of Miami (April 8, 2025)
-    - Workshop offered in SPA 310 — Sephardic Literature, under supervision of Dr. Shai Cohen.
+
+- Workshop offered in SPA 310 — Sephardic Literature, under supervision of Dr. Shai Cohen.
 
 **How to Use CollectionBuilder**, University of Miami (April 16, 2025)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Open-Source StoryMaps using Leaflet and OpenStreetMaps**, University of Miami (February 19, 2025)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Data Literacy: R Language and Statistics Basics**, University of Miami (February 5, 2025)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2025)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
 **Introduction to Semantic Search with Semantra**, University of Miami (April 5, 2024)
-    - Workshop offered in the Department of Modern Languages and Literatures Lecture Series.
+
+- Workshop offered in the Department of Modern Languages and Literatures Lecture Series.
 
 **Introduction to Markdown**, University of Miami (October 16, 2024)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent.
 
 **Introduction to GitHub + GitHub Pages**, University of Miami (November 6, 2024)
-    - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent.
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick, Michael Soriano, and Dr. Susanna Allés-Torrent.
 
 **Pajubá 101**, University of Miami (February 28, 2023)
-    - Workshop offered in POR 699 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil, under supervision of Dr. Steven Butterman
+
+- Workshop offered in POR 322 — Topics in Luso-Brazilian Cultures: LGBTQIA+ Brazil, under supervision of Dr. Steven Butterman
 
 
 ### Community Engagement
@@ -392,8 +396,8 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 **Volunteer Psychologist**, NGO SOMOS, Brazil (2021–2022)
 
 **Psychology Intern**, Working Group GTênero, Clinic of Psychological Care of the Federal University of Rio Grande do Sul, Brazil (2020–2021)
-    - Workshop 
 
+- Workshop
 
 
 

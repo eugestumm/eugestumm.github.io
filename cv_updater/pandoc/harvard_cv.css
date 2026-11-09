@@ -1,180 +1,171 @@
-/* Harvard Style Academic CV CSS - Clean and Consistent */
+/* Harvard Style Academic CV — same compact style as teaching_cv.css
+   Tighter spacing, no visible bullet markers (details are shown by
+   indentation only), numbered lists kept for courses and publications. */
 
+/* Used by WeasyPrint/Prince. wkhtmltopdf takes its margins from the
+   CV's front matter instead (PAGE_MARGIN in the CV scripts). */
 @page {
-    margin: 1in;
+    margin: 0.75in;
     size: letter;
 }
 
 body {
     font-family: "Times New Roman", serif;
     font-size: 11pt;
-    line-height: 1.2;
+    line-height: 1.15;
     margin: 0;
     padding: 0;
     color: #000;
     max-width: 100%;
 }
 
-/* Name */
+/* ---------- Name, title, contact ---------- */
+
 h1 {
     font-size: 16pt;
     font-weight: bold;
     text-align: center;
-    margin: 0 0 0.1in 0;
-    text-transform: none;
+    margin: 0 0 0.04in 0;
 }
 
-/* Contact info */
+/* Title line under the name */
 h1 + p {
     text-align: center;
-    margin: 0.1in 0 0.3in 0;
     font-style: italic;
-    font-size: 11pt;
+    margin: 0 0 0.04in 0;
 }
+
+/* Contact line, centered under the title */
+h1 + p + p {
+    text-align: center;
+    margin: 0 0 0.12in 0;
+}
+
+/* ---------- Headings ---------- */
 
 /* Section headers */
 h2 {
     font-size: 12pt;
     font-weight: bold;
-    margin: 0.3in 0 0.15in 0;
-    padding-bottom: 0.05in;
+    margin: 0.11in 0 0.05in 0;
+    padding-bottom: 0.02in;
     border-bottom: 1pt solid #000;
     text-transform: uppercase;
 }
 
-/* Subsection headers */
+/* Subsection headers (institutions, publication types): bold, normal
+   case; the role labels beneath them are plain italic */
 h3 {
     font-size: 11pt;
     font-weight: bold;
-    margin: 0.2in 0 0.1in 0;
-    font-style: italic;
+    font-style: normal;
+    margin: 0.09in 0 0.01in 0;
 }
 
-/* Sub-subsection headers */
 h4 {
     font-size: 11pt;
     font-weight: bold;
-    margin: 0.15in 0 0.1in 0;
     font-style: italic;
+    margin: 0.08in 0 0.03in 0;
 }
 
-/* All paragraphs - consistent spacing */
+/* ---------- Text ---------- */
+
 p {
-    margin: 0.1in 0;
+    margin: 0.035in 0;
     text-align: left;
-    line-height: 1.2;
 }
 
-/* Strong text */
-strong {
-    font-weight: bold;
-}
+strong { font-weight: bold; }
+em { font-style: italic; }
 
-/* Emphasis */
-em {
-    font-style: italic;
-}
-
-/* Links */
 a {
-    color: #000;
+    color: #0000ff;   /* same blue as the pdflatex links */
     text-decoration: none;
 }
 
-/* Lists */
+/* ---------- Lists ---------- */
+
+/* Bullet lists: no markers, just an indent under the entry above */
 ul {
-    list-style-type: none;
-    margin: 0.1in 0;
-    padding-left: 0;
+    list-style: none;
+    margin: 0 0 0.035in 0;
+    padding-left: 0.25in;
 }
 
+/* Details sit directly under their entry line, with no gap */
+p + ul {
+    margin-top: -0.035in;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Numbered lists (publications) with a hanging indent */
 ol {
-    margin: 0.1in 0;
+    margin: 0 0 0.035in 0;
     padding-left: 0.3in;
 }
 
 li {
-    margin: 0.1in 0;
-    line-height: 1.2;
+    margin: 0.02in 0;
 }
 
-/* Publications - hanging indent */
-ol li {
+ol > li {
     text-indent: -0.3in;
     padding-left: 0.3in;
-    margin-bottom: 0.15in;
+    margin-bottom: 0.02in;
     text-align: justify;
 }
 
-/* Horizontal rules */
+/* Details under a course (level, enrollment, notes …), one step in */
+li ul {
+    margin: 0;
+    padding-left: 0.25in;
+}
+
+li li {
+    text-indent: 0;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
 hr {
     border: none;
     border-top: 1pt solid #000;
-    margin: 0.2in 0;
+    margin: 0.12in 0;
 }
 
-/* Indented details (supervisors, amounts, etc.) */
-p + p:contains("Advisor:"),
-p + p:contains("Thesis:"),
-p + p:contains("Amount:"),
-p + p:contains("Supervised by"),
-p + p:contains("Co-taught with"),
-p + p:contains("For presentation"),
-p + p:contains("PI:"),
-p + p:contains("Technologies"),
-p + p:contains("Collaborators"),
-p + p:contains("Workshop ministered") {
-    margin-left: 0.3in;
-    font-size: 10pt;
-    margin-top: 0.05in;
-}
-
-/* Project metadata */
-p:contains("Years:") {
-    font-size: 10pt;
-    margin: 0.05in 0;
-}
-
-/* Language skills */
-p:contains(": Native"),
-p:contains(": Advanced"),
-p:contains(": Reading") {
-    margin: 0.05in 0;
-}
-
-/* Last updated */
-p:contains("Last updated") {
+/* "Last updated" is always the last line of the CV */
+body > p:last-child {
     text-align: center;
-    font-style: italic;
     font-size: 10pt;
-    margin-top: 0.3in;
     color: #666;
+    margin-top: 0.2in;
 }
 
-/* Print optimization */
-@media print {
-    /* Prevent awkward page breaks */
-    h2, h3, h4 {
-        page-break-after: avoid;
-    }
-    
-    ol li {
-        page-break-inside: avoid;
-    }
-    
-    p {
-        orphans: 2;
-        widows: 2;
-    }
+/* ---------- Page breaks ---------- */
+h2, h3, h4 {
+    page-break-after: avoid;
 }
 
-/* Screen view */
+ol > li {
+    page-break-inside: avoid;
+}
+
+p {
+    orphans: 2;
+    widows: 2;
+}
+
+/* ---------- Browser preview only (not used in the PDF) ---------- */
 @media screen {
     body {
         max-width: 8.5in;
         margin: 0 auto;
-        padding: 1in;
+        padding: 0.75in;
         background: #fff;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 }

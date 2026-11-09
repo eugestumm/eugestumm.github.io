@@ -1,0 +1,173 @@
+/* Teaching CV — compact version of harvard_cv.css
+   Tighter spacing, no visible bullet markers (details are shown by
+   indentation only), numbered lists kept for courses and publications. */
+
+/* Used by WeasyPrint/Prince. wkhtmltopdf takes its margins from the
+   CV's front matter instead (PAGE_MARGIN in generate_cv_teaching.py). */
+@page {
+    margin: 0.75in;
+    size: letter;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    max-width: 100%;
+}
+
+/* ---------- Name, title, contact ---------- */
+
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 0.04in 0;
+}
+
+/* Title line under the name */
+h1 + p {
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 0.04in 0;
+}
+
+/* Contact line, centered under the title */
+h1 + p + p {
+    text-align: center;
+    margin: 0 0 0.12in 0;
+}
+
+/* ---------- Headings ---------- */
+
+/* Section headers */
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0.11in 0 0.05in 0;
+    padding-bottom: 0.02in;
+    border-bottom: 1pt solid #000;
+    text-transform: uppercase;
+}
+
+/* Subsection headers (institutions, publication types) in bold small
+   caps, so they don't look like the italic role labels beneath them */
+h3 {
+    font-size: 11pt;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    margin: 0.07in 0 0.01in 0;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0.08in 0 0.03in 0;
+}
+
+/* ---------- Text ---------- */
+
+p {
+    margin: 0.035in 0;
+    text-align: left;
+}
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+a {
+    color: #0000ff;   /* same blue as the pdflatex links */
+    text-decoration: none;
+}
+
+/* ---------- Lists ---------- */
+
+/* Bullet lists: no markers, just an indent under the entry above */
+ul {
+    list-style: none;
+    margin: 0 0 0.035in 0;
+    padding-left: 0.25in;
+}
+
+/* Details sit directly under their entry line, with no gap */
+p + ul {
+    margin-top: -0.035in;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Numbered lists (courses, publications) with a hanging indent */
+ol {
+    margin: 0 0 0.035in 0;
+    padding-left: 0.3in;
+}
+
+li {
+    margin: 0.02in 0;
+}
+
+ol > li {
+    text-indent: -0.3in;
+    padding-left: 0.3in;
+    margin-bottom: 0.02in;
+    text-align: justify;
+}
+
+/* Details under a numbered course (level, enrollment, notes …),
+   indented slightly from the course title */
+li ul {
+    margin: 0 0 0 -0.15in;
+    padding-left: 0;
+}
+
+li li {
+    text-indent: 0;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+hr {
+    border: none;
+    border-top: 1pt solid #000;
+    margin: 0.12in 0;
+}
+
+/* "Last updated" is always the last line of the CV */
+body > p:last-child {
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+    margin-top: 0.2in;
+}
+
+/* ---------- Page breaks ---------- */
+h2, h3, h4 {
+    page-break-after: avoid;
+}
+
+ol > li {
+    page-break-inside: avoid;
+}
+
+p {
+    orphans: 2;
+    widows: 2;
+}
+
+/* ---------- Browser preview only (not used in the PDF) ---------- */
+@media screen {
+    body {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.75in;
+        background: #fff;
+    }
+}
