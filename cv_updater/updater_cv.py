@@ -22,7 +22,8 @@ Optional columns/sheets (used when present, ignored otherwise):
                       evaluation_scale, description, development
   CourseDevelopment:  course_title, course_code, institution, semester, year,
                       role, level, description
-  PedagogicalTraining: title, provider, month, year, end_year, hours, description
+  PedagogicalTraining: title, provider, location, month, day, year,
+                      end_month, end_day, end_year, hours, description
   Awards sheet:       award_type ("Teaching" marks a teaching award)
   Conferences sheet:  topic ("Teaching"/"Pedagogy" marks a pedagogy talk)
   Publications:       BibTeX keywords = {pedagogy} (or note = {pedagogy})
@@ -36,6 +37,7 @@ Usage:
 """
 
 import argparse
+import calendar
 import re
 from io import BytesIO
 from datetime import datetime
@@ -61,22 +63,27 @@ SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4TyMkL-aPWhYseDOT
 # Service rows of type Thesis Supervision / Professional Development /
 # Invited Workshops stay under SERVICE unless the CV includes the
 # "mentoring", "pedagogical_training" or "workshops" section, where they
-# are listed instead.
+# are listed instead. "pd_heading" is the heading of the
+# "pedagogical_training" section (PedagogicalTraining tab + Service rows of
+# type Professional Development).
 CVS = {
     "research": {
         "markdown": "cv.md",
         "teaching_focus": False,
         "grants_heading": "FUNDED RESEARCH",
+        "pd_heading": "PROFESSIONAL DEVELOPMENT",
         "sections": [
             "header",
             "education",
             "awards",
             "publications",
             "teaching",
+            "mentoring",             # Service 'Thesis Supervision' / 'Mentoring' / 'Advising'
             "conferences",
             "grants",
             "projects",
             "service",
+            "pedagogical_training",  # PedagogicalTraining tab + Service 'Professional Development'
             "memberships",
             "languages",
         ],
@@ -85,6 +92,7 @@ CVS = {
         "markdown": "cv_teaching.md",
         "teaching_focus": True,
         "grants_heading": "GRANTS AND FELLOWSHIPS",
+        "pd_heading": "PEDAGOGICAL TRAINING AND PROFESSIONAL DEVELOPMENT",
         "sections": [
             "header",
             "education",
@@ -782,8 +790,51 @@ def generate_course_development_section(data, cv):
     return "## COURSE AND CURRICULUM DEVELOPMENT\n\n" + "".join(newest_first(items)) + "\n"
 
 
+def month_name(value):
+    """'3' or 3 -> 'March'; month names are kept as typed."""
+    m = as_text(value)
+    if m.isdigit() and 1 <= int(m) <= 12:
+        return calendar.month_name[int(m)]
+    return m
+
+
+def event_date(row):
+    """Date of a one-off event from month/day/year (+ end_month/end_day/
+    end_year): 'March 6, 2026', 'March 6–7, 2026', 'Feb 27–March 1, 2026',
+    'March 2026', '2026'. Returns '' when there is no year."""
+    y = format_date(row.get('year'))
+    if not y:
+        return ""
+    m, d = month_name(row.get('month')), as_text(row.get('day'))
+    ey = format_date(row.get('end_year')) or y
+    em_given, ed = month_name(row.get('end_month')), as_text(row.get('end_day'))
+
+    if not m:
+        return y if ey == y else f"{y}–{ey}"
+    start = f"{m} {d}, {y}" if d else f"{m} {y}"
+    if ey != y:  # crosses into another year
+        if em_given:
+            return f"{start}–{em_given} {ed}, {ey}" if ed else f"{start}–{em_given} {ey}"
+        return f"{start}–{ey}"
+    em = em_given or m
+    if em != m:  # same year, different months
+        if d:
+            return f"{m} {d}–{em} {ed}, {y}" if ed else f"{m} {d}–{em} {y}"
+        return f"{m}–{em} {y}"
+    if d and ed and ed != d:  # same month, several days
+        return f"{m} {d}–{ed}, {y}"
+    return start
+
+
+_undated_warned = set()
+
+
 def generate_pedagogical_training_section(data, cv):
-    """PedagogicalTraining sheet + Service rows of type Professional Development."""
+    """PedagogicalTraining sheet + Service rows of type Professional Development.
+
+    Each PedagogicalTraining row prints as
+        **Title**, Provider, Location (Month Day, Year)
+    with hours and description (both optional) indented underneath."""
     items = []
 
     if has_rows(data, 'PedagogicalTraining'):
@@ -793,16 +844,21 @@ def generate_pedagogical_training_section(data, cv):
                 continue
             line = f"**{title}**"
             provider = val(r, 'provider') or val(r, 'organization') or val(r, 'institution')
-            if provider:
-                line += f", {provider}"
+            for part in (provider, val(r, 'location')):
+                if part:
+                    line += f", {part}"
+
             if not is_blank(r.get('single_year')) or not is_blank(r.get('start_year')):
                 date = service_date(r)
             else:
-                date = format_date_range(r.get('year'), r.get('end_year'))
-                if date and val(r, 'month'):
-                    date = f"{val(r, 'month')} {date}"
+                date = event_date(r)
             if date:
                 line += f" ({date})"
+            elif title not in _undated_warned:
+                _undated_warned.add(title)
+                print(f"⚠️  PedagogicalTraining: no year for \"{title}\" — "
+                      "fill in month, day and year to show the date")
+
             hours = val(r, 'hours')
             if hours and not re.search(r"[a-zA-Z]", hours):
                 hours = f"{hours} hours"
@@ -816,7 +872,8 @@ def generate_pedagogical_training_section(data, cv):
 
     if not items:
         return ""
-    return "## PEDAGOGICAL TRAINING AND PROFESSIONAL DEVELOPMENT\n\n" + "".join(newest_first(items)) + "\n"
+    heading = cv.get("pd_heading", "PEDAGOGICAL TRAINING AND PROFESSIONAL DEVELOPMENT")
+    return f"## {heading}\n\n" + "".join(newest_first(items)) + "\n"
 
 
 def generate_workshops_section(data, cv):

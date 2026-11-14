@@ -35,6 +35,10 @@ generator: updater_cv.py
 
 ## AWARDS AND HONORS
 
+**Three Minute Thesis (3MT) Competition – College of Arts and Sciences Representative** (2026)  
+*University of Miami – Graduate School*  
+Sole representative of the College of Arts and Sciences in the university-wide final  
+
 **Dean's Fellowship** (2026)  
 *University of Miami – Graduate School*  
 
@@ -223,6 +227,24 @@ For presentation in the panel “Teaching”
 
 
 
+## STUDENT MENTORING AND ADVISING
+
+**Co-advisor** for Amanda Carvalho Santos Leonardi, Federal University of Health Sciences of Porto Alegre, Brazil (2026–present)
+
+- *"Mulheres que amam umas às outras: a relação mãe-filha frente à descoberta e a expressão da sexualidade da filha" [Women That Love One Another: Mother-Daughter Relationship Amidst the Discovery and Expression of the Daughter's Sexuality]*
+- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
+
+**Co-advisor** for Camila Maurer, Federal University of Health Sciences of Porto Alegre, Brazil (2024–2025)
+
+- *"Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenthood and Gender Nomenclatures in Trans and Non-Binary Perspectives]*
+- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
+
+**Co-advisor** for Eduarda Meireles, Federal University of Health Sciences of Porto Alegre, Brazil (2023–2024)
+
+- *"Trajetórias rumo à parentalidade: experiências de pessoas trans e não binárias" [Trajectories Toward Parenthood: The Experience of Trans and Non-Binary People]*
+- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
+
+
 ## CONFERENCE PRESENTATIONS
 
 ### Graduate Presentations
@@ -304,20 +326,11 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ## SERVICE
 
-### Thesis Supervision
-
-**Co-advisor** for Camila Maurer, Federal University of Health Sciences of Porto Alegre, Brazil (2024–2025)
-
-- *"Nomenclaturas de Parentalidade e Gênero em Perspectivas Trans e Não-Binárias" [Parenthood and Gender Nomenclatures in Trans and Non-Binary Perspectives]*
-- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
-
-**Co-advisor** for Eduarda Meireles, Federal University of Health Sciences of Porto Alegre, Brazil (2023–2024)
-
-- *"Trajetórias rumo à parentalidade: experiências de pessoas trans e não binárias" [Trajectories Toward Parenthood: The Experience of Trans and Non-Binary People]*
-- Bachelor Thesis in Psychology. Chair: Dr. Daniela Centenaro Levandowski
-
-
 ### University Service
+
+**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2026–present)
+
+- With Elizabeth Cornick, Dr. Ludovic Monpelat and Dr. Chloe Edmonson
 
 **Co-convener, Queer Studies Interdisciplinary Research Group**, University of Miami (January 2026–May 2026)
 
@@ -326,10 +339,6 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 **Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2025–May 2026)
 
 - With Elizabeth Cornick and Dr. Susanna Allés-Torrent
-
-**Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2026–present)
-
-- With Elizabeth Cornick, Dr. Ludovic Monpelat and Dr. Chloe Edmonson
 
 **Co-convener, Digital Humanities Interdisciplinary Research Group**, University of Miami (August 2024–April 2025)
 
@@ -342,7 +351,15 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 ### Invited Workshops
 
-**Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2026)
+**Make a Bilingual Website with your Phone (CollectionBuilder-Remix)**, University of Miami (October 8, 2026)
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick
+
+**Making Bilingual Websites with Jekyll and CollectionBuilder**, University of Miami (February 20, 2026)
+
+- Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick
+
+**Data Literacy: Understanding Association and Causation in Data**, University of Miami (March 5, 2025)
 
 - Workshop offered in the Digital Humanities Interdisciplinary Research Group. With Elizabeth Cornick and Dr. Susanna Allés-Torrent.
 
@@ -399,6 +416,11 @@ Supervisor: Dr. Daniela Centenaro Levandowski
 
 - Workshop
 
+
+
+## PROFESSIONAL DEVELOPMENT
+
+**Approaching Politics in the Language Classroom: Pedagogical Strategies and Practices**, Consortium for Language Teaching and Learning, Massachusetts Institute of Technology, Cambridge, MA (November 5–6, 2026)
 
 
 ## PROFESSIONAL MEMBERSHIPS
