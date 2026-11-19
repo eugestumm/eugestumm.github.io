@@ -170,6 +170,11 @@ generator: updater_cv.py
 
 ## AWARDS AND HONORS
 
+**Modern Language Asssociation Convention Grant** (2026)  
+*Modern Language Association*  
+$400.00  
+For presenting at MLA 2027 conference  
+
 **Three Minute Thesis (3MT) Competition – College of Arts and Sciences Representative** (2026)  
 *University of Miami – Graduate School*  
 Sole representative of the College of Arts and Sciences in the university-wide final  
