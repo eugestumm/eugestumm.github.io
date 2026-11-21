@@ -7,7 +7,7 @@ generator: updater_cv.py
 *Ph.D. Candidate in Literary, Cultural, and Linguistic Studies (University of Miami)*
 
 **Email:** [ehs89@miami.edu](mailto:ehs89@miami.edu) | **Website:** [eugestumm.github.io](https://eugestumm.github.io) | **ORCID:** [0000-0001-9087-4198](https://orcid.org/0000-0001-9087-4198)  
-**GitHub:** [@eugestumm](https://github.com/eugestumm)
+**GitHub:** [@eugestumm](https://github.com/eugestumm) | 5202 University Drive Rm 212 Coral Gables, FL 33146
 
 ## EDUCATION
 
