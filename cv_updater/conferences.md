@@ -9,7 +9,7 @@ author_profile: true
 
 "Workshop: Finally a Workshop for Humanists: How To Build A Digital Archive From Zero to CollectionBuilder." *FLDH America 250 & Florida Digital Humanities: Local, National, & International Connections*, October 2026, University of South Florida, Saint Petersburg, FL, USA.
 
-"Innovative Archival Strategies for Marginalized Linguistic Communities: The B/Pajubá Digital Archive." *Annual Yale Bouchet Conference on Graduate Education: Historic Milestones and Future Directions: Innovative Strategies to Empower the Next Generation of Scholars (22nd)*, April 2026, Edward Alexander Bouchet Graduate Honor Society, Yale University, New Haven, CN, USA.
+"Innovative Archival Strategies for Marginalized Linguistic Communities: The B/Pajubá Digital Archive." *Annual Yale Bouchet Conference on Graduate Education: Historic Milestones and Future Directions: Innovative Strategies to Empower the Next Generation of Scholars (22nd)*, April 2026, Edward Alexander Bouchet Graduate Honor Society, Yale University, New Haven, CT, USA.
 
 "Workshop: Archiving from the Queer South: Queer Zines and Digital Publishing in the Humanities." *67th Annual Society for Cinema and Media Studies Conference*, March 2026, Society for Cinema and Media Studies, Chicago, IL, USA. With Alexandra Arana Blas.
 
@@ -19,7 +19,7 @@ author_profile: true
 
 "From Christine de Pizan to Christine and the Queens: Gender Bending as Transgression of Normative Identity Politics." *International Conference of Europeanists: Radical Europe: Violence, Emancipation & Reaction (30th)*, July 2024, Sciences Po Lyon & Université Lyon 2, Lyon, France.
 
-"Pabujá as a Community of Practices." *Samuel Armistead Colloquium (17th)*, April 2024, University of California, Davis, Davis, CA, USA.
+"Pajubá as a Community of Practices." *Samuel Armistead Colloquium (17th)*, April 2024, University of California, Davis, Davis, CA, USA.
 
 "From Brazilian Literary Feet Lovers to Reddit Femboys: Imagining Queer Multitudes as a Form of Alliance." *Queen's Graduate Conference in Literature: Orientation: This Way, That Way & The Other*, May 2023, Queen's University, Kingston, ON, Canada.
 
