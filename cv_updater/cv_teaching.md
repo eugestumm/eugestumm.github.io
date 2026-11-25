@@ -274,7 +274,7 @@ For presentation in the panel “Teaching”
 
 - Stumm, Euge. "Archiving Gender-Inclusive Language: Mapping Trans, Travesti, and Non-Binary Space and Time in Hispanic Cultural Productions." *Dispatches from the Trans Internet*, edited by Eliot Dunn, B1NARY Press, **forthcoming 2026**.
 
-- Stumm, Euge Helyantus, and Steven Butterman. "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions." *SAGE LGBTQ Studies Handbook*, edited by Nael Bhanji et al., vol. 1, SAGE Publications, **forthcoming 2026**.
+- Stumm, Euge Helyantus, and Steven Butterman. "Representations of Pajubá (or Bajubá) in Brazilian Popular Culture: Between Mass Media and Travesti Productions." *The SAGE Handbook of Queer Studies*, edited by Momin Rahman et al., vol. 2, SAGE Publications, **forthcoming 2026**. [https://www.sagepub.com/shop/buy-a-book/the-sage-handbook-of-queer-studies-1-286728](https://www.sagepub.com/shop/buy-a-book/the-sage-handbook-of-queer-studies-1-286728).
 
 - Stumm, Euge Helyantus. "Manifesto por uma Psicologia Pirata" [Manifesto Toward a Pirate Psychology]. *Gestos, Memórias e Narrativas da Escuta Clínica Permeada pela Tecnologia*, Regional Council of Psychology of Rio Grande do Sul, 2021, pp. 162–168. [https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf](https://www.crprs.org.br/conteudo/publicacoes/coletanea_CPCP_final.pdf).
 
@@ -302,11 +302,9 @@ For presentation in the panel “Teaching”
 
 - Stumm, Euge. "Sometimes Characters, Never Directors: The Brazilian Cinema Directed by Travestis and Trans Women." **[Peer-Reviewed Journal Article]**
 
-- Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
-
-### Manuscripts in Preparation
-
 - Allés-Torrent, Susanna, Euge Stumm, Elizabeth Cornick, and Leo Fein. "Sobre el 'Bien tratar a toda la generación de las mujeres' o cómo cuantificar la virtud en la Castilla del siglo XV" [On the 'Bien tratar a toda la generación de las mujeres', or How to Quantify Virtue in Fifteenth-Century Castile]. **[Peer-Reviewed Journal Article]**
+
+- Stumm, Euge, Cristiano Hamann, and Adolfo Pizzinato. "Furry and Trans* Entanglements: Ethnographic Reflections from the Global South." **[Book Chapter]**
 
 
 
